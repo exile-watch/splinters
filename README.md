@@ -11,8 +11,8 @@
 </p>
 
 ## Description
-test
-{content}
+
+this repo will be nuked from the orbit
 
 ## Getting started
 
