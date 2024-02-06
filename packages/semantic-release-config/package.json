@@ -13,7 +13,6 @@
     ".releaserc",
     "package.json"
   ],
-  "author": "Sebastian Krzyzanowski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/exile-watch/nucleus/issues"
