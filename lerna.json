@@ -2,9 +2,15 @@
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "version": "0.1.0",
   "command": {
+    "publish": {
+      "registry": "https://npm.pkg.github.com/"
+    },
     "version": {
       "allowBranch": "main",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "forcePublish": true,
+      "createRelease": "github",
+      "message": "chore(release): publish %s"
     }
   },
   "packages": [
