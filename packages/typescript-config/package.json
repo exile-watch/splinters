@@ -1,0 +1,19 @@
+{
+  "name": "@exile-watch/typescript-config",
+  "version": "0.0.0",
+  "description": "Shared TypeScript configuration for exile.watch frontend projects",
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exile-watch/nucleus.git"
+  },
+  "author": "Sebastian Krzyzanowski",
+  "license": "ISC",
+  "homepage": "https://github.com/exile-watch/nucleus#readme",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}

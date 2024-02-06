@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+
+    "sourceMap": true,
+
+    "skipLibCheck": true,
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "forceConsistentCasingInFileNames": true,
+
+    "module": "esnext",
+
+    "moduleResolution": "node",
+
+    "checkJs": true,
+
+    "noEmit": true,
+
+    "strict": true,
+
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "allowUnreachableCode": false
+
+    // @see: https: //www.typescriptlang.org/tsconfig#typeRoots
+    // "typeRoots": <not set>
+
+    // @see https: //www.typescriptlang.org/tsconfig#types
+    // "types": <not set>
+  },
+  "$schema": "https://json.schemastore.org/tsconfig"
+}
