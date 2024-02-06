@@ -19,6 +19,6 @@
     "packages/*"
   ],
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }
