@@ -11,7 +11,7 @@
   },
   "main": "release.config.js",
   "files": [
-    "types.js",
+    "commit-types.js",
     "release.config.js",
     "plugins.json"
   ],

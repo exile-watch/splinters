@@ -1,12 +1,14 @@
 const plugins = require("./plugins");
 
-
+/**
+ * @type {import('semantic-release').GlobalConfig}
+ */
 module.exports = {
   releaseRules: plugins[0][1].releaseRules,
   parserOpts: {
     mergePattern: /^Merge pull request #(\d+) from (.*)$/,
     mergeCorrespondence: ["id", "source"]
   },
-  branches: ['main', {name: 'beta', prerelease: true}, {name: 'alpha', prerelease: true}],
+  branches: ['main'],
   plugins
 };
