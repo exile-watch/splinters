@@ -12,7 +12,7 @@
 
 ## Description
 
-this repo will be nuked from the orbit
+this repo will be nuked from the orbit some day
 
 ## Getting started
 
