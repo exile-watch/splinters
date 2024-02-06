@@ -1,0 +1,29 @@
+{
+  "name": "@exile-watch/semantic-release-config",
+  "version": "0.0.0",
+  "description": "Shared semantic-release configuration for exile.watch projects",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exile-watch/nucleus.git"
+  },
+  "main": "release.config.js",
+  "files": [
+    "types.js",
+    "release.config.js",
+    "plugins.json"
+  ],
+  "author": "Sebastian Krzyzanowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exile-watch/nucleus/issues"
+  },
+  "homepage": "https://github.com/exile-watch/nucleus#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^23.0.0"
+  }
+}

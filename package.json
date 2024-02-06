@@ -1,0 +1,25 @@
+{
+  "name": "nucleus",
+  "version": "0.0.0",
+  "description": "Shared build tools for TypeScript and frontend projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exile-watch/nucleus.git"
+  },
+  "author": "Sebastian Krzyzanowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exile-watch/nucleus/issues"
+  },
+  "homepage": "https://github.com/exile-watch/nucleus#readme",
+  "devDependencies": {
+    "lerna": "^8.0.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
