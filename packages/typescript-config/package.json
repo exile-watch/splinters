@@ -15,5 +15,8 @@
   "homepage": "https://github.com/exile-watch/nucleus#readme",
   "dependencies": {
     "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
