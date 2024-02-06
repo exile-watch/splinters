@@ -9,15 +9,18 @@
     "type": "git",
     "url": "git+https://github.com/exile-watch/nucleus.git"
   },
+  "main": "lib/release.config.js",
   "files": [
-    ".releaserc",
-    "package.json"
+    "lib/release.config.js"
   ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/exile-watch/nucleus/issues"
   },
   "homepage": "https://github.com/exile-watch/nucleus#readme",
+  "peerDependencies": {
+    "semantic-release": "^23"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
