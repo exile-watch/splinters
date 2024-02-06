@@ -3,14 +3,15 @@
   "version": "0.1.2",
   "command": {
     "publish": {
-      "registry": "https://registry.npmjs.org/"
+      "registry": "https://registry.npmjs.org/",
+      "loglevel": "verbose"
     },
     "version": {
       "allowBranch": "main",
       "conventionalCommits": true,
       "forcePublish": true,
       "createRelease": "github",
-      "message": "chore(release): publish %s"
+      "message": "chore(release): %s"
     }
   },
   "packages": [
