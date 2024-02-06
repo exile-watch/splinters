@@ -5,15 +5,6 @@
   "scripts": {
     "semantic-release": "semantic-release"
   },
-  "release": {
-    "branches": [
-      "main",
-      {
-        "name": "develop",
-        "prerelease": true
-      }
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/exile-watch/nucleus.git"
