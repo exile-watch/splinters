@@ -4,7 +4,7 @@
   "command": {
     "publish": {
       "registry": "https://registry.npmjs.org/",
-      "loglevel": "error"
+      "loglevel": "debug"
     },
     "version": {
       "allowBranch": "main",
