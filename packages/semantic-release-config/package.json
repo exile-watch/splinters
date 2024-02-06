@@ -9,11 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/exile-watch/nucleus.git"
   },
-  "main": "release.config.js",
   "files": [
-    "commit-types.js",
-    "release.config.js",
-    "plugins.json"
+    ".releaserc",
+    "package.json"
   ],
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
