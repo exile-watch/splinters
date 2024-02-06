@@ -17,5 +17,8 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  }
 }
