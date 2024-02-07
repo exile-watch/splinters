@@ -1,17 +1,16 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.1.10",
+  "version": "independent",
   "command": {
     "publish": {
-      "registry": "https://registry.npmjs.org/",
-      "loglevel": "debug"
+      "registry": "https://registry.npmjs.org/"
     },
     "version": {
       "allowBranch": "main",
       "conventionalCommits": true,
-      "forcePublish": true,
       "createRelease": "github",
-      "message": "chore(release): %s"
+      "message": "chore(release): %s",
+      "commitHooks": false
     }
   },
   "packages": [
