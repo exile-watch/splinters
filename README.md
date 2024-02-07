@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  exile.watch build tools
+  <a href="#">exile.watch</a> build tools
 </h1>
 <p align="center">
     Collection of shared frontend tooling configurations and project dependencies.

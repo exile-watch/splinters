@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="https://exile.watch">
+  <a href="https://biomejs.dev">
     <img alt="biome logo" src="https://biomejs.dev/_astro/slogan-dark-transparent.0580f4b3_ZpPxoY.svg" width="200" />
   </a>
 </p>
 <h1 align="center">
-  `@exile-watch/biome-config`
+  <code>@exile-watch/biome-config</code>
 </h1>
 
 ## Description
