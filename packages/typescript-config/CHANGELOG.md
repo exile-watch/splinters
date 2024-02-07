@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.13 (2024-02-07)
+
+**Note:** Version bump only for package @exile-watch/typescript-config
+
+
+
+
+
 ## 0.1.12 (2024-02-07)
 
 **Note:** Version bump only for package @exile-watch/typescript-config
