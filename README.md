@@ -4,20 +4,18 @@
   </a>
 </p>
 <h1 align="center">
-  {project name}
+  exile.watch build tools
 </h1>
 <p align="center">
-  {(optional) description of the name}
+    Collection of shared frontend tooling configurations and project dependencies.
 </p>
 
-## Description
+### Packages
+- [@exile-watch/biome-config](https://github.com/exile-watch/nucleus/pkgs/npm/biome-config)
+- [@exile-watch/typescript-config](https://github.com/exile-watch/nucleus/pkgs/npm/typescript-config)
 
-this repo will be nuked from the orbit some day
+### Repository Naming context
+_[(The) Nucleus (of the Maven)](https://www.pathofexile.com/forum/view-thread/3031121) contains instructions required for cellular processes._
 
-## Getting started
+_Similarly, `@exile-watch/nucleus` serves as the central hub for a suite of build tools—such as linting, testing, and typechecking—providing essential guidelines for developers on expected code style and quality._
 
-## (optional) Packages
-
-## Got a Question or Problem?
-
-tbd2
