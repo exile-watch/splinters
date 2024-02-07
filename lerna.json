@@ -9,7 +9,7 @@
       "allowBranch": "main",
       "conventionalCommits": true,
       "createRelease": "github",
-      "message": "chore(release): %s",
+      "message": "chore(release): publish",
       "commitHooks": false
     }
   },
