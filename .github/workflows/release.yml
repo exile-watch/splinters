@@ -37,8 +37,13 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > .npmrc
           echo "@exile-watch:registry=https://npm.pkg.github.com/" >> .npmrc
 
-      - env:
-          CI: true
+      - name: Check if package-lock.json changed
+        id: package-lock-changed
+        run: |
+          git diff --quiet HEAD^ HEAD -- package-lock.json || echo ::set-output name=changed::true
+
+      - name: Install dependencies
+        if: steps.package-lock-changed.outputs.changed == 'true'
         run: npm ci
 
       - if: success()
