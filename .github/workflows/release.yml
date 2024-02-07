@@ -40,7 +40,7 @@ jobs:
       - name: Check if package-lock.json changed
         id: package-lock-changed
         run: |
-          git diff --quiet HEAD^ HEAD -- package-lock.json || echo ::set-output name=changed::true
+          git rev-parse --quiet --verify HEAD^1 && git diff --quiet HEAD^1 HEAD -- package-lock.json
 
       - name: Install dependencies
         if: steps.package-lock-changed.outputs.changed == 'true'
