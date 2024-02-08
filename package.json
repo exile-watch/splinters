@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/exile-watch/nucleus.git"
   },
+  "scripts": {
+    "build": "lerna run build",
+    "typecheck": "lerna run typecheck"
+  },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
   "bugs": {

@@ -4,7 +4,8 @@
   "description": "Shared TypeScript configuration for exile.watch frontend projects",
   "main": "tsconfig.json",
   "files": [
-    "tsconfig.json"
+    "tsconfig.json",
+    "tsconfig.rollup.json"
   ],
   "repository": {
     "type": "git",
