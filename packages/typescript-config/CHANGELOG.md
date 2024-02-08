@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/exile-watch/nucleus/compare/@exile-watch/typescript-config@0.1.23...@exile-watch/typescript-config@0.2.0) (2024-02-08)
+
+
+### Features
+
+* **packages:** add rollup-config ([c2d78ce](https://github.com/exile-watch/nucleus/commit/c2d78ce74710cfa28ed15a2d1800ffa1c8f07a37))
+
+
+
+
+
 ## [0.1.23](https://github.com/exile-watch/nucleus/compare/@exile-watch/typescript-config@0.1.22...@exile-watch/typescript-config@0.1.23) (2024-02-07)
 
 **Note:** Version bump only for package @exile-watch/typescript-config
