@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  <code>@exile-watch/typescript-config</code>
+  <code>@exile-watch/conventional-changelog-config</code>
 </h1>
 
 ## Description
