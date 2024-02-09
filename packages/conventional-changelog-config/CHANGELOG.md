@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/exile-watch/nucleus/compare/@exile-watch/conventional-changelog-config@0.1.1...@exile-watch/conventional-changelog-config@0.1.2) (2024-02-09)
+
+
+### 📄 Documentation
+
+* **README:** update file title ([2268d4b](https://github.com/exile-watch/nucleus/commit/2268d4bca6e602715c34b0444b1f7a9238f2770b))
+
+
+
 ## [0.1.1](https://github.com/exile-watch/nucleus/compare/@exile-watch/conventional-changelog-config@0.1.0...@exile-watch/conventional-changelog-config@0.1.1) (2024-02-09)
 
 
