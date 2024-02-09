@@ -11,7 +11,9 @@
 </p>
 
 ### Packages
+- [@exile-watch/conventional-changelog-config](https://github.com/exile-watch/nucleus/pkgs/npm/conventional-changelog-config)
 - [@exile-watch/biome-config](https://github.com/exile-watch/nucleus/pkgs/npm/biome-config)
+- [@exile-watch/rollup-config](https://github.com/exile-watch/nucleus/pkgs/npm/rollup-config)
 - [@exile-watch/typescript-config](https://github.com/exile-watch/nucleus/pkgs/npm/typescript-config)
 
 ### Repository Naming context
