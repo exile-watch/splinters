@@ -1,0 +1,21 @@
+{
+  "name": "@exile-watch/conventional-changelog-config",
+  "version": "0.0.0",
+  "description": "Shared changelog generation from git metadata",
+  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/conventional-changelog-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "directory": "packages/conventional-changelog-config"
+  },
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^7.0.2"
+  },
+  "main": "index.js"
+}
