@@ -193,7 +193,7 @@ const createRollupConfig = async (options: CreateRollupConfigOptions = {}): Prom
        */
 
       pluginIncludePaths({
-        extensions: ['.scss', '.css', '.less'],
+        extensions: ['.scss', '.css'],
         paths: ['src'],
       }),
     ],
