@@ -22,10 +22,8 @@
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
-  "peerDependencies": {
-    "tslib": "^2.3.0"
-  },
   "dependencies": {
+    "@exile-watch/postcss-config": "^0.1.0",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
@@ -33,7 +31,6 @@
     "@rollup/plugin-yaml": "^3.1.0",
     "acorn-jsx": "^5.3.2",
     "lodash.kebabcase": "^4.1.1",
-    "postcss": "^8.3.6",
     "rollup": "^2.56.3",
     "rollup-plugin-includepaths": "^0.2.4",
     "rollup-plugin-postcss": "^4.0.2",

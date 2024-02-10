@@ -16,7 +16,6 @@ export const generateScopedName = function (name: string, filename: string) {
  */
 export const getPostCssPluginConfig = ({
   cssOutputFile,
-  lessOptions,
   sassIncludePaths,
 }: CreateRollupConfigOptions = {}) => {
   /**
@@ -41,7 +40,6 @@ export const getPostCssPluginConfig = ({
       scopeBehavior: 'local',
     },
     use: {
-      less: (lessOptions || {javascriptEnabled: true}) as unknown,
       sass: {
         /**
          * This allows us to import styles from `node_modules` into SCSS files,

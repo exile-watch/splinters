@@ -70,13 +70,6 @@ export interface CreateRollupConfigOptions {
   exports?: OutputOptions['exports']
 
   /**
-   * Override Less options object
-   * @see https://github.com/egoist/rollup-plugin-postcss#use
-   */
-
-  lessOptions?: unknown
-
-  /**
    * Our configuration upgrades certain Rollup warnings to errors, for consistency with
    * the Webpack behaviors that many developers are used to. However,in some cases, we
    * may make an educated decision to allow them through. Use this option to _disable_
