@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.4...@exile-watch/rollup-config@0.1.5) (2024-02-11)
+
+
+### ⚙️ Code Quality
+
+* **pnpm:** update lerna npmClient to pnpm ([fa7422a](https://github.com/exile-watch/nucleus/commit/fa7422a2b874dd9ea651d635b9e89cecf24b20b5))
+* **rollup-config:** remove dist ([4809647](https://github.com/exile-watch/nucleus/commit/48096479b9789da11a7e3cc051dcad4b692d1516))
+
+
+
 ## [0.1.4](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.3...@exile-watch/rollup-config@0.1.4) (2024-02-10)
 
 
