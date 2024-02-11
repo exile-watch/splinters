@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.8](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.7...@exile-watch/rollup-config@0.1.8) (2024-02-11)
+
+
+### ⚙️ Code Quality
+
+* **npm:** I guess nothing is perfect, back to npm ([4cccc2c](https://github.com/exile-watch/nucleus/commit/4cccc2c3aebe22d0c99f260b22163aa715a7123a))
+
+
+
 ## [0.1.7](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.6...@exile-watch/rollup-config@0.1.7) (2024-02-11)
 
 
