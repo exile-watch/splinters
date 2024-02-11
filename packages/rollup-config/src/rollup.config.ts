@@ -136,8 +136,6 @@ const createRollupConfig = async (options: CreateRollupConfigOptions = {}): Prom
       },
     ],
 
-    preserveSymlinks: true,
-
     /********************************************
      * Configure Plugins
      ********************************************/

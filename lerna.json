@@ -11,8 +11,5 @@
       "commitHooks": false,
       "changelogPreset": "@exile-watch/conventional-changelog-config"
     }
-  },
-  "packages": [
-    "packages/*"
-  ]
+  }
 }
