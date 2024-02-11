@@ -11,7 +11,7 @@
   "files": [
     "src"
   ],
-  "bin": "src/index.mjs",
+  "main": "src/index.mjs",
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.14",
     "@storybook/addon-interactions": "^7.6.14",
