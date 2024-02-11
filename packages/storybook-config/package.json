@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/storybook-config",
-  "version": "0.1.8",
+  "version": "0.0.0",
   "description": "Shared Storybook configuration for building React components that power exile.watch",
   "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/storybook-config",
   "repository": {
