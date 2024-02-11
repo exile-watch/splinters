@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/rollup-config",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Shared Rollup configuration for building JavaScript libraries into internal NPM packages",
   "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/rollup-config",
   "repository": {

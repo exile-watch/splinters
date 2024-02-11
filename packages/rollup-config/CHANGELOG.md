@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.10](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.9...@exile-watch/rollup-config@0.1.10) (2024-02-11)
+
+**Note:** Version bump only for package @exile-watch/rollup-config
+
+
+
+
+
 ## [0.1.9](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.8...@exile-watch/rollup-config@0.1.9) (2024-02-11)
 
 
