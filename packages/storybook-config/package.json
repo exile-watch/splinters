@@ -1,0 +1,37 @@
+{
+  "name": "@exile-watch/storybook-config",
+  "version": "0.1.8",
+  "description": "Shared Storybook configuration for building React components that power exile.watch",
+  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/storybook-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "directory": "packages/storybook-config"
+  },
+  "files": [
+    "src"
+  ],
+  "bin": "src/index.mjs",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.14",
+    "@storybook/addon-interactions": "^7.6.14",
+    "@storybook/addon-links": "^7.6.14",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.14",
+    "@storybook/nextjs": "^7.6.14",
+    "@storybook/react": "^7.6.14",
+    "@storybook/react-webpack5": "^7.6.14",
+    "@storybook/test": "^7.6.14",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.14"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
