@@ -15,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "_clean": "rd /s /q dist",
+    "_clean": "del-cli dist",
     "_build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "build": "run-s _clean _build",
     "typecheck": "npx tsc --noEmit",
