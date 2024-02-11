@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/exile-watch/nucleus#readme",
   "devDependencies": {
-    "@exile-watch/conventional-changelog-config": "^0.1.0",
+    "@exile-watch/conventional-changelog-config": "workspace:^",
     "lerna": "^8.0.2"
   }
 }

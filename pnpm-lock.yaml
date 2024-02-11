@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@exile-watch/conventional-changelog-config':
-        specifier: ^0.1.0
+        specifier: workspace:^
         version: link:packages/conventional-changelog-config
       lerna:
         specifier: ^8.0.2
