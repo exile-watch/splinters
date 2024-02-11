@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.9](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.8...@exile-watch/rollup-config@0.1.9) (2024-02-11)
+
+
+### ⚙️ Internal
+
+* **npm:** remove bin ([dba523c](https://github.com/exile-watch/nucleus/commit/dba523c49282f8b0986197d2f88c8ef674cb834d))
+
+
+
 ## [0.1.8](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.7...@exile-watch/rollup-config@0.1.8) (2024-02-11)
 
 
