@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/exile-watch/nucleus/compare/@exile-watch/storybook-config@0.1.0...@exile-watch/storybook-config@0.1.1) (2024-02-11)
+
+
+### 🐞 Bug Fixes
+
+* **deps:** move storybook deps to deps ([3f5c660](https://github.com/exile-watch/nucleus/commit/3f5c660ef98a79a38c5f24ae41af1143b6dc8504))
+
+
+
 ## 0.1.0 (2024-02-11)
 
 
