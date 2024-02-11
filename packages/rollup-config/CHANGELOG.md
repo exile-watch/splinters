@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.6...@exile-watch/rollup-config@0.1.7) (2024-02-11)
+
+
+### ⚙️ Code Quality
+
+* **pnpm:** remove preserveSymlinks ([6b9fbe3](https://github.com/exile-watch/nucleus/commit/6b9fbe3138b4ac4ecd1c53186e6d27636a095eeb))
+
+
+
 ## [0.1.6](https://github.com/exile-watch/nucleus/compare/@exile-watch/rollup-config@0.1.5...@exile-watch/rollup-config@0.1.6) (2024-02-11)
 
 
