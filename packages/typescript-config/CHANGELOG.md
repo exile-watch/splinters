@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/exile-watch/nucleus/compare/@exile-watch/typescript-config@0.2.0...@exile-watch/typescript-config@0.3.0) (2024-02-19)
+
+
+### ✨ Features
+
+* **package.json:** trigger release ([3ffb37c](https://github.com/exile-watch/nucleus/commit/3ffb37cfb433f12ae0dcf1f5336e6bbfa22b0e9e))
+
+
+
 # [0.2.0](https://github.com/exile-watch/nucleus/compare/@exile-watch/typescript-config@0.1.23...@exile-watch/typescript-config@0.2.0) (2024-02-08)
 
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/exile-watch/nucleus/compare/@exile-watch/biome-config@0.1.2...@exile-watch/biome-config@0.2.0) (2024-02-19)
+
+
+### ✨ Features
+
+* **package.json:** trigger release ([3ffb37c](https://github.com/exile-watch/nucleus/commit/3ffb37cfb433f12ae0dcf1f5336e6bbfa22b0e9e))
+
+
+### ⚙️ Internal
+
+* **deps:** change package access to public ([b325f37](https://github.com/exile-watch/nucleus/commit/b325f372d27da37865ee70f26306f79a48944597))
+
+
+
 ## [0.1.2](https://github.com/exile-watch/nucleus/compare/@exile-watch/biome-config@0.1.1...@exile-watch/biome-config@0.1.2) (2024-02-07)
 
 **Note:** Version bump only for package @exile-watch/biome-config
