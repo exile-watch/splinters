@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://rollupjs.org/">
-    <img alt="rollup logo" src="https://rollupjs.org/rollup-logo.svg" width="200" />
+    <img alt="rollup logo" src="./rollup-logo.svg" width="200" />
   </a>
 </p>
 <h1 align="center">
@@ -23,6 +23,8 @@ This package contains both, shared Rollup configuration and the Rollup dependenc
 
 1. Create a new configuration file at `./rollup.config.ts`:
 ```ts
+// rollup.config.ts
+
 import createRollupConfig from '@exile-watch/rollup-config'
 
 export default createRollupConfig()

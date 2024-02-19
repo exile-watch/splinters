@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.typescriptlang.org">
-    <img alt="typescript logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1280px-Typescript_logo_2020.svg.png" width="150" />
+    <img alt="typescript logo" src="./typescript-logo.png" width="150" />
   </a>
 </p>
 <h1 align="center">

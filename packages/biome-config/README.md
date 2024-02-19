@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://biomejs.dev">
-    <img alt="biome logo" src="https://biomejs.dev/_astro/slogan-dark-transparent.0580f4b3_ZpPxoY.svg" width="200" />
+    <img alt="biome logo" src="./biome.svg" width="200" />
   </a>
 </p>
 <h1 align="center">

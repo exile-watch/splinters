@@ -13,7 +13,7 @@
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
-  "homepage": "https://github.com/exile-watch/nucleus#readme",
+  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/biome-config",
   "dependencies": {
     "@biomejs/biome": "^1.5.3"
   },

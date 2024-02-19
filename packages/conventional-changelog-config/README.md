@@ -9,7 +9,7 @@
 
 ## Description
 
-Shared `Conventional Changelog` configuration for exile.watch projects.
+Shared `Conventional Changelog` configuration for [exile.watch](https://github.com/exile-watch) projects.
 
 ## About Conventional Changelog
 
