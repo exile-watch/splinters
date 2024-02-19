@@ -19,6 +19,7 @@
     "postcss-simple-vars": "^7.0.1"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
   }
 }

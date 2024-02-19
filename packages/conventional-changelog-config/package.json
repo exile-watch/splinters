@@ -12,7 +12,8 @@
     "index.js"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^7.0.2"
