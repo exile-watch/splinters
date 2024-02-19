@@ -18,9 +18,7 @@
     "_clean": "del-cli dist",
     "_build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "build": "run-s _clean _build",
-    "typecheck": "npx tsc --noEmit",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "typecheck": "npx tsc --noEmit"
   },
   "dependencies": {
     "@exile-watch/postcss-config": "^0.1.0",
