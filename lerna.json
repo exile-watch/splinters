@@ -20,6 +20,6 @@
     "packages/lefthook-config",
     "packages/postcss-config",
     "packages/rollup-config",
-    "packages/typescript-config",
+    "packages/typescript-config"
   ]
 }
