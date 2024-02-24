@@ -2,10 +2,10 @@
   "name": "@exile-watch/rollup-config",
   "version": "0.2.0",
   "description": "Shared Rollup configuration for building JavaScript libraries into internal NPM packages",
-  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/rollup-config",
+  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/rollup-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/rollup-config"
   },
   "main": "dist/rollup.config.js",

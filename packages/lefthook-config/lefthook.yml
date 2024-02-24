@@ -1,0 +1,14 @@
+pre-push:
+  parallel: true
+  commands:
+    format:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: npx @exile-watch/biome-config format --write "{staged_files}"
+
+    lint:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: npx @exile-watch/biome-config lint "{staged_files}"
+
+    "lint:apply":
+      glob: "*.{js,ts,jsx,tsx}"
+      run: npx @exile-watch/biome-config check --apply "{staged_files}"

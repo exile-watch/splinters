@@ -8,12 +8,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/biome-config"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
-  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/biome-config",
+  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/biome-config",
   "dependencies": {
     "@biomejs/biome": "^1.5.3"
   },

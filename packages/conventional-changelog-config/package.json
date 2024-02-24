@@ -2,10 +2,10 @@
   "name": "@exile-watch/conventional-changelog-config",
   "version": "0.2.0",
   "description": "Shared changelog generation from git metadata",
-  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/conventional-changelog-config",
+  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/conventional-changelog-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/conventional-changelog-config"
   },
   "files": [

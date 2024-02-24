@@ -1,10 +1,10 @@
 {
-  "name": "nucleus",
+  "name": "splinters",
   "version": "0.0.0",
   "description": "Shared build tools for TypeScript and frontend projects",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exile-watch/nucleus.git"
+    "url": "git+https://github.com/exile-watch/splinters.git"
   },
   "scripts": {
     "build": "lerna run build",
@@ -13,9 +13,9 @@
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/exile-watch/nucleus/issues"
+    "url": "https://github.com/exile-watch/hideout/issues"
   },
-  "homepage": "https://github.com/exile-watch/nucleus#readme",
+  "homepage": "https://github.com/exile-watch/splinters#readme",
   "devDependencies": {
     "@exile-watch/conventional-changelog-config": "^0.1.0",
     "lerna": "^8.0.2"

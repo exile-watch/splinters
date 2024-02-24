@@ -9,12 +9,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/typescript-config"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
-  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/typescript-config",
+  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/typescript-config",
   "dependencies": {
     "typescript": "^5.3.3"
   },

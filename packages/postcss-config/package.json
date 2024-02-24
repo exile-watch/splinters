@@ -2,10 +2,10 @@
   "name": "@exile-watch/postcss-config",
   "version": "0.2.0",
   "description": "Shared PostCSS configuration for transforming CSS with Javascript in exile.watch frontend projects",
-  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/postcss-config",
+  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/postcss-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/postcss-config"
   },
   "main": "postcss.config.js",

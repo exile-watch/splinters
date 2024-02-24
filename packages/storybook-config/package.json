@@ -2,10 +2,10 @@
   "name": "@exile-watch/storybook-config",
   "version": "0.1.2",
   "description": "Shared Storybook configuration for building React components that power exile.watch",
-  "homepage": "https://github.com/exile-watch/nucleus/pkgs/npm/storybook-config",
+  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/storybook-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exile-watch/nucleus.git",
+    "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/storybook-config"
   },
   "files": [
