@@ -10,10 +10,9 @@
   },
   "main": "commitlint.config.js",
   "files": [
-    "lefthook-lerna-repo.yml",
+    "lefthook.yml",
     "commitlint.config.js"
   ],
-  "scripts": {},
   "dependencies": {
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.2",
@@ -24,10 +23,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "public"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
