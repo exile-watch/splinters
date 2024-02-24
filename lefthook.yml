@@ -1,4 +1,4 @@
 remotes:
   - git_url: https://github.com/exile-watch/splinters
     configs:
-      - packages/lefthook-config/lefthook.yml
+      - packages/lefthook-config/lefthook-lerna-repo.yml

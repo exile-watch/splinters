@@ -8,16 +8,25 @@
     "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/lefthook-config"
   },
-  "main": "lefthook.yml",
+  "main": "lefthook-lerna-repo.yml",
   "files": [
-    "lefthook.yml"
+    "lefthook-lerna-repo.yml",
+    "commitlint.config.js"
   ],
   "scripts": {},
   "dependencies": {
+    "@commitlint/config-conventional": "^18.6.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "lefthook": "^1.6.1"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
