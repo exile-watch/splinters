@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/exile-watch/splinters/compare/@exile-watch/typescript-config@0.3.0...@exile-watch/typescript-config@0.3.1) (2024-02-24)
+
+
+### ⚙️ Internal
+
+* **deps:** general style improvements and minor fixes after first deploy ([6fe0f2c](https://github.com/exile-watch/splinters/commit/6fe0f2c7d514a8464f9f8b988b71e96dfc5a578f))
+
+
+
 ## [0.3.0](https://github.com/exile-watch/nucleus/compare/@exile-watch/typescript-config@0.2.0...@exile-watch/typescript-config@0.3.0) (2024-02-19)
 
 
