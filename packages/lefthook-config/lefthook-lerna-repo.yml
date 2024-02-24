@@ -13,7 +13,13 @@ pre-commit:
       glob: "*.{js,ts,jsx,tsx}"
       run: npm run lint:apply
 
+prepare-commit-msg:
+  commands:
+    commitzen:
+      interactive: true
+      run: LEFTHOOK=0 npm run cz
+
 commit-msg:
-  scripts:
-    "commitlint.sh":
-      runner: bash
+  commands:
+    "lint commit message":
+      run: npm run commitlint --edit {1}
