@@ -17,7 +17,7 @@ prepare-commit-msg:
   commands:
     commitzen:
       interactive: true
-      run: LEFTHOOK=0 npm run cz
+      run: LEFTHOOK=0 npx cz
 
 commit-msg:
   commands:
