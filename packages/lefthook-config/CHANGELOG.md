@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.1.0...@exile-watch/lefthook-config@0.2.0) (2024-02-24)
+
+
+### ✨ Features
+
+* add commitizen ([be91451](https://github.com/exile-watch/splinters/commit/be9145183eccd0bfe360cbe25778bd76adcb7f35))
+
+
+
 ## [0.1.0](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.0.1...@exile-watch/lefthook-config@0.1.0) (2024-02-24)
 
 
