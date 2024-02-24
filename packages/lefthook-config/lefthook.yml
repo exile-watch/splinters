@@ -13,13 +13,7 @@ pre-commit:
       glob: "*.{js,ts,jsx,tsx}"
       run: npm run lint:apply {staged_files}
 
-prepare-commit-msg:
-  commands:
-    commitzen:
-      interactive: true
-      run: LEFTHOOK=0 npm run cz
-
 commit-msg:
   commands:
     "lint commit message":
-      run: npm run commitlint --edit {1}
+      run: npx commitlint --edit
