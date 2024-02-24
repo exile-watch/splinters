@@ -21,6 +21,11 @@
     "@exile-watch/lefthook-config": "^0.2.0",
     "lerna": "^8.0.2"
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "workspaces": [
     "packages/*"
   ]
