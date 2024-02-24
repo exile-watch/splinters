@@ -12,7 +12,8 @@
   "files": [
     "lefthook.yml"
   ],
-  "scripts": {},
+  "scripts": {
+  },
   "dependencies": {
     "lefthook": "^1.6.1"
   },

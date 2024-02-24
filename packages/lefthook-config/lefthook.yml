@@ -1,14 +1,19 @@
-pre-push:
+pre-commit:
   parallel: true
   commands:
     format:
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx @exile-watch/biome-config format --write "{staged_files}"
+      run: npm run format
 
     lint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx @exile-watch/biome-config lint "{staged_files}"
+      run: npm run lint
 
     "lint:apply":
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx @exile-watch/biome-config check --apply "{staged_files}"
+      run: npm run lint:apply
+
+commit-msg:
+  scripts:
+    "commitlint.sh":
+      runner: bash
