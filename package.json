@@ -8,7 +8,10 @@
   },
   "scripts": {
     "build": "lerna run build",
-    "typecheck": "lerna run typecheck"
+    "typecheck": "lerna run typecheck",
+    "lint": "exit 0",
+    "lint:apply": "exit 0",
+    "format": "exit 0"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",

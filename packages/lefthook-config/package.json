@@ -8,7 +8,7 @@
     "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/lefthook-config"
   },
-  "main": "lefthook-lerna-repo.yml",
+  "main": "commitlint.config.js",
   "files": [
     "lefthook-lerna-repo.yml",
     "commitlint.config.js"
