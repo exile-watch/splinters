@@ -1,6 +1,6 @@
 {
   "name": "splinters",
-  "version": "0.0.0",
+  "private": true,
   "description": "Shared build tools for TypeScript and frontend projects",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/exile-watch/splinters#readme",
   "devDependencies": {
     "@exile-watch/conventional-changelog-config": "^0.2.1",
-    "@exile-watch/lefthook-config": "^0.3.1",
+    "@exile-watch/lefthook-config": "^0.3.2",
     "lerna": "^8.0.2"
   },
   "workspaces": [
