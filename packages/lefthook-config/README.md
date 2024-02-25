@@ -41,10 +41,18 @@ module.exports = {
 };
 ```
 
-3. Create `lefthook.yml` in repo root:
+3. In project root create `lefthook.yml`:
 ```yaml
 remotes:
   - git_url: https://github.com/exile-watch/splinters
     configs:
       - packages/lefthook-config/lefthook.yml
+```
+
+4. In project root create `.lefthook/commit-msg/commitlint.sh` file:
+```bash
+#!/bin/bash
+source ./node_modules/@exile-watch/lefthook-config/scripts/commitlint.sh
+
+run_commitlint
 ```
