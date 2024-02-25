@@ -21,7 +21,7 @@
   "homepage": "https://github.com/exile-watch/splinters#readme",
   "devDependencies": {
     "@exile-watch/conventional-changelog-config": "^0.2.1",
-    "@exile-watch/lefthook-config": "^0.2.3",
+    "@exile-watch/lefthook-config": "^0.2.4",
     "lerna": "^8.0.2"
   },
   "workspaces": [
