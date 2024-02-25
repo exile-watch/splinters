@@ -8,10 +8,9 @@
     "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/lefthook-config"
   },
-  "main": "commitlint.config.js",
+  "main": "lefthook.yml",
   "files": [
-    "lefthook.yml",
-    "commitlint.config.js"
+    "lefthook.yml"
   ],
   "dependencies": {
     "@commitlint/cli": "^18.6.1",

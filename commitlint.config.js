@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@exile-watch/lefthook-config']
+  extends: ['@commitlint/config-conventional']
 };
