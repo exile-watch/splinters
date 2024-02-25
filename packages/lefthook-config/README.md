@@ -17,7 +17,7 @@ Shared `lefthook` configuration for exile.watch projects.
 
 ## About this package
 
-This package contains shared lefthook configuration and lefthook + the commit-related dependencies itself.
+This package contains shared lefthook configuration, lefthook dependency and commit-related dependencies.
 
 ## Usage
 
