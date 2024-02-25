@@ -41,7 +41,7 @@ module.exports = {
 };
 ```
 
-3. In project root create `lefthook.yml`:
+3. In project root edit `lefthook.yml` to only include:
 ```yaml
 remotes:
   - git_url: https://github.com/exile-watch/splinters
