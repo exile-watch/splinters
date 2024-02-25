@@ -10,7 +10,8 @@
   },
   "main": "lefthook.yml",
   "files": [
-    "lefthook.yml"
+    "lefthook.yml",
+    "scripts"
   ],
   "dependencies": {
     "@commitlint/cli": "^18.6.1",
