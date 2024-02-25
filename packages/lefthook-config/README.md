@@ -21,10 +21,15 @@ This package contains shared lefthook configuration, lefthook dependency and com
 
 ## Usage
 
-1. Add/update following `config` property in repo's root `package.json`:
+1. Add/update following `config` and `scripts` properties in repo's root `package.json`:
 ```jsonc
 // package.json
 {
+  "scripts": {
+    "lint": ...,        // "exit 0" if linting is not set
+    "lint:apply": ...,  // "exit 0" if linting is not set
+    "format": ...       // "exit 0" if formatting is not set
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
