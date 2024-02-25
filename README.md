@@ -10,14 +10,9 @@
     Collection of shared frontend tooling configurations and project dependencies.
 </p>
 
-### Packages
-- [@exile-watch/conventional-changelog-config](https://github.com/exile-watch/nucleus/pkgs/npm/conventional-changelog-config)
-- [@exile-watch/biome-config](https://github.com/exile-watch/nucleus/pkgs/npm/biome-config)
-- [@exile-watch/rollup-config](https://github.com/exile-watch/nucleus/pkgs/npm/rollup-config)
-- [@exile-watch/typescript-config](https://github.com/exile-watch/nucleus/pkgs/npm/typescript-config)
+### Contributing
+Encountered a [bug](https://github.com/exile-watch/hideout/issues) or have a [question](https://github.com/exile-watch/hideout/discussions)?
 
-### Repository Naming context
-_[(The) Nucleus (of the Maven)](https://www.pathofexile.com/forum/view-thread/3031121) contains instructions required for cellular processes._
+Have an idea for a new [feature](https://github.com/exile-watch/hideout/discussions/categories/ideas)?
 
-_Similarly, `@exile-watch/nucleus` serves as the central hub for a suite of build tools—such as linting, testing, and typechecking—providing essential guidelines for developers on expected code style and quality._
-
+Head over to exile.watch's [hideout](https://github.com/exile-watch/hideout)
