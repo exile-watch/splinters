@@ -16,4 +16,4 @@ pre-commit:
 commit-msg:
   scripts:
     commitlint:
-      runnner: bash
+      runner: bash
