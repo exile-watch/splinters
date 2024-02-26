@@ -46,7 +46,7 @@ module.exports = {
 };
 ```
 
-3. In project root edit `lefthook.yml` to only include:
+3. In project root in `lefthook.yml` replace generated content with:
 ```yaml
 remotes:
   - git_url: https://github.com/exile-watch/splinters
@@ -62,7 +62,8 @@ source ./node_modules/@exile-watch/lefthook-config/scripts/commitlint.sh
 run_commitlint
 ```
 
+5. Run `npx lefthook install` to sync lefthook configs
+
 > [!CAUTION]
 > This step syncs lefthook configs
 > Skipping this step will throw `commitlint.sh (skip) not specified in config file` message
-5. Run `npx lefthook install` to sync lefthook configs
