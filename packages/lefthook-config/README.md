@@ -61,3 +61,8 @@ source ./node_modules/@exile-watch/lefthook-config/scripts/commitlint.sh
 
 run_commitlint
 ```
+
+> [!CAUTION]
+> This step syncs lefthook configs
+> Skipping this step will throw `commitlint.sh (skip) not specified in config file` message
+5. Run `npx lefthook install` to sync lefthook configs
