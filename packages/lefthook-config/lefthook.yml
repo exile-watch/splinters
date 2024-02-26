@@ -15,5 +15,5 @@ pre-commit:
 
 commit-msg:
   scripts:
-    commitlint:
+    "commitlint.sh":
       runner: bash
