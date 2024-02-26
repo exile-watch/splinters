@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.8](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.7...@exile-watch/lefthook-config@0.3.8) (2024-02-26)
+
+
+### 📄 Documentation
+
+* remove .lefthook dir creation due to duplicated commit-msg output ([6720557](https://github.com/exile-watch/splinters/commit/67205572833aa6101aabc5f570453490a49023ca))
+
+
+
 ## [0.3.7](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.6...@exile-watch/lefthook-config@0.3.7) (2024-02-26)
 
 
