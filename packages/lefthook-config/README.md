@@ -66,4 +66,5 @@ run_commitlint
 
 > [!CAUTION]
 > This step syncs lefthook configs
+> 
 > Skipping this step will throw `commitlint.sh (skip) not specified in config file` message
