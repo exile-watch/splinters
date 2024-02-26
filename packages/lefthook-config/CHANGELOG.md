@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.7](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.6...@exile-watch/lefthook-config@0.3.7) (2024-02-26)
+
+
+### 📄 Documentation
+
+* caution block spacing ([acf304b](https://github.com/exile-watch/splinters/commit/acf304b8a8a709453c184adc60c88898a47139bf))
+
+
+
 ## [0.3.6](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.5...@exile-watch/lefthook-config@0.3.6) (2024-02-26)
 
 
