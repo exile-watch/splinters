@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.5](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.4...@exile-watch/lefthook-config@0.3.5) (2024-02-26)
+
+
+### 📄 Documentation
+
+* add npx lefthook install step ([35dd917](https://github.com/exile-watch/splinters/commit/35dd91700f6b48ab96052fc8cd6187e0c9a9ec02))
+
+
+
 ## [0.3.4](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.3...@exile-watch/lefthook-config@0.3.4) (2024-02-26)
 
 
