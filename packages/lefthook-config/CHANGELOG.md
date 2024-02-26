@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.6](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.5...@exile-watch/lefthook-config@0.3.6) (2024-02-26)
+
+
+### 📄 Documentation
+
+* move caution block below 5th step for better clarity ([b7a6134](https://github.com/exile-watch/splinters/commit/b7a6134044d1f1912b8a4e6a8262da821aff3935))
+
+
+
 ## [0.3.5](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.4...@exile-watch/lefthook-config@0.3.5) (2024-02-26)
 
 
