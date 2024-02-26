@@ -54,15 +54,7 @@ remotes:
       - packages/lefthook-config/lefthook.yml
 ```
 
-4. In project root create `.lefthook/commit-msg/commitlint.sh` file:
-```bash
-#!/bin/bash
-source ./node_modules/@exile-watch/lefthook-config/scripts/commitlint.sh
-
-run_commitlint
-```
-
-5. Run `npx lefthook install` to sync lefthook configs
+4. Run `npx lefthook install` to sync lefthook configs
 
 > [!CAUTION]
 > This step syncs lefthook configs
