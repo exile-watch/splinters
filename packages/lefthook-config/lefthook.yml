@@ -11,7 +11,7 @@ pre-commit:
 
     "typecheck":
       glob: "*.{ts,tsx}"
-      run: tsc
+      run: npx tsc
 
 commit-msg:
   scripts:
