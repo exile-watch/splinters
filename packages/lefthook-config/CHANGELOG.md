@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.8...@exile-watch/lefthook-config@0.4.0) (2024-03-03)
+
+
+### ✨ Features
+
+* add biome linting commands ([0b6af23](https://github.com/exile-watch/splinters/commit/0b6af23e572f506fbef419c0ff720db8f1d2e5c0))
+
+
+
 ## [0.3.8](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.3.7...@exile-watch/lefthook-config@0.3.8) (2024-02-26)
 
 
