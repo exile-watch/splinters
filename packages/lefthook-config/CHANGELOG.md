@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.0...@exile-watch/lefthook-config@0.5.1) (2024-03-03)
+
+
+### 🐞 Bug Fixes
+
+* add npx prefix to typecheck command ([074fc00](https://github.com/exile-watch/splinters/commit/074fc00d3e2d67debe6e4841021cbf63d116ea72))
+
+
+
 ## [0.5.0](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.4.0...@exile-watch/lefthook-config@0.5.0) (2024-03-03)
 
 
