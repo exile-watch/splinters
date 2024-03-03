@@ -21,7 +21,12 @@ This package contains both, shared Biome configuration and the Biome dependency 
 
 ## Usage
 
-Create a new configuration file at `./biome.json` and inherit all the options using `extends` property:
+1. Install `@exile-watch/biome-config` as a `devDependency` in project's root dir
+```bash
+$: npm i -D @exile-watch/biome-config
+```
+
+2. Create a new configuration file at `./biome.json` and inherit all the options using `extends` property:
 ```json
 {
   "extends": "@exile-watch/biome-config"

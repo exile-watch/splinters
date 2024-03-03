@@ -21,9 +21,12 @@ This package contains both, shared Conventional Changelog configuration and the 
 
 ## Usage
 
-Install `@exile-watch/conventional-changelog-config` as a `devDependency` in project's root dir.
+1. Install `@exile-watch/conventional-changelog-config` as a `devDependency` in project's root dir
+```bash
+$: npm i -D @exile-watch/conventional-changelog-config
+```
 
-In the project’s `lerna.json` file, add the following content:
+2. In the project’s `lerna.json` file, add the following content:
 
 ```json
 {

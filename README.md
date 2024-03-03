@@ -10,9 +10,20 @@
     Collection of shared frontend tooling configurations and project dependencies.
 </p>
 
+### Packages
+
+- [@exile-watch/biome-config](https://github.com/exile-watch/splinters/tree/main/packages/biome-config)
+- [@exile-watch/conventional-changelog-config](https://github.com/exile-watch/splinters/tree/main/packages/conventional-changelog-config)
+- [@exile-watch/lefthook-config](https://github.com/exile-watch/splinters/tree/main/packages/lefthook-config)
+- [@exile-watch/postcss-config](https://github.com/exile-watch/splinters/tree/main/packages/postcss-config)
+- [@exile-watch/rollup-config](https://github.com/exile-watch/splinters/tree/main/packages/rollup-config)
+- [@exile-watch/typescript-config](https://github.com/exile-watch/splinters/tree/main/packages/typescript-config)
+
 ### Contributing
+Want to contribute? [Check the docs](https://docs.exile.watch/projects/splinters/contributing)
+
 Encountered a [bug](https://github.com/exile-watch/hideout/issues) or have a [question](https://github.com/exile-watch/hideout/discussions)?
 
 Have an idea for a new [feature](https://github.com/exile-watch/hideout/discussions/categories/ideas)?
 
-Head over to exile.watch's [hideout](https://github.com/exile-watch/hideout)
+Head over to exile.watch's [hideout](https://github.com/exile-watch/hideout)!

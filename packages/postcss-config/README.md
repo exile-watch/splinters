@@ -21,9 +21,13 @@ This package contains both, shared PostCSS configuration and PostCSS related dep
 
 ## Usage
 
-Install `@exile-watch/postcss-config` as a `devDependency` in project's root dir.
+1. Install `@exile-watch/postcss-config` as a `devDependency` in project's root dir
+```bash
+$: npm i -D @exile-watch/postcss-config
+```
 
-In the project’s `postcss.config.js` file, add the following content:
+
+2. In the project’s `postcss.config.js` file, add the following content:
 
 ```js
 // postcss.config.js
