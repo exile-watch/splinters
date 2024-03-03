@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/postcss-config",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Shared PostCSS configuration for transforming CSS with Javascript in exile.watch frontend projects",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/postcss-config",
   "repository": {

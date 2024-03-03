@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/exile-watch/splinters/compare/@exile-watch/postcss-config@0.2.1...@exile-watch/postcss-config@0.2.2) (2024-03-03)
+
+
+### 📄 Documentation
+
+* update README ([0ccbb79](https://github.com/exile-watch/splinters/commit/0ccbb79a1c27ee230a05dbc7f5d3401fedc8a094))
+
+
+
 ## [0.2.1](https://github.com/exile-watch/splinters/compare/@exile-watch/postcss-config@0.2.0...@exile-watch/postcss-config@0.2.1) (2024-02-24)
 
 
