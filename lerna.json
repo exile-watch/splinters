@@ -15,11 +15,6 @@
     }
   },
   "packages": [
-    "packages/biome-config",
-    "packages/conventional-changelog-config",
-    "packages/lefthook-config",
-    "packages/postcss-config",
-    "packages/rollup-config",
-    "packages/typescript-config"
+    "packages/*"
   ]
 }
