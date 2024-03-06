@@ -40,6 +40,7 @@ jobs:
         run: npm run build
 
       - name: Lerna publish prerelease
+        id: lerna_publish
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -49,9 +50,7 @@ jobs:
           npx lerna publish from-git --dist-tag next --yes
 
       - name: Comment PR with Published Versions
-        uses: actions/github-script@v6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@v7
         with:
           script: |
             const output = `${{ steps.lerna_publish.outputs.publish_output }}`;
