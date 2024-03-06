@@ -14,7 +14,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - uses: actions/setup-node@v4
         with:
@@ -25,12 +25,14 @@ jobs:
         run: |
           git config --global user.name "${{ secrets.GIT_USER_NAME }}"
           git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+
       - name: "GitHub Package Registry Identity"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > .npmrc
           echo "@exile-watch:registry=https://npm.pkg.github.com/" >> .npmrc
+
       - name: Install dependencies
         run: npm ci
 
@@ -43,5 +45,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx lerna version prerelease --preid preview --yes --no-push
+          npx lerna version prerelease --preid preview --yes --no-push --loglevel=debug
           npx lerna publish from-git --dist-tag next --yes
