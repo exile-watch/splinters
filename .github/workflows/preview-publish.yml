@@ -47,11 +47,9 @@ jobs:
         run: |
           npx lerna version prerelease --preid preview --yes --no-push
           npx lerna publish from-git --dist-tag next --yes
-          
-          
+
       - name: Comment PR with Published Versions
         uses: actions/github-script@v6
-        if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
