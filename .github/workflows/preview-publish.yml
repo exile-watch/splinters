@@ -45,5 +45,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx lerna version prerelease --preid preview --yes --no-push --loglevel=debug
+          npx lerna version prerelease --preid preview --yes --no-push
           npx lerna publish from-git --dist-tag next --yes
