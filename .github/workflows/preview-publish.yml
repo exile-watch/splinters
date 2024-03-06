@@ -1,0 +1,47 @@
+name: Preview Publish on Label
+
+on:
+  pull_request_target:
+    types: [labeled]
+
+jobs:
+  preview-publish:
+    if: github.event.label.name == 'preview-publish'
+    name: Publish Prerelease to NPM
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
+          git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+      - name: "GitHub Package Registry Identity"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > .npmrc
+          echo "@exile-watch:registry=https://npm.pkg.github.com/" >> .npmrc
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Lerna publish prerelease
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx lerna version prerelease --preid preview --yes --no-push
+          npx lerna publish from-git --dist-tag next --yes
