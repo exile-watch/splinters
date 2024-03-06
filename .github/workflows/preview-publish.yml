@@ -49,15 +49,17 @@ jobs:
           output=$(npx lerna version prerelease --preid preview --yes --no-push && npx lerna publish from-git --dist-tag next --yes)
           echo "publish_output=$output" >> $GITHUB_OUTPUT # Use the new syntax to set the output
 
-      - name: Comment PR with Published Versions
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const output = `${{ steps.lerna_publish.outputs.publish_output }}`;
-            const prNumber = context.payload.pull_request.number;
-            const comment = `Published Packages:\n\`\`\`\n${output}\n\`\`\``;
-            github.rest.issues.createComment({
-              ...context.repo,
-              issue_number: prNumber,
-              body: comment
-            });
+  comment-pr:
+    if: steps.lerna_publish.outcome == 'success'
+    name: Comment PR with Published Versions
+    uses: actions/github-script@v7
+    with:
+      script: |
+        const output = `${{ steps.lerna_publish.outputs.publish_output }}`;
+        const prNumber = context.payload.pull_request.number;
+        const comment = `Published Packages:\n\`\`\`\n${output}\n\`\`\``;
+        github.rest.issues.createComment({
+          ...context.repo,
+          issue_number: prNumber,
+          body: comment
+        });
