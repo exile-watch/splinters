@@ -51,7 +51,7 @@ jobs:
           
       - name: Comment PR with Published Versions
         uses: actions/github-script@v6
-        if: github.event_name == 'pull_request'
+        if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
