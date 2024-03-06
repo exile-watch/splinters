@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.2...@exile-watch/rollup-config@0.2.3) (2024-03-06)
+
+
+### ⚙️ Code Quality
+
+* add index file ([8d8c348](https://github.com/exile-watch/splinters/commit/8d8c34882502b25c3bc5ec45a2bd2034c2cf988f))
+
+
+
 ## [0.2.2](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.1...@exile-watch/rollup-config@0.2.2) (2024-03-03)
 
 **Note:** Version bump only for package @exile-watch/rollup-config

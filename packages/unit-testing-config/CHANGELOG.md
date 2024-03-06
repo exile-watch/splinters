@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.0...@exile-watch/unit-testing-config@0.1.1) (2024-03-06)
+
+
+### ⚙️ Code Quality
+
+* add index file ([8d8c348](https://github.com/exile-watch/splinters/commit/8d8c34882502b25c3bc5ec45a2bd2034c2cf988f))
+* convert to rollup package ([5a3d4e7](https://github.com/exile-watch/splinters/commit/5a3d4e7c6b8fdd9fa89509194fe40050fe628d12))
+
+
+
 ## 0.1.0 (2024-03-06)
 
 
