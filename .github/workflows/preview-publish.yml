@@ -70,10 +70,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npx lerna version prerelease --preid preview --yes --no-push
-          npx lerna publish from-git --dist-tag next --yes
-          echo "publish_output=$(output)" >> $GITHUB_OUTPUT
-    outputs:
-      changelog: ${{ steps.lerna_prerelease.outputs.publish_output }}
+          echo "changelog=$(npx lerna publish from-git --dist-tag next --yes)" >> $GITHUB_OUTPUT
 
   update-initial-comment:
     needs: [create-initial-comment, preview-publish]
@@ -94,7 +91,6 @@ jobs:
           script: |
             const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }};
             const changelog = ${{ needs.preview-publish.outputs.changelog }}
-            console.log(changelog, toJSON(changelog), fromJSON(changelog))
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,

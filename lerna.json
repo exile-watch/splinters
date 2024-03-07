@@ -2,13 +2,9 @@
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "version": "independent",
   "command": {
-    "publish": {
-      "loglevel": "debug"
-    },
     "version": {
       "conventionalCommits": true,
       "createRelease": "github",
-
       "message": "chore(release): publish [skip ci]",
       "commitHooks": false,
       "changelogPreset": "@exile-watch/conventional-changelog-config"
