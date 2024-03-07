@@ -26,7 +26,6 @@ jobs:
           ref: ${{ inputs.prRef }}
 
       - name: Create status comment
-        id: status_comment
         uses: actions/github-script@v7
         with:
           script: >
@@ -41,3 +40,19 @@ jobs:
             }).then(response => {
               core.setOutput("comment_id", response.data.id)
             });
+
+  create-comment-id-artifact:
+    needs: create-status-comment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Write comment_id to a file
+        run: echo "${{ needs.create-status-comment.outputs.comment_id }}" > comment_id.txt
+
+      - name: Upload comment_id as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: comment-id
+          path: comment_id.txt
