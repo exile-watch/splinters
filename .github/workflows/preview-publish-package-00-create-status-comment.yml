@@ -1,5 +1,5 @@
-name: Lerna Pre-Release - 00
-run-name: Lerna Pre-Release - 00 - Create status comment
+name: Preview publish package - 00
+run-name: Preview publish package - 00 - Create status comment
 
 on:
   workflow_call:

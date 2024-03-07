@@ -1,0 +1,70 @@
+name: Preview publish package - 02
+run-name: Preview publish package - 02 - Update status comment on success
+
+on:
+  workflow_call:
+    inputs:
+      prRef:
+        required: true
+        type: string
+    secrets:
+      GH_TOKEN:
+        required: true
+
+jobs:
+  update-status-comment-on-succes:
+    name: Update status pre-release comment on success
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          path: ./
+
+      - name: Read artifacts
+        run: |
+          echo "comment_id=$(cat ./comment-artifact/comment_id.txt)" >> $GITHUB_ENV
+          echo "changelog=$(cat ./changelog-artifact/changelog.txt)" >> $GITHUB_ENV
+
+      - name: Update status comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment_id = ${{ env.comment_id }}
+            const changelogString = '${{ env.changelog }}';
+            const changelog = changelogString.length > 0 ? changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n') : null;
+
+            if(!changelog){
+              github.rest.issues.updateComment({
+                ...context.repo,
+                comment_id: comment_id,
+                body: `> [!NOTE]
+            > Pre-Release skipped. 
+
+            No changes were made.
+                `
+              });
+
+              return;
+            }
+
+            github.rest.issues.updateComment({
+              ...context.repo,
+              comment_id: comment_id,
+              body: `> [!TIP]
+              > Pre-Release created
+
+              The pre-release has been successfully created for the following packages:
+              \`\`\`
+              ${changelog}
+              \`\`\`
+              You can now check out the latest version.
+              `
+            });
