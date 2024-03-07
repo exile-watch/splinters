@@ -6,55 +6,20 @@ on:
       - labeled
 jobs:
   create-status-comment:
-    uses: ./.github/workflows/lerna-prerelease-00-create-status-comment.yml
+    uses: ./.github/workflows/preview-publish-package/00-create-status-comment.yml
     secrets: inherit
     with:
       prRef: ${{ github.event.pull_request.head.ref }}
 
-  preview-publish:
+  preview-publish-package:
     needs: [create-status-comment]
-    name: Publish Prerelease to NPM
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: .nvmrc
-          cache: npm
-      - name: Configure Git
-        run: |
-          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
-          git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
-      - name: GitHub Package Registry Identity
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > .npmrc
-          echo "@exile-watch:registry=https://npm.pkg.github.com/" >> .npmrc
-      - name: Install dependencies
-        run: npm ci
-      - name: Build
-        run: npm run build
-
-      - name: Lerna publish prerelease
-        id: lerna_prerelease
-        env:
-          CI: true
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npx lerna version prerelease --preid preview --yes --no-push
-          npx lerna publish from-git --dist-tag next --yes
-          echo "changelog=$(npx lerna changed --json | tr '\n' ' ')" >> $GITHUB_OUTPUT
-    outputs:
-      changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
+    uses: ./.github/workflows/preview-publish-package/01-publish-prerelease.yml
+    secrets: inherit
+    with:
+      prRef: ${{ github.event.pull_request.head.ref }}
 
   update-status-comment-on-succes:
-    needs: [create-status-comment, preview-publish]
+    needs: [create-status-comment, preview-publish-package]
     name: Update status pre-release comment on success
     runs-on: ubuntu-latest
     steps:
@@ -70,23 +35,17 @@ jobs:
         with:
           path: ./
 
-      - name: Read comment_id from artifact
-        id: read-comment-id
+      - name: Read artifacts
         run: |
-          echo "comment_id=$(cat ./comment-id/comment_id.txt)" >> $GITHUB_ENV
-
-      - name: Echo comment_id
-        run: echo "Comment ID is $comment_id"
-
-      - name: List downloaded artifact contents
-        run: ls -la ./comment-id/comment_id.txt
+          echo "comment_id=$(cat ./comment-artifact/comment_id.txt)" >> $GITHUB_ENV
+          echo "changelog=$(cat ./changelog-artifact/changelog.txt)" >> $GITHUB_ENV
 
       - name: Update status comment
         uses: actions/github-script@v7
         with:
           script: |
             const comment_id = ${{ env.comment_id }}
-            const changelogString = '${{ needs.preview-publish.outputs.changelog }}';
+            const changelogString = '${{ env.changelog }}';
             const changelog = changelogString.length > 0 ? changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n') : null;
             
             if(!changelog){
@@ -165,11 +124,20 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
 
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          path: ./
+
+      - name: Read artifacts
+        run: |
+          echo "comment_id=$(cat ./comment-artifact/comment_id.txt)" >> $GITHUB_ENV
+
       - name: Update status comment on failure
         uses: actions/github-script@v7
         with:
           script: |
-            const comment_id = ${{ needs.create-status-comment.outputs.comment_id }}
+            const comment_id = ${{ env.comment_id }}
             
             github.rest.issues.updateComment({
               ...context.repo,
