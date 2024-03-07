@@ -5,36 +5,36 @@ on:
     types:
       - labeled
 jobs:
-  ppp-00:
+  CI-00:
     uses: ./.github/workflows/preview-publish-package-00-create-status-comment.yml
     secrets: inherit
     with:
       prRef: ${{ github.event.pull_request.head.ref }}
 
-  ppp-01:
-    needs: [create-status-comment]
+  CI-01:
+    needs: [CI-00]
     uses: ./.github/workflows/preview-publish-package-01-publish-prerelease.yml
     secrets: inherit
     with:
       prRef: ${{ github.event.pull_request.head.ref }}
 
-  ppp-02:
-    needs: [ create-status-comment, preview-publish-package]
+  CI-02:
+    needs: [ CI-00, CI-01 ]
     uses: ./.github/workflows/preview-publish-package-02-update-status-comment-on-success.yml
     secrets: inherit
     with:
       prRef: ${{ github.event.pull_request.head.ref }}
 
-  ppp-03:
-    needs: [ create-status-comment ]
+  CI-03:
+    needs: [ CI-00 ]
     if: failure()
     uses: ./.github/workflows/preview-publish-package-03-update-status-comment-on-failure.yml
     secrets: inherit
     with:
       prRef: ${{ github.event.pull_request.head.ref }}
 
-  ppp-04:
-    needs: [ create-status-comment ]
+  CI-04:
+    needs: [ CI-00 ]
     uses: ./.github/workflows/preview-publish-package-04-remove-preview-publish-label.yml
     secrets: inherit
     with:
