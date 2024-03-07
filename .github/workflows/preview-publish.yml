@@ -6,7 +6,7 @@ on:
       - labeled
 jobs:
   create-status-comment:
-    uses: ./.github/workflows/lerna-prerelease-00-create-status-comment.yml@main
+    uses: ./.github/workflows/lerna-prerelease-00-create-status-comment.yml
     with:
       ghToken: ${{ secrets.GH_TOKEN }}
       prRef: ${{ github.event.pull_request.head.ref }}
