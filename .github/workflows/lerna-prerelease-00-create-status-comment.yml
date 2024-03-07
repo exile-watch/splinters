@@ -54,6 +54,7 @@ jobs:
       - name: Upload comment_id as an artifact
         uses: actions/upload-artifact@v4
         with:
+          name: comment-id
           path: comment_id.txt
           retention-days: 1
 
