@@ -91,7 +91,8 @@ jobs:
         uses: actions/github-script@v7
         id: initial_comment
         with:
-          script: >
+          script: |
+            const comment_id = ${{ jobs.create-initial-comment.outputs.comment_id }};
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,
