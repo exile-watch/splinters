@@ -103,9 +103,9 @@ jobs:
                 ...context.repo,
                 comment_id: comment_id,
                 body: `> [!NOTE]
-                > Pre-Release skipped. 
+            > Pre-Release skipped. 
             
-                No changes were made.
+            No changes were made.
                 `
               });
             
@@ -114,9 +114,10 @@ jobs:
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,
-              body: `🌟 Pre-Release Created 🌟
+              body: `> [!NOTE]
+              > 🎉 Pre-Release created. 🎉
             
-              The pre-release has been successfully created with the following details:
+              The pre-release has been successfully created for the following packages:
               \`\`\`
               ${changelog}
               \`\`\`
