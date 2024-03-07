@@ -70,7 +70,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npx lerna version prerelease --preid preview --yes --no-push
-          echo "changelog=$(npx lerna publish from-git --dist-tag next --yes)" >> $GITHUB_OUTPUT
+          npx lerna publish from-git --dist-tag next --yes
+          echo "changelog=$(npx lerna changed)" >> $GITHUB_OUTPUT
 
   update-initial-comment:
     needs: [create-initial-comment, preview-publish]
