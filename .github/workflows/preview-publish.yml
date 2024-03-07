@@ -73,13 +73,13 @@ jobs:
       - name: Read comment_id from artifact
         id: read-comment-id
         run: |
-          echo "comment_id=$(cat comment_id.txt)" >> $GITHUB_OUTPUT
+          echo "comment_id=$(cat comment_id.txt)" >> $GITHUB_ENV
 
       - name: Update status comment
         uses: actions/github-script@v7
         with:
           script: |
-            const comment_id = ${{ steps.read-comment-id.outputs.comment_id }}
+            const comment_id = ${{ env.comment_id }}
             const changelogString = '${{ needs.preview-publish.outputs.changelog }}';
             const changelog = changelogString.length > 0 ? changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n') : null;
             
