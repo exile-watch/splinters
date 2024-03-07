@@ -17,7 +17,7 @@ on:
 
 jobs:
   publish-prerelease:
-    name: Publish Prerelease to NPM
+    name: Publish pre-release
     runs-on: ubuntu-latest
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
@@ -63,6 +63,7 @@ jobs:
           echo "changelog=$(npx lerna changed --json | tr '\n' ' ')" >> $GITHUB_OUTPUT
 
   create-prerelease-changelog-artifact:
+    name: Create changelog artifact
     needs: publish-prerelease
     runs-on: ubuntu-latest
     steps:
