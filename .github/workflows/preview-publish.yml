@@ -24,7 +24,7 @@ jobs:
             github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,
-              body: `🚧 Pre-Release Process Initiated 🚧
+              body: `<div class="anim-rotate">⚙️</div> Pre-Release Process Initiated 🚧
 
               The pre-release is currently being created. No action is required on your part; this comment will automatically update once everything is complete.
               `
@@ -73,27 +73,9 @@ jobs:
           npx lerna version prerelease --preid preview --yes --no-push
           npx lerna publish from-git --dist-tag next --yes
           echo '${{ toJSON(github) }}'
+          echo '${{ toJSON(runner) }}'
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
-
-
-  readFileContent:
-    needs: [preview-publish]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Find and Read the File
-        run: |
-          FILE_PATH=$(find /tmp -type f -name "lerna-commit.txt" 2>/dev/null)
-          echo "Found file at: $FILE_PATH"
-          
-          if [ ! -z "$FILE_PATH" ]; then
-            echo "Content of the file:"
-            cat "$FILE_PATH"
-          else
-            echo "File not found."
 
   update-initial-comment:
     needs: [create-initial-comment, preview-publish]
