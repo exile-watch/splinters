@@ -1,5 +1,5 @@
-name: Lerna Pre-Release - 01
-run-name: Lerna Pre-Release - 01 - Publish pre-release
+name: Preview publish package - 01
+run-name: Preview publish package - 01 - Publish pre-release
 
 on:
   workflow_call:
