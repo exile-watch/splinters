@@ -4,12 +4,12 @@ run-name: Lerna Pre-Release - 00 - Create status comment
 on:
   workflow_call:
     inputs:
-      ghToken:
-        required: true
-        type: string
       prRef:
         required: true
         type: string
+    secrets:
+      GH_TOKEN:
+        required: true
 
 jobs:
   create-status-comment:
