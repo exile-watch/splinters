@@ -5,38 +5,14 @@ on:
     types:
       - labeled
 jobs:
-  create-initial-comment:
-    name: Create initial pre-release comment
-    runs-on: ubuntu-latest
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'preview-publish') }}
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
-      - name: Create initial comment
-        uses: actions/github-script@v7
-        id: initial_comment
-        with:
-          script: >
-            github.rest.issues.createComment({
-              ...context.repo,
-              issue_number: context.issue.number,
-              body: `> [!WARNING]
-              > Pre-Release process initiated
-                     
-              The pre-release is currently being created. No action is required on your part; this comment will automatically update once everything is complete.
-              `
-            }).then(response => {
-              core.setOutput("comment_id", response.data.id)
-            });
-    outputs:
-      comment_id: ${{ steps.initial_comment.outputs.comment_id }}
+  create-status-comment:
+    uses: ./.github/workflows/lerna-prerelease-00-create-status-comment.yml@main
+    with:
+      ghToken: ${{ secrets.GH_TOKEN }}
+      prRef: ${{ github.event.pull_request.head.ref }}
 
   preview-publish:
-    needs: [create-initial-comment]
+    needs: [create-status-comment]
     name: Publish Prerelease to NPM
     runs-on: ubuntu-latest
     steps:
@@ -77,9 +53,9 @@ jobs:
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
 
-  update-initial-comment-on-succes:
-    needs: [create-initial-comment, preview-publish]
-    name: Update initial pre-release comment on success
+  update-status-comment-on-succes:
+    needs: [create-status-comment, preview-publish]
+    name: Update status pre-release comment on success
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -89,11 +65,11 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
 
-      - name: Update initial comment
+      - name: Update status comment
         uses: actions/github-script@v7
         with:
           script: |
-            const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }}
+            const comment_id = ${{ needs.create-status-comment.outputs.comment_id }}
             const changelogString = '${{ needs.preview-publish.outputs.changelog }}';
             const changelog = changelogString.length > 0 ? changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n') : null;
             
@@ -126,7 +102,7 @@ jobs:
             });
 
   remove-preview-publish-label:
-    needs: [ create-initial-comment ]
+    needs: [ create-status-comment ]
     name: Remove preview-publish label
     runs-on: ubuntu-latest
     steps:
@@ -160,10 +136,10 @@ jobs:
               name: [labelToRemove]
             });
 
-  update-initial-comment-on-failure:
-    needs: [create-initial-comment]
+  update-status-comment-on-failure:
+    needs: [create-status-comment]
     if: failure()
-    name: Update initial pre-release comment on failure
+    name: Update status pre-release comment on failure
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -173,11 +149,11 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
 
-      - name: Update initial comment on failure
+      - name: Update status comment on failure
         uses: actions/github-script@v7
         with:
           script: |
-            const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }}
+            const comment_id = ${{ needs.create-status-comment.outputs.comment_id }}
             
             github.rest.issues.updateComment({
               ...context.repo,
