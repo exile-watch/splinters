@@ -24,7 +24,7 @@ jobs:
             github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,
-              body: `<div class="anim-rotate">⚙️</div> Pre-Release Process Initiated 🚧
+              body: `<div style={{background: "white"}}>⚙️</div> Pre-Release Process Initiated 🚧
 
               The pre-release is currently being created. No action is required on your part; this comment will automatically update once everything is complete.
               `
@@ -70,10 +70,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          echo "changelog=$(npx lerna changed --json | tr '\n' ' ')" >> $GITHUB_OUTPUT
           npx lerna version prerelease --preid preview --yes --no-push
           npx lerna publish from-git --dist-tag next --yes
-          echo '${{ toJSON(github) }}'
-          echo '${{ toJSON(runner) }}'
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
 
@@ -94,6 +93,8 @@ jobs:
         with:
           script: |
             const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }};
+            const changelog = ${{ needs.preview-publish.outputs.changelog }}
+            console.log(changelog)
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,
