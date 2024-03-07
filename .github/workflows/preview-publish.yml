@@ -70,8 +70,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo "changelog=$(npx lerna changed --json | tr '\n' ' ')" >> $GITHUB_OUTPUT
           npx lerna version prerelease --preid preview --yes --no-push
+          echo "changelog=$(npx lerna changed --json | tr '\n' ' ')" >> $GITHUB_OUTPUT
           npx lerna publish from-git --dist-tag next --yes
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
