@@ -72,7 +72,8 @@ jobs:
         run: |
           npx lerna version prerelease --preid preview --yes --no-push
           npx lerna publish from-git --dist-tag next --yes
-          echo "changelog=$(npx lerna changed --json)" >> $GITHUB_OUTPUT
+          changelog=$(npx lerna changed --json)
+          echo "changelog=$changelog" >> $GITHUB_ENV
 
   update-initial-comment:
     needs: [create-initial-comment, preview-publish]
@@ -92,7 +93,7 @@ jobs:
         with:
           script: |
             const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }};
-            console.log(${{ fromJSON(github) }})
+            console.log(${{ env.changelog }})
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,
