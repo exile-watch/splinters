@@ -92,7 +92,7 @@ jobs:
         with:
           script: |
             const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }};
-            console.log(fromJSON(github))
+            console.log(${{ fromJSON(github) }})
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,
