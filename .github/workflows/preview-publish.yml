@@ -73,7 +73,7 @@ jobs:
       - name: Read comment_id from artifact
         id: read-comment-id
         run: |
-          echo "comment_id=$(cat comment-id/comment_id.txt)" >> $GITHUB_ENV
+          echo "comment_id=$(cat comment_id.txt/comment-id/comment_id.txt)" >> $GITHUB_ENV
 
       - name: List downloaded artifact contents
         run: ls -la comment_id.txt
