@@ -33,9 +33,9 @@ jobs:
             });
     outputs:
       comment_id: ${{ steps.initial_comment.outputs.comment_id }}
+
   preview-publish:
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'preview-publish') &&
-      needs.create-initial-comment.result == 'success' }}
+    needs: [create-initial-comment]
     name: Publish Prerelease to NPM
     runs-on: ubuntu-latest
     steps:
@@ -75,10 +75,10 @@ jobs:
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.* }}
   update-initial-comment:
+    needs: [create-initial-comment, preview-publish]
     name: Update initial pre-release comment
     runs-on: ubuntu-latest
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'preview-publish') &&
-      needs.preview-publish.result == 'success' }}
+
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
