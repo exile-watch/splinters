@@ -21,7 +21,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
-          token: ${{ inputs.ghToken }}
+          token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
           ref: ${{ inputs.prRef }}
 
