@@ -100,14 +100,14 @@ jobs:
         with:
           script: |
             github.rest.issues.updateComment({
-            ...context.repo,
-            comment_id: comment_id,
-            body: `🌟 Pre-Release Created 🌟
-            
-            The pre-release has been successfully created with the following details:
-            \`\`\`
-    #              ${lernaOutput}
-            \`\`\`
-            You can now check out the latest version.
-            `
-          });
+              ...context.repo,
+              comment_id: comment_id,
+              body: `🌟 Pre-Release Created 🌟
+              
+              The pre-release has been successfully created with the following details:
+              \`\`\`
+      #              ${lernaOutput}
+              \`\`\`
+              You can now check out the latest version.
+              `
+            });
