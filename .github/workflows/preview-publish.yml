@@ -64,7 +64,6 @@ jobs:
         run: npm run build
 
       - name: Lerna publish prerelease
-        id: lerna_prerelease
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -72,9 +71,17 @@ jobs:
         run: |
           npx lerna version prerelease --preid preview --yes --no-push
           npx lerna publish from-git --dist-tag next --yes
+
+      - name: Lerna prepare versions changelog
+        id: lerna_changelog
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
           echo "changelog=$(npx lerna changed --json | tr '\n' ' ')" >> $GITHUB_OUTPUT
     outputs:
-      changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
+      changelog: ${{ steps.lerna_changelog.outputs.changelog }}
 
   update-initial-comment:
     needs: [create-initial-comment, preview-publish]
