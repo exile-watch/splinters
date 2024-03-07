@@ -76,12 +76,31 @@ jobs:
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.changelog }}
 
+
+  readFileContent:
+    needs: [preview-publish]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Find and Read the File
+        run: |
+          FILE_PATH=$(find /tmp -type f -name "lerna-commit.txt")
+          echo "Found file at: $FILE_PATH"
+          
+          if [ ! -z "$FILE_PATH" ]; then
+            echo "Content of the file:"
+            cat "$FILE_PATH"
+          else
+            echo "File not found."
+
   update-initial-comment:
     needs: [create-initial-comment, preview-publish]
     name: Update initial pre-release comment
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source code
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_TOKEN }}
