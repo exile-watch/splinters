@@ -68,15 +68,18 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          path: comment_id.txt
+          path: ./
 
       - name: Read comment_id from artifact
         id: read-comment-id
         run: |
-          echo "comment_id=$(cat comment_id.txt/comment-id/comment_id.txt)" >> $GITHUB_ENV
+          echo "comment_id=$(cat ./comment-id/comment_id.txt)" >> $GITHUB_ENV
+
+      - name: Echo comment_id
+        run: echo "Comment ID is $comment_id"
 
       - name: List downloaded artifact contents
-        run: ls -la comment_id.txt/comment-id/comment_id.txt
+        run: ls -la ./comment-id/comment_id.txt
 
       - name: Update status comment
         uses: actions/github-script@v7
