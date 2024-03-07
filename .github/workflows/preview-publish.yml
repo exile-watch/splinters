@@ -92,7 +92,8 @@ jobs:
         id: initial_comment
         with:
           script: |
-            const comment_id = ${{ jobs.create-initial-comment.outputs.comment_id }};
+            const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }};
+            const changelog = ${{ needs.preview-publish.outputs.changelog }}
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,
@@ -100,7 +101,7 @@ jobs:
             
               The pre-release has been successfully created with the following details:
               \`\`\`
-              tbd output
+              ${changelog}
               \`\`\`
               You can now check out the latest version.
               `
