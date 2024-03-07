@@ -94,6 +94,7 @@ jobs:
           script: |
             const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }};
             const changelog = ${{ needs.preview-publish.outputs.changelog }}
+            console.log(changelog, toJSON(changelog), fromJSON(changelog))
             github.rest.issues.updateComment({
               ...context.repo,
               comment_id: comment_id,
