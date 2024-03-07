@@ -78,12 +78,11 @@ jobs:
               ...context.repo,
               comment_id: comment_id,
               body: `🌟 Pre-Release Created 🌟
-            
+              
               The pre-release has been successfully created with the following details:
               \`\`\`
-#              ${lernaOutput}
+      #              ${lernaOutput}
               \`\`\`
               You can now check out the latest version.
               `
             });
-
