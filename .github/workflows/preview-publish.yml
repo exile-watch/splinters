@@ -161,6 +161,7 @@ jobs:
             });
 
   update-initial-comment-on-failure:
+    needs: [create-initial-comment]
     if: failure()
     name: Update initial pre-release comment on failure
     runs-on: ubuntu-latest
