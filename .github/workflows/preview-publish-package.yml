@@ -6,14 +6,14 @@ on:
       - labeled
 jobs:
   create-status-comment:
-    uses: ./.github/workflows/preview-publish-package/00-create-status-comment.yml
+    uses: ./.github/workflows/preview-publish-package-00-create-status-comment.yml
     secrets: inherit
     with:
       prRef: ${{ github.event.pull_request.head.ref }}
 
   preview-publish-package:
     needs: [create-status-comment]
-    uses: ./.github/workflows/preview-publish-package/01-publish-prerelease.yml
+    uses: ./.github/workflows/preview-publish-package-01-publish-prerelease.yml
     secrets: inherit
     with:
       prRef: ${{ github.event.pull_request.head.ref }}
