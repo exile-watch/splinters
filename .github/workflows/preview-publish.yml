@@ -76,7 +76,7 @@ jobs:
           echo "comment_id=$(cat comment-id/comment_id.txt)" >> $GITHUB_ENV
 
       - name: List downloaded artifact contents
-        run: ls -la
+        run: ls -la comment_id.txt
 
       - name: Update status comment
         uses: actions/github-script@v7
