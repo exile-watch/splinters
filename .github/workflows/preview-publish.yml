@@ -73,7 +73,8 @@ jobs:
           npx lerna publish from-git --dist-tag next --yes
           echo "publish_output=$(output)" >> $GITHUB_OUTPUT
     outputs:
-      changelog: ${{ steps.lerna_prerelease.outputs.* }}
+      changelog: ${{ steps.lerna_prerelease.outputs.publish_output }}
+
   update-initial-comment:
     needs: [create-initial-comment, preview-publish]
     name: Update initial pre-release comment
