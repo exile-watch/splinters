@@ -94,9 +94,9 @@ jobs:
         with:
           script: |
             const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }}
-            const changelogString = '${{ needs.preview-publish.outputs.changelog }}';
-            const changelogJson = changelogString ?? null;
-            const changelog = changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n')
+            const changelog = '${{ needs.preview-publish.outputs.changelog }}';
+            const changelog = Array.isArray(JSON.parse(changelog)) ? changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n') : null;
+            
             if(!changelog){
               github.rest.issues.updateComment({
                 ...context.repo,
