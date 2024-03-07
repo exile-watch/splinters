@@ -141,6 +141,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }}
             const labelToRemove = 'preview-publish'
             
             // Check if the PR already has the label
