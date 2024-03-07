@@ -86,7 +86,7 @@ jobs:
 
       - name: Find and Read the File
         run: |
-          FILE_PATH=$(find /tmp -type f -name "lerna-commit.txt")
+          FILE_PATH=$(find /tmp -type f -name "lerna-commit.txt" 2>/dev/null)
           echo "Found file at: $FILE_PATH"
           
           if [ ! -z "$FILE_PATH" ]; then
