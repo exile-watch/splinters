@@ -71,7 +71,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           changelog=$(npx lerna changed --json)
-          echo "changelog=$changelog" >> $GITHUB_ENV
+          echo "changelog=$changelog" >> "$GITHUB_OUTPUT"
           npx lerna version prerelease --preid preview --yes --no-push
           npx lerna publish from-git --dist-tag next --yes
     outputs:
