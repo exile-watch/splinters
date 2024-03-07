@@ -1,9 +1,9 @@
+---
 name: Preview Publish on Label
-
 on:
   pull_request_target:
-    types: [labeled]
-
+    types:
+      - labeled
 jobs:
   create-initial-comment:
     name: Create initial pre-release comment
@@ -16,17 +16,16 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
-
       - name: Create initial comment
         uses: actions/github-script@v7
         id: initial_comment
         with:
-          script: |
+          script: >
             github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,
               body: `🚧 Pre-Release Process Initiated 🚧
-            
+
               The pre-release is currently being created. No action is required on your part; this comment will automatically update once everything is complete.
               `
             }).then(response => {
@@ -34,9 +33,9 @@ jobs:
             });
     outputs:
       comment_id: ${{ steps.initial_comment.outputs.comment_id }}
-
   preview-publish:
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'preview-publish') && (needs.create-initial-comment.result == 'success' }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'preview-publish') &&
+      (needs.create-initial-comment.result == 'success' }}
     name: Publish Prerelease to NPM
     runs-on: ubuntu-latest
     steps:
@@ -45,30 +44,24 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
-
       - uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
-
+          node-version-file: .nvmrc
+          cache: npm
       - name: Configure Git
         run: |
           git config --global user.name "${{ secrets.GIT_USER_NAME }}"
           git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
-
-      - name: "GitHub Package Registry Identity"
+      - name: GitHub Package Registry Identity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > .npmrc
           echo "@exile-watch:registry=https://npm.pkg.github.com/" >> .npmrc
-
       - name: Install dependencies
         run: npm ci
-
       - name: Build
         run: npm run build
-
       - name: Lerna publish prerelease
         id: lerna_prerelease
         env:
@@ -81,11 +74,11 @@ jobs:
           echo "publish_output=$(output)" >> $GITHUB_OUTPUT
     outputs:
       changelog: ${{ steps.lerna_prerelease.outputs.* }}
-
   update-initial-comment:
     name: Update initial pre-release comment
     runs-on: ubuntu-latest
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'preview-publish') && (needs.preview-publish.result == 'success' }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'preview-publish') &&
+      (needs.preview-publish.result == 'success' }}
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
@@ -93,21 +86,20 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
-
       - name: Create initial comment
         uses: actions/github-script@v7
         id: initial_comment
         with:
-          script: |
+          script: >
             github.rest.issues.updateComment({
-            ...context.repo,
-            comment_id: comment_id,
-            body: `🌟 Pre-Release Created 🌟
+              ...context.repo,
+              comment_id: comment_id,
+              body: `🌟 Pre-Release Created 🌟
             
-            The pre-release has been successfully created with the following details:
-            \`\`\`
-    #              ${lernaOutput}
-            \`\`\`
-            You can now check out the latest version.
-            `
-          });
+              The pre-release has been successfully created with the following details:
+              \`\`\`
+              tbd output
+              \`\`\`
+              You can now check out the latest version.
+              `
+            });
