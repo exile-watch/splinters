@@ -24,8 +24,8 @@ jobs:
             github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,
-              body: `> [!NOTE]
-              > 🚧 Pre-Release Process Initiated 🚧.
+              body: `> [!WARNING]
+              > 🚧 Pre-Release process initiated 🚧.
                      
               The pre-release is currently being created. No action is required on your part; this comment will automatically update once everything is complete.
               `
@@ -96,14 +96,16 @@ jobs:
           script: |
             const comment_id = ${{ needs.create-initial-comment.outputs.comment_id }}
             const changelogString = '${{ needs.preview-publish.outputs.changelog }}';
-            const changelog = Array.isArray(JSON.parse(changelogString)) ? changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n') : null;
+            const changelog = changelogString.length > 0 ? changelogJson?.map(c => `${c.name}@${c.version}`).join('\\n') : null;
             
             if(!changelog){
               github.rest.issues.updateComment({
                 ...context.repo,
                 comment_id: comment_id,
                 body: `> [!NOTE]
-                > Pre-Release skipped. No changes were made.
+                > Pre-Release skipped. 
+            
+                No changes were made.
                 `
               });
             
