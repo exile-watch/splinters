@@ -6,9 +6,9 @@
       "loglevel": "debug"
     },
     "version": {
+      "allowBranch": "main",
       "conventionalCommits": true,
       "createRelease": "github",
-
       "message": "chore(release): publish [skip ci]",
       "commitHooks": false,
       "changelogPreset": "@exile-watch/conventional-changelog-config"
