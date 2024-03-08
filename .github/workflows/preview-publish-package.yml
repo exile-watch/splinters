@@ -5,37 +5,17 @@ on:
     types:
       - labeled
 jobs:
-  CI-00:
-    uses: ./.github/workflows/preview-publish-package-00-create-status-comment.yml
-    secrets: inherit
-    with:
-      prRef: ${{ github.event.pull_request.head.ref }}
+  preview-publish-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
 
-  CI-01:
-    needs: [CI-00]
-    uses: ./.github/workflows/preview-publish-package-01-publish-prerelease.yml
-    secrets: inherit
-    with:
-      prRef: ${{ github.event.pull_request.head.ref }}
-
-  CI-02:
-    needs: [ CI-00, CI-01 ]
-    uses: ./.github/workflows/preview-publish-package-02-update-status-comment-on-success.yml
-    secrets: inherit
-    with:
-      prRef: ${{ github.event.pull_request.head.ref }}
-
-  CI-03:
-    needs: [ CI-00 ]
-    if: failure()
-    uses: ./.github/workflows/preview-publish-package-03-update-status-comment-on-failure.yml
-    secrets: inherit
-    with:
-      prRef: ${{ github.event.pull_request.head.ref }}
-
-  CI-04:
-    needs: [ CI-00 ]
-    uses: ./.github/workflows/preview-publish-package-04-remove-preview-publish-label.yml
-    secrets: inherit
-    with:
-      prRef: ${{ github.event.pull_request.head.ref }}
+      - name: Preview publish package
+        uses: @exile-watch/doryani/preview-publish-lerna-package@main
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
