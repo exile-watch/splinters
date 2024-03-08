@@ -18,4 +18,4 @@ jobs:
       - name: Preview publish package
         uses: @exile-watch/doryani/preview-publish-lerna-package@main
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          prRef: ${{ github.event.pull_request.head.ref }}
