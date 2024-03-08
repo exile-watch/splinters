@@ -16,6 +16,6 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Preview publish package
-        uses: exile-watch/doryani/actions/preview-publish-package@main
+        uses: exile-watch/doryani/preview-publish-package@main
         with:
           prRef: ${{ github.event.pull_request.head.ref }}
