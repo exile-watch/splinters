@@ -1,5 +1,5 @@
 ---
-name: Preview publish package
+name: @exile-watch/doryani
 on:
   pull_request_target:
     types:
