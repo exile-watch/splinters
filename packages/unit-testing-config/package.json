@@ -2,15 +2,15 @@
   "name": "@exile-watch/unit-testing-config",
   "version": "0.1.2",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
-  "main": "dist/index.esm.js",
+  "main": "dist/index.mjs",
   "files": [
     "dist"
   ],
   "type": "module",
   "scripts": {
     "_clean": "del-cli dist",
-    "_build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
-    "build": "run-s _clean _build",
+    "_build": "rollup -c",
+    "build": "npm run _build",
     "typecheck": "npx tsc"
   },
   "repository": {
