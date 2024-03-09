@@ -1,4 +1,3 @@
-import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 import { WritProvider } from '@exile-watch/writ-react';
 import React, {ReactNode} from 'react';
