@@ -105,6 +105,22 @@ const createRollupConfig = async (options: CreateRollupConfigOptions = {}): Prom
      */
     output: [
       /**
+       * Outputs CommonJS version with `js` extension
+       */
+      {
+        assetFileNames: '[name][extname]',
+        /**
+         * Using output.dir retains the original modular structure of the src folder
+         * @see https://rollupjs.org/guide/en/#outputpreservemodules
+         */
+        dir: 'dist',
+        exports: exports || 'auto',
+        format: 'cjs',
+        preserveModules: true,
+        preserveModulesRoot,
+        sourcemap: true,
+      },
+      /**
        * Outputs ES Modules version with `.esm.js` extension
        */
       {
@@ -115,7 +131,8 @@ const createRollupConfig = async (options: CreateRollupConfigOptions = {}): Prom
         exports: exports || 'auto',
         format: 'es',
         preserveModules: true,
-        preserveModulesRoot
+        preserveModulesRoot,
+        sourcemap: true,
       },
     ],
 
