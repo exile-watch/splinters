@@ -6,7 +6,7 @@ const defaultConfig = defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    // setupFiles: ['./test-setup.tsx']
+    setupFiles: ['./test-setup.tsx']
   }
 })
 
