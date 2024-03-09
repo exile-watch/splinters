@@ -1,9 +1,10 @@
----
 name: "@exile-watch/doryani"
+
 on:
   pull_request_target:
     types:
       - labeled
+
 jobs:
   preview-publish-package:
     runs-on: ubuntu-latest
