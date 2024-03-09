@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/unit-testing-config",
-  "version": "0.1.3-preview.0",
+  "version": "0.1.3-preview.1",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

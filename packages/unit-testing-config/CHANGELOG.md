@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3-preview.1](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.3-preview.0...@exile-watch/unit-testing-config@0.1.3-preview.1) (2024-03-09)
+
+
+### ⚙️ Code Quality
+
+* uncomment setupFiles ([152c4dc](https://github.com/exile-watch/splinters/commit/152c4dcfe487967dd4235ba6142c46c405d456e8))
+
+
+
 ## [0.1.3-preview.0](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.2...@exile-watch/unit-testing-config@0.1.3-preview.0) (2024-03-09)
 
 
