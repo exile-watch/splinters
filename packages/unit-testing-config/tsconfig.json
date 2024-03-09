@@ -1,8 +1,8 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es5",                          // Compile to ES5
-    "module": "esnext",                       // Use ES modules
+    "target": "es6",                          // Compile to ES5
+    "module": "es6",                       // Use ES modules
     "jsx": "react",                           // Transform JSX into React.createElement calls
     "outDir": "./dist",                       // Output directory for compiled files
     "strict": true,                           // Enable all strict type-checking options
@@ -10,7 +10,8 @@
     "esModuleInterop": true,                  // Enable default imports from modules with no default export
     "skipLibCheck": true,                     // Skip type checking of declaration files
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
-    "sourceMap": false
+    "sourceMap": false,
+
     // Other options here
   },
   "include": ["src/**/*"], // Compile all files in src (including .tsx files)
