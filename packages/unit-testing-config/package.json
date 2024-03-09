@@ -2,16 +2,11 @@
   "name": "@exile-watch/unit-testing-config",
   "version": "0.1.2",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.mjs",
   "files": [
-    "dist"
+    "src/index.mjs"
   ],
   "scripts": {
-    "_clean": "del-cli dist",
-    "_build": "rollup -c",
-    "build": "npm run _build",
     "typecheck": "npx tsc"
   },
   "repository": {

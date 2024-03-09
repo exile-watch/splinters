@@ -1,7 +1,7 @@
-import { mergeConfig } from 'vitest/config'
+import { mergeConfig, defineConfig } from 'vitest/config'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
-const defaultConfig = {
+const defaultConfig = defineConfig({
   plugins: [tsconfigPaths()],
   test: {
     globals: true,
@@ -11,6 +11,6 @@ const defaultConfig = {
       './test-setup.tsx'
     ]
   }
-}
+})
 
 export {defaultConfig, mergeConfig}

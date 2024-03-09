@@ -1,0 +1,1 @@
+export {mergeConfig, defaultConfig} from './vitest.config.mjs'
