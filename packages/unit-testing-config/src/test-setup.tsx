@@ -9,8 +9,5 @@ const customRender = (ui: ReactNode, options = {}) =>
     ...options,
   });
 
-// Re-export everything
-export * from '@testing-library/react';
-
 // Override the render method
 export { customRender as render };

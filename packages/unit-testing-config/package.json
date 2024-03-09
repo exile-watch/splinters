@@ -4,7 +4,7 @@
   "description": "Shared unit testing configuration for exile.watch frontend projects",
   "main": "src/index.mjs",
   "files": [
-    "src/index.mjs"
+    "src"
   ],
   "scripts": {
     "typecheck": "npx tsc"
