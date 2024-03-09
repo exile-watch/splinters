@@ -1,5 +1,4 @@
-import './setupTestEnvCompatibility'
-import { mergeConfig, defineConfig } from 'vitest/config'
+import { defineConfig } from 'vitest/config'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 const defaultConfig = defineConfig({
@@ -9,9 +8,9 @@ const defaultConfig = defineConfig({
     environment: 'jsdom',
     setupFiles: [
       '@testing-library/jest-dom',
-      './test-setup.tsx'
+      '@exile-watch/unit-testing-config/dist/test-setup.mjs'
     ]
   }
 })
 
-export {defaultConfig, mergeConfig}
+export {defaultConfig}
