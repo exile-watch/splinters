@@ -1,5 +1,6 @@
 import createRollupConfig from '@exile-watch/rollup-config'
 
 export default createRollupConfig({
-  outputFormats: ['module']
+  outputFormats: ['module'],
+  externals: ["@exile-watch/writ-react"]
 })
