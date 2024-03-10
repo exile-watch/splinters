@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.2...@exile-watch/unit-testing-config@0.1.3) (2024-03-10)
+
+
+### 🐞 Bug Fixes
+
+* add missing defineConfig ([eaaaabf](https://github.com/exile-watch/splinters/commit/eaaaabf8c4e7f1f924ca460a037cabcbfbc3424c))
+
+
+### 📄 Documentation
+
+* update readme ([e88ea6a](https://github.com/exile-watch/splinters/commit/e88ea6a1909376d16480cf00d1cae168698316e6))
+* update unit-testing-config readme logo ([30136d5](https://github.com/exile-watch/splinters/commit/30136d50120f6870869ff85ac8ca920f86bc112e))
+
+
+### ⚙️ Internal
+
+* **deps:** bump @exile-watch/writ-react to latest ([1cb5023](https://github.com/exile-watch/splinters/commit/1cb5023fc6b6ad4da1058467bfe1eb2116fc37c4))
+
+
+### ⚙️ Code Quality
+
+* add @exile-watch/writ-react as external ([5b7191e](https://github.com/exile-watch/splinters/commit/5b7191e99e24f73db9dda42fb15d170d75d72929))
+* add missing output ([c7e85f7](https://github.com/exile-watch/splinters/commit/c7e85f7f11f4613d0ccb014c7566145ba13850cd))
+* add nx and fix build scripts ([398e948](https://github.com/exile-watch/splinters/commit/398e9482cc932566d39f1c627ce8803b3d4a8907))
+* experiment with rollup ([2c900fc](https://github.com/exile-watch/splinters/commit/2c900fce8acbddb69a45c9748c9d5b2e82b35611))
+* experiment with shimming textencoder ([eb4bfa1](https://github.com/exile-watch/splinters/commit/eb4bfa19c908389a54c830112370d19e1a6c130f))
+* experiment with silencing mantine error ([8d0894b](https://github.com/exile-watch/splinters/commit/8d0894bba07b4cbf428281adfc2c9541c2aaa65c))
+* experiment with tsc ([ad8dcd9](https://github.com/exile-watch/splinters/commit/ad8dcd989caacfce5ecd07ea47fb2f98f78a8d18))
+* export src dir ([38cb4ab](https://github.com/exile-watch/splinters/commit/38cb4abf81e88d48018ea640e13f152d045895c9))
+* intentionally comment setupFiles ([fb534cc](https://github.com/exile-watch/splinters/commit/fb534cce8c12263ddb7cde7e12215a99369a65c4))
+* move extend expect to setup files ([56da4d8](https://github.com/exile-watch/splinters/commit/56da4d80a82cb79d3fceba2d9b9c32d6d2b798c8))
+* remove cjs ([e05020f](https://github.com/exile-watch/splinters/commit/e05020f44720bd355205120a60bd8a8eee5944de))
+* remove externals ([a69a061](https://github.com/exile-watch/splinters/commit/a69a061ede19d7676d20655a0c157a4fcb884a9f))
+* remove process stuff in favour of ErrorBoundary ([0348214](https://github.com/exile-watch/splinters/commit/0348214176d99fe6fe1a87cf181720a38161ca02))
+* test with mjs ([f31b180](https://github.com/exile-watch/splinters/commit/f31b1806ea7ad1fc7bb4092831633185269d3318))
+* update test-setup file location ([4fb589c](https://github.com/exile-watch/splinters/commit/4fb589cb4bc76050230b103495240aa8bf111c16))
+
+
+
 ## [0.1.2](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.1...@exile-watch/unit-testing-config@0.1.2) (2024-03-07)
 
 

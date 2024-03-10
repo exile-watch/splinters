@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.3...@exile-watch/rollup-config@0.2.4) (2024-03-10)
+
+
+### ⚙️ Code Quality
+
+* add nx and fix build scripts ([398e948](https://github.com/exile-watch/splinters/commit/398e9482cc932566d39f1c627ce8803b3d4a8907))
+* experiment with outputs ([9dcbf37](https://github.com/exile-watch/splinters/commit/9dcbf373be2fe1127bec423058052806f7e5b245))
+* nevermind, re-add cjs :) ([daef2c0](https://github.com/exile-watch/splinters/commit/daef2c0d99034ed92349ea6111b0c7d7d23fd395))
+* remove cjs ([e05020f](https://github.com/exile-watch/splinters/commit/e05020f44720bd355205120a60bd8a8eee5944de))
+
+
+
 ## [0.2.3](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.2...@exile-watch/rollup-config@0.2.3) (2024-03-06)
 
 
