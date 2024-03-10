@@ -1,0 +1,34 @@
+version: 2
+registries:
+  github:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{ secrets.GH_TOKEN }}
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    registries: [github]
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "10:35"
+      timezone: "Europe/Warsaw"
+    groups:
+      exile-watch:
+        patterns:
+          - "@exile-watch*"
+      rollup-config-deps:
+        patterns:
+          - "@rollup*"
+      lefthook-config-deps:
+        patterns:
+          - "@commitlint*"
+          - "commitizen"
+          - "lefthook"
+          - "cz-conventional-changelog"
+      unit-testing-config-deps:
+        patterns:
+          - "@testing-library*"
+          - "vite-tsconfig-paths"
+          - "vitest"
+
