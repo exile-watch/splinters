@@ -15,6 +15,7 @@ import {CreateRollupConfigOptions} from './options'
 import {getPostCssPluginConfig} from './plugins/getPostCssPluginConfig'
 import {getTypescriptPluginConfig} from './plugins/getTypescriptPluginConfig'
 import {getOnWarn} from './warningToError'
+import {getOutputPluginConfig} from "./plugins/getOutputPluginConfig";
 
 /**
  * Schemastore package.json types do not accept valid strings for the
@@ -29,7 +30,7 @@ export interface PackageJSON extends Omit<JSONSchemaForNPMPackageJsonFiles, 'hom
  * See `options.ts` for details on optional override params
  */
 const createRollupConfig = async (options: CreateRollupConfigOptions = {}): Promise<RollupOptions> => {
-  const {input, externals, exports} = options
+  const {input, outputFormats = ['esm'], externals, exports} = options
 
   /**
    * Retrieve the package.json file of the consumer
@@ -103,38 +104,7 @@ const createRollupConfig = async (options: CreateRollupConfigOptions = {}): Prom
      * Note: `assetFileNames` is used by `styles` plugin to name & locate CSS output. Required in all output configs.
      * @see https://rollupjs.org/guide/en/#outputfile
      */
-    output: [
-      /**
-       * Outputs CommonJS version with `js` extension
-       */
-      {
-        assetFileNames: '[name][extname]',
-        /**
-         * Using output.dir retains the original modular structure of the src folder
-         * @see https://rollupjs.org/guide/en/#outputpreservemodules
-         */
-        dir: 'dist',
-        exports: exports || 'auto',
-        format: 'cjs',
-        preserveModules: true,
-        preserveModulesRoot,
-        sourcemap: true,
-      },
-      /**
-       * Outputs ES Modules version with `.esm.js` extension
-       */
-      {
-        assetFileNames: '[name][extname]',
-        chunkFileNames: '[name]-[hash].esm.js',
-        dir: 'dist',
-        entryFileNames: '[name].esm.js',
-        exports: exports || 'auto',
-        format: 'es',
-        preserveModules: true,
-        preserveModulesRoot,
-        sourcemap: true,
-      },
-    ],
+    output: outputFormats.map(format => getOutputPluginConfig({format, preserveModulesRoot, exports})),
 
     /********************************************
      * Configure Plugins

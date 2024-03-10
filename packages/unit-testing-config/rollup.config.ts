@@ -1,3 +1,5 @@
 import createRollupConfig from '@exile-watch/rollup-config'
 
-export default createRollupConfig()
+export default createRollupConfig({
+  outputFormats: ['module']
+})

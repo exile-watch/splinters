@@ -1,2 +1,4 @@
-export * from './test-setup'
-export * from './vitest.config'
+export * from '@testing-library/react';
+export { defaultConfig} from './vitest.config'
+
+export {render} from './test-setup'

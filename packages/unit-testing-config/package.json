@@ -2,12 +2,11 @@
   "name": "@exile-watch/unit-testing-config",
   "version": "0.1.2",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.mjs",
   "files": [
     "dist"
   ],
+  "type": "module",
   "scripts": {
     "_clean": "del-cli dist",
     "_build": "rollup -c",
@@ -26,13 +25,13 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
-    "@exile-watch/writ-react": "^0.5.0",
+    "@exile-watch/writ-react": "^0.6.0",
     "react": "^18.2.0"
   },
   "devDependencies": {
     "@exile-watch/rollup-config": "^0.2.3",
     "@exile-watch/typescript-config": "^0.3.1",
-    "@exile-watch/writ-react": "^0.5.0",
+    "@exile-watch/writ-react": "^0.6.0",
     "@types/react": "^18.2.63",
     "react": "^18.2.0"
   },

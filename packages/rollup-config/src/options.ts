@@ -13,6 +13,14 @@ export interface CreateRollupConfigOptions {
   input?: string
 
   /**
+   * The file to write to
+   *
+   * @default {format: ['esm']}
+   * @see https://rollupjs.org/configuration-options/#output-file
+   */
+  outputFormats?: OutputOptions['format'][]
+
+  /**
    * Optional override for name of CSS output file, if the package includes CSS
    * Path starts within the dist folder.
    *
@@ -77,6 +85,5 @@ export interface CreateRollupConfigOptions {
    * @see https://rollupjs.org/guide/en/#onwarn for all warning types
    * @see warningToError.ts for list of warning types upgraded by default
    */
-
   allowAsWarning?: UpgradedWarning[]
 }
