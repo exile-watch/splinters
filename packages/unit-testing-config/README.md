@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img alt="vitest and react-testing logos in a bucket" src="" width="150" />
+    <img alt="vitest and react-testing logos in a bucket" src="https://github.com/exile-watch/splinters/blob/main/docs/assets/unit-testing-logo.png" width="150" />
   </a>
 </p>
 <h1 align="center">
