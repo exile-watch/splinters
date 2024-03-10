@@ -18,12 +18,17 @@
 - [@exile-watch/postcss-config](https://github.com/exile-watch/splinters/tree/main/packages/postcss-config)
 - [@exile-watch/rollup-config](https://github.com/exile-watch/splinters/tree/main/packages/rollup-config)
 - [@exile-watch/typescript-config](https://github.com/exile-watch/splinters/tree/main/packages/typescript-config)
+- [@exile-watch/unit-testing-config](https://github.com/exile-watch/splinters/tree/main/packages/unit-testing-config)
 
 ### Contributing
-Want to contribute? [Check the docs](https://docs.exile.watch/projects/splinters/contributing)
+| `@exile-watch/splinters`        | Link                                                                                             |
+|---------------------------------|--------------------------------------------------------------------------------------------------|
+| Want to contribute?             | [Check the docs](https://docs.exile.watch/projects/splinters/contributing)                       |
+| Encountered a bug?              | [Check issues or create a new one](https://github.com/exile-watch/hideout/issues)                |
+| Have an idea for a new feature? | [Check the discussions or create a new one](https://github.com/exile-watch/hideout/discussions)  |
 
-Encountered a [bug](https://github.com/exile-watch/hideout/issues) or have a [question](https://github.com/exile-watch/hideout/discussions)?
-
-Have an idea for a new [feature](https://github.com/exile-watch/hideout/discussions/categories/ideas)?
-
-Head over to exile.watch's [hideout](https://github.com/exile-watch/hideout)!
+| General                                            | Link                                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------|
+| exile.watch projects                               | [Read about them here](https://docs.exile.watch/projects/hideout#links-to-projects) | 
+| Anything else is on your mind?                     | [Head over to exile.watch's hideout](https://github.com/exile-watch/hideout)        |
+| Curious about exile.watch architecture decisions?  | [Read exile.watch engineering blog](https://engineering.exile.watch/)               | 
