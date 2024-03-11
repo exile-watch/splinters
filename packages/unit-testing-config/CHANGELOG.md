@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.3...@exile-watch/unit-testing-config@0.1.4) (2024-03-11)
+
+
+### ⚙️ Internal
+
+* **deps:** bump @exile-watch/writ-react ([c0c62a5](https://github.com/exile-watch/splinters/commit/c0c62a551ea1e7db0f2abd521cc8a65084925f58))
+
+
+
 ## [0.1.3](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.2...@exile-watch/unit-testing-config@0.1.3) (2024-03-10)
 
 
