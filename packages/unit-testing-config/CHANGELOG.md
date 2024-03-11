@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.5...@exile-watch/unit-testing-config@0.1.6) (2024-03-11)
+
+
+### ⚙️ Internal
+
+* **deps:** add jsdom dep ([96b6392](https://github.com/exile-watch/splinters/commit/96b63928acdea99a2fbd49bb3eb438bb2dc9a4eb))
+
+
+
 ## [0.1.5](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.4...@exile-watch/unit-testing-config@0.1.5) (2024-03-11)
 
 
