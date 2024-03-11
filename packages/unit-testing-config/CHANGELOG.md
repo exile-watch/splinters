@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.4...@exile-watch/unit-testing-config@0.1.5) (2024-03-11)
+
+
+### ⚙️ Internal
+
+* **deps:** update peer deps to be less strict ([e632bc5](https://github.com/exile-watch/splinters/commit/e632bc5ab8627699af224b7e905939f50a830e45))
+
+
+
 ## [0.1.4](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.3...@exile-watch/unit-testing-config@0.1.4) (2024-03-11)
 
 
