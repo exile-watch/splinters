@@ -31,7 +31,7 @@
   "devDependencies": {
     "@exile-watch/rollup-config": "^0.2.4",
     "@exile-watch/typescript-config": "^0.3.1",
-    "@exile-watch/writ-react": "^0.6.0",
+    "@exile-watch/writ-react": "^0.7.1",
     "@types/react": "^18.2.63",
     "react": "^18.2.0"
   },
