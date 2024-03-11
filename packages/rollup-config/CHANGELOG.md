@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.4...@exile-watch/rollup-config@0.2.5) (2024-03-11)
+
+
+### ⚙️ Internal
+
+* **deps:** bump the rollup-config-deps group with 5 updates ([cb8d5c4](https://github.com/exile-watch/splinters/commit/cb8d5c4ae8b57d7c711ffc6c4d04094ed5bac831))
+
+
+
 ## [0.2.4](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.3...@exile-watch/rollup-config@0.2.4) (2024-03-10)
 
 
