@@ -1,6 +1,6 @@
 import { defineConfig, UserConfig } from 'vitest/config'
 import tsconfigPaths from 'vite-tsconfig-paths'
-import {PluginOption, mergeConfig} from "vite";
+import {PluginOption} from "vite";
 
 const defaultConfig = (config?: UserConfig) => defineConfig({
   ...config,
@@ -20,4 +20,4 @@ const defaultConfig = (config?: UserConfig) => defineConfig({
   }
 })
 
-export {mergeConfig, defaultConfig}
+export {defaultConfig}
