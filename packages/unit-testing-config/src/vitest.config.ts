@@ -1,6 +1,6 @@
-import { mergeConfig, defineConfig, UserConfig } from 'vitest/config'
+import { defineConfig, UserConfig } from 'vitest/config'
 import tsconfigPaths from 'vite-tsconfig-paths'
-import {PluginOption} from "vite";
+import {PluginOption, mergeConfig} from "vite";
 
 const defaultConfig = (config?: UserConfig) => defineConfig({
   ...config,
