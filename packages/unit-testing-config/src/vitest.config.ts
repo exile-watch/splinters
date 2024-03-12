@@ -2,7 +2,9 @@ import { defineConfig } from 'vitest/config'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 const defaultConfig = defineConfig({
-  plugins: [tsconfigPaths()],
+  plugins: [
+    tsconfigPaths()
+  ],
   test: {
     globals: true,
     environment: 'jsdom',
