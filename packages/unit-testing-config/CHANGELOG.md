@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.7...@exile-watch/unit-testing-config@0.2.0) (2024-03-12)
+
+
+### ✨ Features
+
+* extend config ([1cbcc69](https://github.com/exile-watch/splinters/commit/1cbcc697e5a83aad2e7fc24a930abad693d0a3cf))
+* extend config ([0789b8b](https://github.com/exile-watch/splinters/commit/0789b8ba04b71835cbd9fa8400ba206147c3e677))
+
+
+### 🐞 Bug Fixes
+
+* remove mergeConfig export ([9a1eea5](https://github.com/exile-watch/splinters/commit/9a1eea5c499721b04e501f5c6283463193e69d37))
+* remove mergeConfig export ([8ffb05e](https://github.com/exile-watch/splinters/commit/8ffb05e45818fede5df0a3dd7ca70e41021eeedd))
+
+
+### ⚙️ Internal
+
+* **deps:** experiment with mocking next font ([5598e88](https://github.com/exile-watch/splinters/commit/5598e889c7ebba6e974884b93ddfab6fe70324fd))
+
+
+
 ## [0.1.7](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.1.6...@exile-watch/unit-testing-config@0.1.7) (2024-03-11)
 
 **Note:** Version bump only for package @exile-watch/unit-testing-config
