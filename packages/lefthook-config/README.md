@@ -26,7 +26,7 @@ This package contains shared lefthook configuration, lefthook dependency and com
 
 1. Install `@exile-watch/lefthook-config` as a `devDependency` in project's root dir
 ```bash
-$: npm i -D @exile-watch/lefthook-config
+npm i -D @exile-watch/lefthook-config
 ```
 
 2. Add/update following `config` and `scripts` properties in repo's root `package.json`:
@@ -34,6 +34,7 @@ $: npm i -D @exile-watch/lefthook-config
 // package.json
 {
   "scripts": {
+    "postinstall": "npx lefthook install",
     "lint": ...,        // "exit 0" if linting is not set
     "lint:apply": ...,  // "exit 0" if linting is not set
     "format": ...       // "exit 0" if formatting is not set
@@ -61,13 +62,3 @@ remotes:
     configs:
       - packages/lefthook-config/lefthook.yml
 ```
-
-5. Run `npx lefthook install` to sync lefthook configs
-
-> [!CAUTION]
-> This step syncs lefthook configs
-> 
-> Skipping this step after initial setup will throw `commitlint.sh (skip) not specified in config file` message
-
-> [!WARNING]
-> Every new minor version bump in your app will require `npx lefthook install` to sync configs
