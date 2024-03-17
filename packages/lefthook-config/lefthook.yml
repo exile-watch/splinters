@@ -11,7 +11,7 @@ pre-commit:
 
     "typecheck":
       glob: "*.{ts,tsx}"
-      run: npx tsc
+      run: npx tsc --noEmit
 
 commit-msg:
   scripts:
