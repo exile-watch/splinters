@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  "@exile-watch / doryani":
+  code-quality-assurance:
     runs-on: ubuntu-latest
     steps:
       - name: Code Quality Assurance
