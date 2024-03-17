@@ -1,4 +1,4 @@
-name: "@exile-watch / doryani"
+name: "Preview Publish Package: @exile-watch / doryani"
 
 on:
   pull_request_target:
