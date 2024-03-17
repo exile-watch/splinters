@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.4](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.3...@exile-watch/lefthook-config@0.5.4) (2024-03-17)
+
+
+### ⚙️ Internal
+
+* lint ([f22a79c](https://github.com/exile-watch/splinters/commit/f22a79c2370d8821c9cc80289555b210b257af33))
+
+
+
 ## [0.5.3](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.2...@exile-watch/lefthook-config@0.5.3) (2024-03-17)
 
 
