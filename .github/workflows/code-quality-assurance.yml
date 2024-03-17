@@ -1,4 +1,5 @@
-name: "@exile-watch / doryani"
+name: "Code Quality Assurance"
+run-name: "@exile-watch / doryani"
 
 on:
   push:
