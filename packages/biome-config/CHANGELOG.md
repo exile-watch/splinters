@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@0.3.0...@exile-watch/biome-config@0.3.1) (2024-03-17)
+
+
+### 🐞 Bug Fixes
+
+* add indendWidth option ([0faf4dc](https://github.com/exile-watch/splinters/commit/0faf4dcc4e474ac442cbd9d8e5630e866b185eb0))
+
+
+
 ## [0.3.0](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@0.2.2...@exile-watch/biome-config@0.3.0) (2024-03-17)
 
 
