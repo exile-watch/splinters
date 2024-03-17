@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.3](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.2...@exile-watch/lefthook-config@0.5.3) (2024-03-17)
+
+
+### 🐞 Bug Fixes
+
+* add noEmit flag to typecheck precommit git hook ([4cb6305](https://github.com/exile-watch/splinters/commit/4cb63059869f2b401dcf900cbe10f52ec4cafb5f))
+
+
+
 ## [0.5.2](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.1...@exile-watch/lefthook-config@0.5.2) (2024-03-11)
 
 

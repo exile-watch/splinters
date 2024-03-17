@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.6](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.5...@exile-watch/rollup-config@0.2.6) (2024-03-17)
+
+
+### 🐞 Bug Fixes
+
+* add missing less flag ([4cfb4c0](https://github.com/exile-watch/splinters/commit/4cfb4c0e2e3e422fa4144938b1b03c11dece6153))
+
+
+### ⚙️ Internal
+
+* **deps:** bump rollup from 2.79.1 to 4.13.0 ([f1f2302](https://github.com/exile-watch/splinters/commit/f1f2302165de12ba724c4a66694b82562c1dcc3e))
+* revert rollup bump ([c032d5a](https://github.com/exile-watch/splinters/commit/c032d5ab5bf1c0af2f3d36e6d1923b8e7e9c4186))
+
+
+
 ## [0.2.5](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.4...@exile-watch/rollup-config@0.2.5) (2024-03-11)
 
 
