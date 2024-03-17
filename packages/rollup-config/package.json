@@ -1,55 +1,53 @@
 {
-  "name": "@exile-watch/rollup-config",
-  "version": "0.2.5",
-  "description": "Shared Rollup configuration for building JavaScript libraries into internal NPM packages",
-  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/rollup-config",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/exile-watch/splinters.git",
-    "directory": "packages/rollup-config"
-  },
-  "main": "dist/rollup.config.js",
-  "module": "dist/rollup.config.esm.js",
-  "types": "dist/rollup.config.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "_clean": "del-cli dist",
-    "_build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
-    "build": "run-s _clean _build",
-    "typecheck": "npx tsc --noEmit"
-  },
-  "dependencies": {
-    "@exile-watch/postcss-config": "^0.2.2",
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@rollup/plugin-yaml": "^4.1.2",
-    "acorn-jsx": "^5.3.2",
-    "del-cli": "^5.1.0",
-    "lodash.kebabcase": "^4.1.1",
-    "rollup": "^4.13.0",
-    "rollup-plugin-includepaths": "^0.2.4",
-    "rollup-plugin-postcss": "^4.0.2",
-    "sass": "^1.42.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.23.9",
-    "@babel/plugin-transform-runtime": "^7.23.9",
-    "@babel/preset-env": "^7.23.9",
-    "@babel/preset-typescript": "^7.23.3",
-    "@exile-watch/typescript-config": "^0.3.1",
-    "@schemastore/package": "^0.0.6",
-    "@types/jest": "^26.0.22",
-    "@types/lodash.kebabcase": "^4.1.6",
-    "identity-obj-proxy": "^3.0.0",
-    "npm-run-all": "^4.1.5",
-    "tslib": "^2.3.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
-  }
+	"name": "@exile-watch/rollup-config",
+	"version": "0.2.5",
+	"description": "Shared Rollup configuration for building JavaScript libraries into internal NPM packages",
+	"homepage": "https://github.com/exile-watch/splinters/pkgs/npm/rollup-config",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/exile-watch/splinters.git",
+		"directory": "packages/rollup-config"
+	},
+	"main": "dist/rollup.config.js",
+	"module": "dist/rollup.config.esm.js",
+	"types": "dist/rollup.config.d.ts",
+	"files": ["dist"],
+	"scripts": {
+		"_clean": "del-cli dist",
+		"_build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+		"build": "run-s _clean _build",
+		"typecheck": "npx tsc --noEmit"
+	},
+	"dependencies": {
+		"@exile-watch/postcss-config": "^0.2.2",
+		"@rollup/plugin-commonjs": "^25.0.7",
+		"@rollup/plugin-json": "^6.1.0",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"@rollup/plugin-yaml": "^4.1.2",
+		"acorn-jsx": "^5.3.2",
+		"del-cli": "^5.1.0",
+		"lodash.kebabcase": "^4.1.1",
+		"rollup": "^2.56.3",
+		"rollup-plugin-includepaths": "^0.2.4",
+		"rollup-plugin-postcss": "^4.0.2",
+		"sass": "^1.42.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.9",
+		"@babel/plugin-transform-runtime": "^7.23.9",
+		"@babel/preset-env": "^7.23.9",
+		"@babel/preset-typescript": "^7.23.3",
+		"@exile-watch/typescript-config": "^0.3.1",
+		"@schemastore/package": "^0.0.6",
+		"@types/jest": "^26.0.22",
+		"@types/lodash.kebabcase": "^4.1.6",
+		"identity-obj-proxy": "^3.0.0",
+		"npm-run-all": "^4.1.5",
+		"tslib": "^2.3.0"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/",
+		"access": "public"
+	}
 }
