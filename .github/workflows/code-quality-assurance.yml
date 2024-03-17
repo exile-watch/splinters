@@ -1,0 +1,16 @@
+name: "Code Quality Assurance"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  "@exile-watch / doryani":
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code Quality Assurance
+        uses: exile-watch/doryani/code-quality-assurance@main
+        with:
+          GH_ACTOR: ${{ github.actor }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
