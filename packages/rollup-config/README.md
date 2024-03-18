@@ -1,38 +1,20 @@
-<p align="center">
-  <a href="https://rollupjs.org/">
-    <img alt="rollup logo" src="./rollup-logo.svg" width="200" />
+<div align="center">
+  <a href="https://exile.watch">
+    <img alt="exile.watch logo" src="https://avatars.githubusercontent.com/u/158840748?s=400&u=4c73ba2a9a2ebc70b01c6303d41e8571df84ec37&v=4" width="300" />
   </a>
-</p>
-<h1 align="center">
-  <code>@exile-watch/rollup-config</code>
-</h1>
 
-## Description
+## [`@exile-watch/rollup-config`](https://docs.exile.watch/projects/splinters/exile-watch-rollup-config)
 
-Shared `Rollup` configuration for exile.watch frontend projects.
+Shared Rollup configuration for exile.watch projects
 
-## About Rollup
+| Want to contribute?                                  | 📖 [Check the docs](https://docs.exile.watch/projects/splinters/contributing)                      |
+|:-----------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| Encountered a bug?                                   | 🐞 [Check issues or create a new one](https://github.com/exile-watch/hideout/issues)               |
+| Have an idea for a new feature?                      | 💡 [Check the discussions or create a new one](https://github.com/exile-watch/hideout/discussions) |
+| exile.watch projects                                 | 📦 [Read about them here](https://docs.exile.watch/projects/hideout#links-to-projects)             | 
+| Anything else is on your mind?                       | 💬 [Head over to exile.watch's hideout](https://github.com/exile-watch/hideout)                    |
+| Curious about exile.watch architecture decisions?    | 🛠️ [Read exile.watch engineering blog](https://engineering.exile.watch/)                          | 
 
-[Rollup](https://rollupjs.org/) is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.
+##### [Why project setup is not part of README?](https://engineering.exile.watch/march-2024/why-projects-local-setup-instructions-are-not-part-of-readme)
 
-## About this package
-
-This package contains both, shared Rollup configuration and the Rollup dependency itself.
-
-## Usage
-
-1. Create a new configuration file at `./rollup.config.ts`:
-```ts
-// rollup.config.ts
-
-import createRollupConfig from '@exile-watch/rollup-config'
-
-export default createRollupConfig()
-```
-
-2. Add `build` script to `package.json`
-```json
-{
-  "build": "rollup -c"
-}
-```
+</div>
