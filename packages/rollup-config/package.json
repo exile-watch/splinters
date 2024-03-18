@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/rollup-config",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Shared Rollup configuration for building JavaScript libraries into internal NPM packages",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/rollup-config",
   "repository": {
@@ -40,7 +40,7 @@
     "@babel/plugin-transform-runtime": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-typescript": "^7.23.3",
-    "@exile-watch/typescript-config": "^0.3.1",
+    "@exile-watch/typescript-config": "^0.3.2",
     "@schemastore/package": "^0.0.6",
     "@types/jest": "^26.0.22",
     "@types/lodash.kebabcase": "^4.1.6",

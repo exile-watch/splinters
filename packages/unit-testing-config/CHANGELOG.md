@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.2.1...@exile-watch/unit-testing-config@0.2.2) (2024-03-18)
+
+
+### 📄 Documentation
+
+* update readme ([5a6d745](https://github.com/exile-watch/splinters/commit/5a6d745b01482110ecfb98e4981e8ef6d8f58724))
+
+
+
 ## [0.2.1](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.2.0...@exile-watch/unit-testing-config@0.2.1) (2024-03-17)
 
 **Note:** Version bump only for package @exile-watch/unit-testing-config
