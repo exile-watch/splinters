@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.6](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.5...@exile-watch/lefthook-config@0.5.6) (2024-03-21)
+
+
+### ⚙️ Code Quality
+
+* remove format and lint apply commands ([a0b0c91](https://github.com/exile-watch/splinters/commit/a0b0c91fa838d041e1c58e95454e26447fb23838))
+
+
+
 ## [0.5.5](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.4...@exile-watch/lefthook-config@0.5.5) (2024-03-18)
 
 
