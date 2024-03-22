@@ -8,6 +8,7 @@
 		".": "./biome.json"
 	},
 	"scripts": {
+		"ci:lint": "npx @biomejs/biome ci .",
 		"lint": "npx @biomejs/biome check .",
 		"lint:apply": "npx @biomejs/biome check --apply .",
 		"format": "npx @biomejs/biome format --write ."
