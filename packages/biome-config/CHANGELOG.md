@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.4](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@0.3.3...@exile-watch/biome-config@0.3.4) (2024-03-22)
+
+
+### ⚙️ Internal
+
+* add ci command ([af6b97a](https://github.com/exile-watch/splinters/commit/af6b97a351eee2a9912992d18649dd5878a76b04))
+* add missing "ci:lint" script ([542750e](https://github.com/exile-watch/splinters/commit/542750e1766821252839ca4a28a7e22a39c098f6))
+* add missing "ci:lint" script ([09c1f1c](https://github.com/exile-watch/splinters/commit/09c1f1c610dcb868ada4ba055809e868cc0f1c0f))
+
+
+
 ## [0.3.3](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@0.3.2...@exile-watch/biome-config@0.3.3) (2024-03-18)
 
 

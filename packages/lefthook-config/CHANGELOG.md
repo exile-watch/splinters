@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.8](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.7...@exile-watch/lefthook-config@0.5.8) (2024-03-22)
+
+
+### ⚙️ Internal
+
+* add missing "ci:lint" script ([a54e3a8](https://github.com/exile-watch/splinters/commit/a54e3a87aea46d183c83226450f79e5721bb7651))
+* adjust pre-commit ([b37eb94](https://github.com/exile-watch/splinters/commit/b37eb94e607a87af0b2930480d7f1dd60b693c67))
+
+
+
 ## [0.5.7](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.6...@exile-watch/lefthook-config@0.5.7) (2024-03-22)
 
 
