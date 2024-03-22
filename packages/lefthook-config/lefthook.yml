@@ -3,11 +3,11 @@ pre-commit:
   commands:
     lint:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,yml,yaml}"
-      run: npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
+      run: npm run lint
 
     "lint:apply":
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,yml,yaml}"
-      run: npx @biomejs/biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again
+      run: npm run lint:apply
 
     "typecheck":
       glob: "*.{ts,tsx}"
