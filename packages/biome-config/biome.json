@@ -1,35 +1,35 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
-	"files": {
-		"ignore": ["node_modules", ".next", ".nx", "out", "dist"]
-	},
-	"organizeImports": {
-		"enabled": true
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
-			"a11y": {
-				"useKeyWithClickEvents": "off"
-			},
-			"suspicious": {
-				"noExplicitAny": "off",
-				"noArrayIndexKey": "off",
-				"noShadowRestrictedNames": "off"
-			},
-			"correctness": {
-				"useExhaustiveDependencies": "off"
-			},
-			"complexity": {
-				"noExtraBooleanCast": "off",
-				"noForEach": "off"
-			}
-		}
-	},
-	"formatter": {
-		"lineEnding": "lf",
-		"indentStyle": "space",
-		"indentWidth": 2
-	}
+  "$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
+  "files": {
+    "ignore": ["node_modules", ".next", ".nx", "out", "dist"]
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noShadowRestrictedNames": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      },
+      "complexity": {
+        "noExtraBooleanCast": "off",
+        "noForEach": "off"
+      }
+    }
+  },
+  "formatter": {
+    "lineEnding": "lf",
+    "indentStyle": "space",
+    "indentWidth": 2
+  }
 }

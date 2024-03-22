@@ -1,31 +1,31 @@
 {
-	"name": "@exile-watch/biome-config",
-	"version": "0.3.3",
-	"description": "Shared Biome.js configuration for exile.watch frontend projects",
-	"main": "biome.json",
-	"type": "module",
-	"exports": {
-		".": "./biome.json"
-	},
-	"scripts": {
-		"ci:lint": "npx @biomejs/biome ci .",
-		"lint": "npm run format && npx @biomejs/biome check .",
-		"lint:apply": "npx @biomejs/biome check --apply .",
-		"format": "npx @biomejs/biome format --write ."
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/exile-watch/splinters.git",
-		"directory": "packages/biome-config"
-	},
-	"author": "Sebastian Krzyzanowski",
-	"license": "ISC",
-	"homepage": "https://github.com/exile-watch/splinters/pkgs/npm/biome-config",
-	"dependencies": {
-		"@biomejs/biome": "^1.6.1"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/",
-		"access": "public"
-	}
+  "name": "@exile-watch/biome-config",
+  "version": "0.3.3",
+  "description": "Shared Biome.js configuration for exile.watch frontend projects",
+  "main": "biome.json",
+  "type": "module",
+  "exports": {
+    ".": "./biome.json"
+  },
+  "scripts": {
+    "ci:lint": "npx @biomejs/biome ci .",
+    "lint": "npm run format && npx @biomejs/biome check .",
+    "lint:apply": "npx @biomejs/biome check --apply .",
+    "format": "npx @biomejs/biome format --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exile-watch/splinters.git",
+    "directory": "packages/biome-config"
+  },
+  "author": "Sebastian Krzyzanowski",
+  "license": "ISC",
+  "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/biome-config",
+  "dependencies": {
+    "@biomejs/biome": "^1.6.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  }
 }
