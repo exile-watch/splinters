@@ -11,7 +11,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "saturday"
-      time: "10:35"
+      time: "05:00"
       timezone: "Europe/Warsaw"
     groups:
       exile-watch:
@@ -31,4 +31,8 @@ updates:
           - "@testing-library*"
           - "vite-tsconfig-paths"
           - "vitest"
+      lerna:
+        patterns:
+          - "lerna"
+          - "nx"
 
