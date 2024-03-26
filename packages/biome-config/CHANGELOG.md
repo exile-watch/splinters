@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.5](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@0.3.4...@exile-watch/biome-config@0.3.5) (2024-03-26)
+
+
+### ⚙️ Internal
+
+* bump biome ([ed785aa](https://github.com/exile-watch/splinters/commit/ed785aa0f9b950b2a98a4aa276c38be6c02e4b62))
+
+
+
 ## [0.3.4](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@0.3.3...@exile-watch/biome-config@0.3.4) (2024-03-22)
 
 
