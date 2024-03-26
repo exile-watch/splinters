@@ -11,6 +11,7 @@
 		"build": "lerna run build",
 		"typecheck": "lerna run typecheck",
 		"ci:lint": "lerna run ci:lint",
+		"ci:typecheck": "lerna run ci:typecheck",
 		"lint": "npm run format && lerna run lint",
 		"lint:apply": "lerna run lint:apply",
 		"format": "lerna run format",
