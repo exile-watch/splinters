@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.11](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.10...@exile-watch/lefthook-config@0.5.11) (2024-03-27)
+
+
+### ⚙️ Internal
+
+* experiment with biome check ([10d4ed9](https://github.com/exile-watch/splinters/commit/10d4ed90a3cb0e2db8e180a38ff29a62e52e95ad))
+
+
+
 ## [0.5.10](https://github.com/exile-watch/splinters/compare/@exile-watch/lefthook-config@0.5.9...@exile-watch/lefthook-config@0.5.10) (2024-03-26)
 
 
