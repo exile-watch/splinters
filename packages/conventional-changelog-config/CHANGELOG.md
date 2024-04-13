@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/exile-watch/splinters/compare/@exile-watch/conventional-changelog-config@0.2.3...@exile-watch/conventional-changelog-config@1.1.0) (2024-04-13)
+
+
+### ✨ Features
+
+* manually change version to 1.0.0 ([9f0d132](https://github.com/exile-watch/splinters/commit/9f0d1327ecfda3e8c7a10feee8fc4753a8fa347b))
+
+
+
 ## [0.2.3](https://github.com/exile-watch/splinters/compare/@exile-watch/conventional-changelog-config@0.2.2...@exile-watch/conventional-changelog-config@0.2.3) (2024-03-18)
 
 

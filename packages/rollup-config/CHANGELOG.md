@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.7...@exile-watch/rollup-config@1.1.0) (2024-04-13)
+
+
+### ✨ Features
+
+* manually change version to 1.0.0 ([9f0d132](https://github.com/exile-watch/splinters/commit/9f0d1327ecfda3e8c7a10feee8fc4753a8fa347b))
+
+
+### ⚙️ Internal
+
+* **deps-dev:** bump @types/jest from 26.0.24 to 29.5.12 ([bd45421](https://github.com/exile-watch/splinters/commit/bd4542143fd1f87e3b2f0e383c92207d8c0b946b))
+
+
+
 ## [0.2.7](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.6...@exile-watch/rollup-config@0.2.7) (2024-03-18)
 
 

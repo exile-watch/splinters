@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/lefthook-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Shared lefthook configuration for git hooks managers in exile.watch frontend projects",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/lefthook-config",
   "repository": {
@@ -9,7 +9,10 @@
     "directory": "packages/lefthook-config"
   },
   "main": "lefthook.yml",
-  "files": ["lefthook.yml", "scripts"],
+  "files": [
+    "lefthook.yml",
+    "scripts"
+  ],
   "dependencies": {
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",

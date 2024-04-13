@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.2.2...@exile-watch/unit-testing-config@1.1.0) (2024-04-13)
+
+
+### ✨ Features
+
+* manually change version to 1.0.0 ([9f0d132](https://github.com/exile-watch/splinters/commit/9f0d1327ecfda3e8c7a10feee8fc4753a8fa347b))
+
+
+### ⚙️ Internal
+
+* **deps:** bump the unit-testing-config-deps group with 2 updates ([67e7471](https://github.com/exile-watch/splinters/commit/67e7471e97da63a4b6024fd0cc1a086353e249bc))
+
+
+
 ## [0.2.2](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.2.1...@exile-watch/unit-testing-config@0.2.2) (2024-03-18)
 
 
