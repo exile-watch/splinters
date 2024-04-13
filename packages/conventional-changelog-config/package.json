@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/conventional-changelog-config",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "Shared changelog generation from git metadata",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/conventional-changelog-config",
   "repository": {
@@ -8,9 +8,7 @@
     "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/conventional-changelog-config"
   },
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "public"

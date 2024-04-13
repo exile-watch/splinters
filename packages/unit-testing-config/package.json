@@ -1,11 +1,9 @@
 {
   "name": "@exile-watch/unit-testing-config",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
   "main": "dist/index.mjs",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "type": "module",
   "scripts": {
     "_clean": "del-cli dist",

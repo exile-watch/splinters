@@ -31,8 +31,12 @@ updates:
           - "@testing-library*"
           - "vite-tsconfig-paths"
           - "vitest"
+          - "jsdom"
       lerna:
         patterns:
           - "lerna"
           - "nx"
+      types:
+        patterns:
+          - "@types*"
 
