@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/rollup-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Shared Rollup configuration for building JavaScript libraries into internal NPM packages",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/rollup-config",
   "repository": {
@@ -11,7 +11,9 @@
   "main": "dist/rollup.config.js",
   "module": "dist/rollup.config.esm.js",
   "types": "dist/rollup.config.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "_clean": "del-cli dist",
     "_build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",

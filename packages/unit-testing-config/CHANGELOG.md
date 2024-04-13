@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@1.1.0...@exile-watch/unit-testing-config@1.1.1) (2024-04-13)
+
+
+### ⚙️ Internal
+
+* bump exile watch deps ([7b2c3b5](https://github.com/exile-watch/splinters/commit/7b2c3b575e0edafe010cc1c199f79eaf7a1fed6e))
+* remove unused types jest pkg ([26f26c7](https://github.com/exile-watch/splinters/commit/26f26c7c7d8e9c5ae351f8cf04d6c4389a612f32))
+
+
+
 ## [1.1.0](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@0.2.2...@exile-watch/unit-testing-config@1.1.0) (2024-04-13)
 
 

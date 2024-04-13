@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@1.1.0...@exile-watch/rollup-config@1.1.1) (2024-04-13)
+
+
+### ⚙️ Internal
+
+* remove unused types jest pkg ([26f26c7](https://github.com/exile-watch/splinters/commit/26f26c7c7d8e9c5ae351f8cf04d6c4389a612f32))
+
+
+
 ## [1.1.0](https://github.com/exile-watch/splinters/compare/@exile-watch/rollup-config@0.2.7...@exile-watch/rollup-config@1.1.0) (2024-04-13)
 
 
