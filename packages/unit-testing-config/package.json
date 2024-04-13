@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@exile-watch/postcss-config": "^1.1.0",
-    "@exile-watch/rollup-config": "^1.1.0",
-    "@exile-watch/typescript-config": "^1.1.0",
+    "@exile-watch/rollup-config": "^0.2.7",
+    "@exile-watch/typescript-config": "^0.3.2",
     "@exile-watch/writ-react": "^1.0.2",
     "@types/react": "^18.2.63",
     "react": "^18.2.0"

@@ -1,19 +1,16 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "@exile-watch/typescript-config/tsconfig.rollup.json",
   "compilerOptions": {
-    "target": "es6",                          // Compile to ES5
-    "module": "es6",                       // Use ES modules
-    "jsx": "react",                           // Transform JSX into React.createElement calls
-    "outDir": "./dist",                       // Output directory for compiled files
-    "strict": true,                           // Enable all strict type-checking options
-    "moduleResolution": "node",               // Module resolution strategy
-    "esModuleInterop": true,                  // Enable default imports from modules with no default export
-    "skipLibCheck": true,                     // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
-    "sourceMap": false,
-
-    // Other options here
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": "./src",
+    "module": "ESNext",
+    "target": "ES6",
+    "paths": {
+      "@exile-watch/*": ["./packages/*/"]
+    }
   },
-  "include": ["src/**/*"], // Compile all files in src (including .tsx files)
-  "exclude": ["node_modules", "dist"] // Don't compile node_modules or dist
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
