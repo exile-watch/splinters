@@ -3,9 +3,7 @@
   "version": "1.1.1",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
   "main": "dist/index.mjs",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "type": "module",
   "scripts": {
     "_clean": "del-cli dist",
@@ -32,7 +30,7 @@
     "@exile-watch/postcss-config": "^1.1.0",
     "@exile-watch/rollup-config": "^0.2.7",
     "@exile-watch/typescript-config": "^0.3.2",
-    "@exile-watch/writ-react": "^1.0.2",
+    "@exile-watch/writ-react": "^1.0.3",
     "@types/react": "^18.2.63",
     "react": "^18.2.0"
   },
