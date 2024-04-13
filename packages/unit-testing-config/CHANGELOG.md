@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@1.1.1...@exile-watch/unit-testing-config@1.1.2) (2024-04-13)
+
+
+### ⚙️ Internal
+
+* bump writ react to latest ([fca1678](https://github.com/exile-watch/splinters/commit/fca167861c7a85cf62f2592c86d77b48caf68267))
+
+
+
 ## [1.1.1](https://github.com/exile-watch/splinters/compare/@exile-watch/unit-testing-config@1.1.0...@exile-watch/unit-testing-config@1.1.1) (2024-04-13)
 
 
