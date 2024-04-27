@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@1.1.1...@exile-watch/biome-config@1.1.2) (2024-04-27)
+
+
+### ⚙️ Internal
+
+* **deps:** bump @biomejs/biome from 1.7.0 to 1.7.1 ([f4f0025](https://github.com/exile-watch/splinters/commit/f4f002533449d8414198a758730aaadfcaf28f41))
+
+
+
 ## [1.1.1](https://github.com/exile-watch/splinters/compare/@exile-watch/biome-config@1.1.0...@exile-watch/biome-config@1.1.1) (2024-04-23)
 
 
