@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/exile-watch/splinters/compare/@exile-watch/postcss-config@1.1.0...@exile-watch/postcss-config@1.1.1) (2024-05-04)
+
+
+### ⚙️ Internal
+
+* **deps:** bump postcss-preset-mantine from 1.14.4 to 1.15.0 ([a4b910a](https://github.com/exile-watch/splinters/commit/a4b910a8059392ed1e356c57718ccd43ee683dc3))
+
+
+
 ## [1.1.0](https://github.com/exile-watch/splinters/compare/@exile-watch/postcss-config@0.2.2...@exile-watch/postcss-config@1.1.0) (2024-04-13)
 
 
