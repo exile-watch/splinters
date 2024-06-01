@@ -28,7 +28,7 @@
 		"@exile-watch/biome-config": "^0.3.5",
 		"@exile-watch/conventional-changelog-config": "^0.2.1",
 		"@exile-watch/lefthook-config": "^0.5.7",
-		"@nx/vite": "18.3.3",
+		"@nx/vite": "19.1.1",
 		"@nx/web": "19.1.1",
 		"@vitest/ui": "^1.6.0",
 		"lerna": "^8.1.3",
