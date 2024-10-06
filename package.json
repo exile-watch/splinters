@@ -34,7 +34,7 @@
 		"lerna": "^8.1.8",
 		"nx": "19.8.4",
 		"vite": "~5.4.8",
-		"vitest": "^1.6.0"
+		"vitest": "^2.1.2"
 	},
 	"workspaces": [
 		"packages/*"
