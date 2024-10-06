@@ -8,9 +8,10 @@
       "message": "chore(release): publish [skip ci]",
       "commitHooks": false,
       "changelogPreset": "@exile-watch/conventional-changelog-config"
+    },
+    "publish": {
+      "includeDependencies": true
     }
   },
-  "packages": [
-    "packages/*"
-  ]
+  "packages": ["packages/*"]
 }
