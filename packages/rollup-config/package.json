@@ -22,10 +22,10 @@
   },
   "dependencies": {
     "@exile-watch/postcss-config": "^0.2.2",
-    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
     "@rollup/plugin-yaml": "^4.1.2",
     "acorn-jsx": "^5.3.2",
     "del-cli": "^5.1.0",
