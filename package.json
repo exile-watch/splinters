@@ -15,7 +15,8 @@
     "format": "turbo run format",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
