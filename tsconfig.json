@@ -1,11 +1,9 @@
 {
-  "extends": "@exile-watch/typescript-config/tsconfig.rollup.json",
+  "extends": "@exile-watch/typescript-config/tsconfig.lib.json",
   "compilerOptions": {
     "checkJs": false,
     "paths": {
-      "@exile-watch/": [
-        "./packages/*/"
-      ]
+      "@exile-watch/": ["./packages/*/"]
     }
   }
 }

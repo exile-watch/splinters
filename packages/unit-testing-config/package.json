@@ -2,16 +2,15 @@
   "name": "@exile-watch/unit-testing-config",
   "version": "1.1.4",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
-  "main": "dist/index.mjs",
-  "files": [
-    "dist"
-  ],
+  "main": "dist/index.es.js",
+  "module": "dis/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "type": "module",
   "scripts": {
-    "_clean": "del-cli dist",
-    "_build": "rollup -c",
-    "build": "npm run _build",
-    "typecheck": "npx tsc"
+    "clean": "del-cli dist",
+    "build": "npm run clean && vite build",
+    "typecheck": "tsc"
   },
   "repository": {
     "type": "git",
@@ -30,8 +29,8 @@
   },
   "devDependencies": {
     "@exile-watch/postcss-config": "^1.1.1",
-    "@exile-watch/rollup-config": "^0.2.7",
     "@exile-watch/typescript-config": "^0.3.2",
+    "@exile-watch/vite-config": "*",
     "@exile-watch/writ-react": "^1.0.3",
     "@types/react": "^18.3.3",
     "react": "^18.3.1"
