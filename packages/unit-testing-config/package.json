@@ -27,10 +27,10 @@
     "react": ">=18.2.0"
   },
   "devDependencies": {
-    "@exile-watch/postcss-config": "^1.1.1",
-    "@exile-watch/typescript-config": "^0.3.2",
+    "@exile-watch/postcss-config": "*",
+    "@exile-watch/typescript-config": "*",
     "@exile-watch/vite-config": "*",
-    "@exile-watch/writ-react": "^1.0.3",
+    "@exile-watch/writ-react": "*",
     "@types/react": "^19.0.10",
     "react": "^19.0.0"
   },
