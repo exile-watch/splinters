@@ -8,8 +8,7 @@
   "files": ["dist"],
   "type": "module",
   "scripts": {
-    "clean": "del-cli dist",
-    "build": "npm run clean && vite build",
+    "build": "vite build",
     "typecheck": "tsc"
   },
   "repository": {
