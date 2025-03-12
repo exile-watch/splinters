@@ -1,16 +1,33 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
+    "postinstall": {
+      "dependsOn": ["^postinstall"]
+    },
+    "ci:typecheck": {
+      "dependsOn": ["^ci:typecheck"]
+    },
+    "ci:lint": {
+      "dependsOn": ["^ci:lint"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "lint:apply": {
+      "dependsOn": ["^lint:apply"]
+    },
+    "format": {
+      "dependsOn": ["^format"]
+    },
     "typecheck": {
       "dependsOn": ["^typecheck"]
+    },
+    "test": {
+      "dependsOn": ["^test"]
     },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
-    },
-    "dev": {
-      "persistent": true,
-      "cache": false
     }
   }
 }

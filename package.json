@@ -8,14 +8,14 @@
   },
   "scripts": {
     "postinstall": "npx lefthook install",
-    "build": "turbo run build",
-    "typecheck": "turbo run typecheck",
-    "ci:lint": "turbo run ci:lint",
     "ci:typecheck": "exit 0",
+    "ci:lint": "turbo run ci:lint",
     "lint": "npm run format && turbo run lint",
     "lint:apply": "turbo run lint:apply",
     "format": "turbo run format",
-    "test": "turbo run test"
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "build": "turbo run build"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
