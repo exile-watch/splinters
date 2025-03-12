@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/vite-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Shared Vite configuration for exile.watch projects",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/vite-config",
   "repository": {
