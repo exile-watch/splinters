@@ -19,6 +19,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "del-cli": "^6.0.0",
     "vite": "^6.2.1",
     "vite-plugin-dts": "^4.5.3"
   },

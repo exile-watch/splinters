@@ -35,6 +35,7 @@ const libConfig = ({
                 "fs",
                 "module",
                 "util",
+                "del-cli",
               ],
               output: {
                 globals: {
