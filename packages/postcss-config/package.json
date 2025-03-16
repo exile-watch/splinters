@@ -10,7 +10,9 @@
   },
   "main": "postcss.config.js",
   "files": ["postcss.config.js"],
-  "scripts": {},
+  "scripts": {
+    "release": "auto shipit"
+  },
   "dependencies": {
     "postcss": "^8.4.47",
     "postcss-preset-mantine": "^1.17.0",

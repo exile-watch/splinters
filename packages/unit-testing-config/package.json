@@ -9,7 +9,8 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "release": "auto shipit"
   },
   "repository": {
     "type": "git",

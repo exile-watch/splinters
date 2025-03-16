@@ -9,10 +9,10 @@
     "directory": "packages/lefthook-config"
   },
   "main": "lefthook.yml",
-  "files": [
-    "lefthook.yml",
-    "scripts"
-  ],
+  "scripts": {
+    "release": "auto shipit"
+  },
+  "files": ["lefthook.yml", "scripts"],
   "dependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",

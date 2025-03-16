@@ -8,9 +8,10 @@
     "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/conventional-changelog-config"
   },
-  "files": [
-    "index.js"
-  ],
+  "scripts": {
+    "release": "auto shipit"
+  },
+  "files": ["index.js"],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "public"

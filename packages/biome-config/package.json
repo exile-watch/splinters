@@ -11,7 +11,8 @@
     "ci:lint": "npx @biomejs/biome ci .",
     "lint": "npm run format && npx @biomejs/biome check .",
     "lint:apply": "npx @biomejs/biome check --apply .",
-    "format": "npx @biomejs/biome format --write ."
+    "format": "npx @biomejs/biome format --write .",
+    "release": "auto shipit"
   },
   "repository": {
     "type": "git",
