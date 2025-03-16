@@ -10,7 +10,7 @@
   },
   "main": "lefthook.yml",
   "scripts": {
-    "release": "semantic-release -e semantic-release-monorepo"
+    "release": "release-it --ci"
   },
   "files": ["lefthook.yml", "scripts"],
   "dependencies": {
@@ -19,6 +19,9 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "lefthook": "^1.7.18"
+  },
+  "devDependencies": {
+    "@exile-watch/release-it-config": "*"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",

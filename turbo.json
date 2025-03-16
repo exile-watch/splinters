@@ -26,7 +26,8 @@
       "dependsOn": ["^test"]
     },
     "release": {
-      "dependsOn": ["^release"]
+      "dependsOn": ["^release"],
+      "outputLogs": "new-only"
     },
     "build": {
       "dependsOn": ["^build"],

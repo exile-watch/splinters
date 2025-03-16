@@ -10,7 +10,7 @@
   "scripts": {
     "build": "vite build",
     "typecheck": "tsc",
-    "release": "semantic-release -e semantic-release-monorepo"
+    "release": "release-it --ci"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "@exile-watch/typescript-config": "*",
     "@exile-watch/vite-config": "*",
     "@exile-watch/writ-react": "*",
+    "@exile-watch/release-it-config": "*",
     "@types/react": "^19.0.10",
     "react": "^19.0.0"
   },

@@ -9,7 +9,7 @@
     "directory": "packages/conventional-changelog-config"
   },
   "scripts": {
-    "release": "semantic-release -e semantic-release-monorepo"
+    "release": "release-it --ci"
   },
   "files": ["index.js"],
   "publishConfig": {
@@ -18,6 +18,9 @@
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^8.0.0"
+  },
+  "devDependencies": {
+    "@exile-watch/release-it-config": "*"
   },
   "main": "index.js"
 }
