@@ -25,6 +25,9 @@
     "test": {
       "dependsOn": ["^test"]
     },
+    "release": {
+      "dependsOn": ["^release"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
