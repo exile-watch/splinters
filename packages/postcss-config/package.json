@@ -11,7 +11,7 @@
   "main": "postcss.config.js",
   "files": ["postcss.config.js"],
   "scripts": {
-    "release": "auto shipit"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "dependencies": {
     "postcss": "^8.4.47",

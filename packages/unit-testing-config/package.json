@@ -10,7 +10,7 @@
   "scripts": {
     "build": "vite build",
     "typecheck": "tsc",
-    "release": "auto shipit"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "repository": {
     "type": "git",

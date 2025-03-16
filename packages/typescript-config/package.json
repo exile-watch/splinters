@@ -10,7 +10,7 @@
     "directory": "packages/typescript-config"
   },
   "scripts": {
-    "release": "auto shipit"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",

@@ -9,7 +9,7 @@
     "directory": "packages/conventional-changelog-config"
   },
   "scripts": {
-    "release": "auto shipit"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "files": ["index.js"],
   "publishConfig": {

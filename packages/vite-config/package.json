@@ -16,7 +16,7 @@
   "scripts": {
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "release": "auto shipit"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "dependencies": {
     "vite": "^6.2.1",
