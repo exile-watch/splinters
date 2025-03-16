@@ -17,7 +17,7 @@
     "test": "turbo run test",
     "build": "turbo run build",
     "publish-packages": "turbo run build lint test && changeset version && changeset publish",
-    "release": "turbo run release"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
