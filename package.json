@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/exile-watch/splinters#readme",
   "devDependencies": {
+    "@auto-it/all-contributors": "^11.3.0",
+    "@auto-it/conventional-commits": "^11.3.0",
+    "@auto-it/first-time-contributor": "^11.3.0",
     "@exile-watch/biome-config": "*",
     "@exile-watch/lefthook-config": "*",
     "@vitest/ui": "^3.0.8",
@@ -46,10 +49,19 @@
   },
   "auto": {
     "plugins": [
-      "npm",
+      [
+        "npm",
+        {
+          "monorepoChangelog": false
+        }
+      ],
       "all-contributors",
       "conventional-commits",
       "first-time-contributor"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
   }
 }
