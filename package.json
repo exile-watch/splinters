@@ -17,7 +17,7 @@
     "test": "turbo run test",
     "build": "turbo run build",
     "publish-packages": "turbo run build lint test && changeset version && changeset publish",
-    "release": "auto shipit"
+    "release": "turbo run release"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
@@ -29,6 +29,7 @@
     "@auto-it/all-contributors": "^11.3.0",
     "@auto-it/conventional-commits": "^11.3.0",
     "@auto-it/first-time-contributor": "^11.3.0",
+    "@auto-it/npm": "^11.3.0",
     "@exile-watch/biome-config": "*",
     "@exile-watch/lefthook-config": "*",
     "@vitest/ui": "^3.0.8",
