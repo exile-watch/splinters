@@ -25,6 +25,10 @@
     "test": {
       "dependsOn": ["^test"]
     },
+    "release": {
+      "dependsOn": ["^release"],
+      "outputLogs": "new-only"
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
