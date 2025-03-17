@@ -9,6 +9,7 @@ type LibConfigProps = {
   config?: UserConfig;
 };
 
+console.log("trigger release");
 const libConfig = ({
   dirname = import.meta.url,
   config = {},
