@@ -1,4 +1,4 @@
 {
-  "extends": "@exile-watch/typescript-config/tsconfig.rollup.json",
+  "extends": "@exile-watch/typescript-config/tsconfig.lib.json",
   "include": ["index.ts", "configs"]
 }

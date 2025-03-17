@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "Shared TypeScript configuration for exile.watch frontend projects",
   "main": "tsconfig.json",
-  "files": ["tsconfig.json", "tsconfig.rollup.json"],
+  "files": ["tsconfig.json", "tsconfig.lib.json"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/exile-watch/splinters.git",
