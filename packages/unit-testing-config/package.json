@@ -9,8 +9,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "typecheck": "tsc",
-    "release": "release-it --ci"
+    "typecheck": "tsc"
   },
   "repository": {
     "type": "git",
@@ -32,7 +31,6 @@
     "@exile-watch/typescript-config": "*",
     "@exile-watch/vite-config": "*",
     "@exile-watch/writ-react": "*",
-    "@exile-watch/release-it-config": "*",
     "@types/react": "^19.0.10",
     "react": "^19.0.0"
   },

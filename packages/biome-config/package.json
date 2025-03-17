@@ -11,8 +11,7 @@
     "ci:lint": "npx @biomejs/biome ci .",
     "lint": "npm run format && npx @biomejs/biome check .",
     "lint:apply": "npx @biomejs/biome check --apply .",
-    "format": "npx @biomejs/biome format --write .",
-    "release": "release-it --ci"
+    "format": "npx @biomejs/biome format --write ."
   },
   "repository": {
     "type": "git",
@@ -24,9 +23,6 @@
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/biome-config",
   "dependencies": {
     "@biomejs/biome": "^1.9.4"
-  },
-  "devDependencies": {
-    "@exile-watch/release-it-config": "*"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",

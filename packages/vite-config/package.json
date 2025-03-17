@@ -15,16 +15,14 @@
   "files": ["dist"],
   "scripts": {
     "build": "vite build",
-    "typecheck": "tsc --noEmit",
-    "release": "release-it --ci"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "vite": "^6.2.1",
     "vite-plugin-dts": "^4.5.3"
   },
   "devDependencies": {
-    "@exile-watch/typescript-config": "*",
-    "@exile-watch/release-it-config": "*"
+    "@exile-watch/typescript-config": "*"
   },
   "peerDependenciesMeta": {
     "fsevents": {

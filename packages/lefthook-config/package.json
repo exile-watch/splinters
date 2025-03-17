@@ -9,9 +9,6 @@
     "directory": "packages/lefthook-config"
   },
   "main": "lefthook.yml",
-  "scripts": {
-    "release": "release-it --ci"
-  },
   "files": ["lefthook.yml", "scripts"],
   "dependencies": {
     "@commitlint/cli": "^19.5.0",
@@ -19,9 +16,6 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "lefthook": "^1.7.18"
-  },
-  "devDependencies": {
-    "@exile-watch/release-it-config": "*"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",

@@ -10,16 +10,10 @@
   },
   "main": "postcss.config.js",
   "files": ["postcss.config.js"],
-  "scripts": {
-    "release": "release-it --ci"
-  },
   "dependencies": {
     "postcss": "^8.4.47",
     "postcss-preset-mantine": "^1.17.0",
     "postcss-simple-vars": "^7.0.1"
-  },
-  "devDependencies": {
-    "@exile-watch/release-it-config": "*"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",

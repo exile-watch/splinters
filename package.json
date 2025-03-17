@@ -16,8 +16,7 @@
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "build": "turbo run build",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish",
-    "release": "turbo release --concurrency=1"
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
@@ -33,16 +32,7 @@
     "vite": "~6.2.1",
     "vitest": "^3.0.8"
   },
-  "workspaces": [
-    "packages/biome-config",
-    "packages/conventional-changelog-config",
-    "packages/lefthook-config",
-    "packages/postcss-config",
-    "packages/typescript-config",
-    "packages/vite-config",
-    "packages/unit-testing-config",
-    "packages/release-it-config"
-  ],
+  "workspaces": ["packages/*"],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

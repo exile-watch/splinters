@@ -9,17 +9,11 @@
     "url": "git+https://github.com/exile-watch/splinters.git",
     "directory": "packages/typescript-config"
   },
-  "scripts": {
-    "release": "release-it --ci"
-  },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/typescript-config",
   "dependencies": {
     "typescript": "^5.4.5"
-  },
-  "devDependencies": {
-    "@exile-watch/release-it-config": "*"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
