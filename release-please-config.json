@@ -1,4 +1,5 @@
 {
+  "separate-pull-requests": true,
   "packages": {
     "packages/biome-config": {
       "changelog-path": "packages/biome-config/CHANGELOG.md",
@@ -49,5 +50,6 @@
       "prerelease": false
     }
   },
+  "plugins": [""],
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 }
