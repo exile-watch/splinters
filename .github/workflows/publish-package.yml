@@ -26,19 +26,13 @@ jobs:
           GH_ACTOR: ${{ github.actor }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-  publish-package:
+  release-package:
     needs: [code-quality-assurance]
-    name: Publish to NPM
+    name: Release package
     runs-on: ubuntu-latest
     steps:
-      - id: publish-package-step
-        uses: exile-watch/doryani/publish-package@main
+      - uses: googleapis/release-please-action@v4
+        id: release
         with:
-          GH_ACTOR: ${{ github.actor }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Use outputs
-        run: |
-          echo "Paths released: ${{ steps.publish-package-step.outputs.paths_released }}"
-          echo "Releases: ${{ steps.publish-package-step.outputs }}"
+          token: ${{ secrets.GH_TOKEN }}
+          release-type: node
