@@ -27,7 +27,6 @@
     "react": ">=18.2.0"
   },
   "devDependencies": {
-    "@exile-watch/postcss-config": "*",
     "@exile-watch/typescript-config": "*",
     "@exile-watch/vite-config": "*",
     "@exile-watch/writ-react": "*",
