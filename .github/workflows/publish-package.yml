@@ -31,8 +31,14 @@ jobs:
     name: Publish to NPM
     runs-on: ubuntu-latest
     steps:
-      - uses: exile-watch/doryani/publish-package@main
+      - id: publish-package-step
+        uses: exile-watch/doryani/publish-package@main
         with:
           GH_ACTOR: ${{ github.actor }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Use outputs
+        run: |
+          echo "Paths released: ${{ steps.publish-package-step.outputs.paths_released }}"
+          echo "Releases: ${{ steps.publish-package-step.outputs.releases }}"
