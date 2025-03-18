@@ -4,6 +4,7 @@
     "packages/biome-config": {
       "changelog-path": "packages/biome-config/CHANGELOG.md",
       "release-type": "node",
+      "include-component-in-tag": true,
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
@@ -12,6 +13,7 @@
     "packages/conventional-changelog-config": {
       "changelog-path": "packages/conventional-changelog-config/CHANGELOG.md",
       "release-type": "node",
+      "include-component-in-tag": true,
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
@@ -20,6 +22,7 @@
     "packages/lefthook-config": {
       "changelog-path": "packages/lefthook-config/CHANGELOG.md",
       "release-type": "node",
+      "include-component-in-tag": true,
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
@@ -28,6 +31,7 @@
     "packages/typescript-config": {
       "changelog-path": "packages/typescript-config/CHANGELOG.md",
       "release-type": "node",
+      "include-component-in-tag": true,
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
@@ -36,6 +40,7 @@
     "packages/unit-testing-config": {
       "changelog-path": "packages/unit-testing-config/CHANGELOG.md",
       "release-type": "node",
+      "include-component-in-tag": true,
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
@@ -44,12 +49,12 @@
     "packages/vite-config": {
       "changelog-path": "packages/vite-config/CHANGELOG.md",
       "release-type": "node",
+      "include-component-in-tag": true,
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
       "prerelease": false
     }
   },
-  "plugins": [""],
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 }
