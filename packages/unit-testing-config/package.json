@@ -38,6 +38,6 @@
     "@testing-library/react": "^16.2.0",
     "jsdom": "^26.0.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.8"
+    "vitest": "^3.0.9"
   }
 }
