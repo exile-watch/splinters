@@ -27,7 +27,12 @@
   "devDependencies": {
     "@exile-watch/biome-config": "*",
     "@exile-watch/lefthook-config": "*",
+    "@nx/js": "^20.8.0",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
     "@vitest/ui": "^3.0.8",
+    "nx": "20.8.0",
     "turbo": "^2.4.4",
     "vite": "~6.2.2",
     "vitest": "^3.0.8"
