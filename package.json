@@ -37,7 +37,9 @@
     "vite": "~6.2.2",
     "vitest": "^3.0.8"
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -50,5 +52,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "public"
-  }
+  },
+  "version": "1.0.0"
 }
