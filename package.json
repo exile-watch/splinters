@@ -9,7 +9,7 @@
   "scripts": {
     "postinstall": "npx lefthook install",
     "ci:typecheck": "exit 0",
-    "ci:lint": "nx run ci:lint",
+    "ci:lint": "nx run-many -t ci:lint",
     "lint": "nx run-many -t format lint",
     "lint:apply": "nx run-many -t lint:apply",
     "format": "nx run-many -t format",
