@@ -9,14 +9,13 @@
   "scripts": {
     "postinstall": "npx lefthook install",
     "ci:typecheck": "exit 0",
-    "ci:lint": "turbo run ci:lint",
-    "lint": "npm run format && turbo run lint",
-    "lint:apply": "turbo run lint:apply",
-    "format": "turbo run format",
-    "typecheck": "turbo run typecheck",
-    "test": "turbo run test",
-    "build": "turbo run build",
-    "publish-packages": "turbo run build lint && changeset version && changeset publish"
+    "ci:lint": "nx run ci:lint",
+    "lint": "nx run-many -t format lint",
+    "lint:apply": "nx run lint:apply",
+    "format": "nx run format",
+    "typecheck": "nx run typecheck",
+    "test": "nx run test",
+    "build": "nx build"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
