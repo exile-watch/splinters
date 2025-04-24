@@ -28,9 +28,5 @@
     "fsevents": {
       "optional": true
     }
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
   }
 }

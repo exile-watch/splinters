@@ -9,10 +9,6 @@
     "directory": "packages/conventional-changelog-config"
   },
   "files": ["index.js"],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
-  },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^8.0.0"
   },

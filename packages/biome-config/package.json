@@ -23,9 +23,5 @@
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/biome-config",
   "dependencies": {
     "@biomejs/biome": "^1.9.4"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
   }
 }

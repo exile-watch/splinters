@@ -19,9 +19,6 @@
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/unit-testing-config",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "peerDependencies": {
     "@exile-watch/writ-react": ">=1",
     "react": ">=18.2.0"
