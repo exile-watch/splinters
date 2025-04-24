@@ -50,6 +50,14 @@
     "version": {
       "conventionalCommits": true
     },
+    "conventionalCommits": {
+      "types": {
+        "chore": {
+          "semverBump": "patch",
+          "changelog": false
+        }
+      }
+    },
     "changelog": {
       "projectChangelogs": {
         "createRelease": "github"
