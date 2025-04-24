@@ -43,6 +43,7 @@
       "cache": true
     }
   },
+  "plugins": ["nx/plugins/package-json"],
   "release": {
     "projects": ["packages/*"],
     "projectsRelationship": "independent",

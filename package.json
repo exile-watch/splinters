@@ -11,11 +11,11 @@
     "ci:typecheck": "exit 0",
     "ci:lint": "nx run ci:lint",
     "lint": "nx run-many -t format lint",
-    "lint:apply": "nx run lint:apply",
-    "format": "nx run format",
-    "typecheck": "nx run typecheck",
-    "test": "nx run test",
-    "build": "nx build"
+    "lint:apply": "nx run-many -t lint:apply",
+    "format": "nx run-many -t format",
+    "typecheck": "nx run-many -t typecheck",
+    "test": "nx run-many -t test",
+    "build": "nx run-many -t build"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
