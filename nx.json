@@ -48,13 +48,12 @@
     "projects": ["packages/*"],
     "projectsRelationship": "independent",
     "version": {
-      "conventionalCommits": true
-    },
-    "git": {
-      "commit": true,
-      "tag": true,
-      "push": true,
-      "commitMessage": "chore(release): release {version} [skip ci]"
+      "conventionalCommits": true,
+      "git": {
+        "commit": true,
+        "tag": true,
+        "commitMessage": "chore(release): release {version} [skip ci]"
+      }
     },
     "conventionalCommits": {
       "types": {
@@ -67,6 +66,11 @@
     "changelog": {
       "projectChangelogs": {
         "createRelease": "github"
+      },
+      "git": {
+        "commit": true,
+        "push": true,
+        "commitMessage": "docs(changelog): generate changelog [skip ci]"
       }
     }
   }
