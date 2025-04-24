@@ -1,3 +1,13 @@
+## 1.1.4 (2025-04-24)
+
+### 🚀 Features
+
+- **deps:** update vite to latest versions ([7bdbfa6](https://github.com/exile-watch/splinters/commit/7bdbfa6))
+
+### ❤️ Thank You
+
+- Sebastian Krzyzanowski
+
 # Change Log
 
 ## 1.1.3

@@ -1,3 +1,26 @@
+## 1.2.0 (2025-04-24)
+
+### 🚀 Features
+
+- **deps:** update vite to latest versions ([7bdbfa6](https://github.com/exile-watch/splinters/commit/7bdbfa6))
+- update publish-packages script to remove versioning step ([2f84120](https://github.com/exile-watch/splinters/commit/2f84120))
+- add publish-packages script to package.json ([b8c8723](https://github.com/exile-watch/splinters/commit/b8c8723))
+- update turbo tasks and scripts in package.json and turbo.json ([81e983e](https://github.com/exile-watch/splinters/commit/81e983e))
+- migrate from lerna to turbo for build and typecheck scripts ([7b64294](https://github.com/exile-watch/splinters/commit/7b64294))
+- remove changeset ([1410c36](https://github.com/exile-watch/splinters/commit/1410c36))
+- add changesets configuration file ([8d4c9a8](https://github.com/exile-watch/splinters/commit/8d4c9a8))
+- add del-cli dependency and update package.json structure ([908ee2f](https://github.com/exile-watch/splinters/commit/908ee2f))
+- add vite-config package ([b3e1cb3](https://github.com/exile-watch/splinters/commit/b3e1cb3))
+
+### 🩹 Fixes
+
+- handle ES Module import for conventional-changelog-conventionalcommits ([46c3a7a](https://github.com/exile-watch/splinters/commit/46c3a7a))
+
+### ❤️ Thank You
+
+- Sebastian Krzyzanowski
+- Sebastian Krzyżanowski
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

@@ -1,3 +1,18 @@
+## 1.1.6 (2025-04-24)
+
+### 🚀 Features
+
+- **deps:** update vite to latest versions ([7bdbfa6](https://github.com/exile-watch/splinters/commit/7bdbfa6))
+
+### 🧱 Updated Dependencies
+
+- Updated @exile-watch/typescript-config to 1.2.0
+- Updated @exile-watch/vite-config to 0.1.0
+
+### ❤️ Thank You
+
+- Sebastian Krzyzanowski
+
 # Change Log
 
 ## 1.1.5
