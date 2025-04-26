@@ -15,7 +15,8 @@
     "format": "nx run-many -t format",
     "typecheck": "nx run-many -t typecheck",
     "test": "nx run-many -t test",
-    "build": "nx run-many -t build"
+    "build": "nx run-many -t build",
+    "release": "npx voidstone"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@exile-watch/biome-config": "*",
     "@exile-watch/lefthook-config": "*",
+    "@exile-watch/voidstone": "^1.0.8",
     "@nx/js": "^20.8.0",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
