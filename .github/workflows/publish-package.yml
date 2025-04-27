@@ -37,6 +37,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_ACTOR: ${{ github.actor }}
 
+      - name: Install deps
+        uses: exile-watch/doryani/install-npm-dependencies@main
+        with:
+          GH_ACTOR: ${{ github.actor }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - run: npm run release
         env:
           GH_ACTOR: ${{ github.actor }}
