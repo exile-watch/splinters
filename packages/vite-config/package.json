@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/vite-config",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Shared Vite configuration for exile.watch projects",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/vite-config",
   "repository": {
@@ -24,7 +24,7 @@
     "vite-plugin-dts": "^4.5.3"
   },
   "devDependencies": {
-    "@exile-watch/typescript-config": "^1.2.8"
+    "@exile-watch/typescript-config": "^1.2.9"
   },
   "peerDependenciesMeta": {
     "fsevents": {

@@ -1,5 +1,14 @@
 ##  (2025-04-27)
 
+* chore(deps-dev): bump @swc-node/register from 1.9.2 to 1.10.10 ([5d6d7d2](https://github.com/exile-watch/splinters/commit/5d6d7d2))
+* chore(deps-dev): bump nx from 20.8.0 to 20.8.1 ([f1018f6](https://github.com/exile-watch/splinters/commit/f1018f6))
+* chore(deps-dev): bump react and @types/react ([539bb60](https://github.com/exile-watch/splinters/commit/539bb60))
+
+
+
+## <small>1.2.8 (2025-04-27)</small>
+
+* chore: release [skip ci] ([98162e0](https://github.com/exile-watch/splinters/commit/98162e0))
 * chore: update @exile-watch/voidstone to version 1.0.17 in package.json and package-lock.json ([c640149](https://github.com/exile-watch/splinters/commit/c640149))
 
 
