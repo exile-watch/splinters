@@ -28,14 +28,8 @@
     "@exile-watch/biome-config": "*",
     "@exile-watch/lefthook-config": "*",
     "@exile-watch/voidstone": "^1.0.27",
-    "@nx/js": "^20.8.0",
-    "@swc-node/register": "~1.10.10",
-    "@swc/core": "~1.5.7",
-    "@swc/helpers": "~0.5.11",
     "@vitest/ui": "^3.1.2",
-    "nx": "20.8.1",
-    "vite": "~6.3.2",
-    "vitest": "^3.0.8"
+    "nx": "20.8.1"
   },
   "workspaces": ["packages/*"],
   "config": {
@@ -43,5 +37,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "packageManager": "npm@10.9.2"
+  "packageManager": "npm@11.3.0"
 }

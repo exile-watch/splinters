@@ -1,8 +1,0 @@
-{
-  "packages/biome-config": "1.1.3",
-  "packages/conventional-changelog-config": "1.1.0",
-  "packages/lefthook-config": "1.1.0",
-  "packages/typescript-config": "1.2.0",
-  "packages/unit-testing-config": "1.1.5",
-  "packages/vite-config": "1.0.0"
-}
