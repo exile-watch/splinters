@@ -1,10 +1,21 @@
 ##  (2025-04-27)
 
+* chore(release): release v0.1.3 and update deps [skip-ci] ([dbebd0f](https://github.com/exile-watch/splinters/commit/dbebd0f))
+* chore(release): release v1.1.9 and update deps [skip-ci] ([e00f22b](https://github.com/exile-watch/splinters/commit/e00f22b))
+* chore(release): release v1.1.9 and update deps [skip-ci] ([5a78d04](https://github.com/exile-watch/splinters/commit/5a78d04))
+* chore(release): release v1.2.4 and update deps [skip-ci] ([1b39b21](https://github.com/exile-watch/splinters/commit/1b39b21))
+* chore(release): release v1.2.4 and update deps [skip-ci] ([07735fa](https://github.com/exile-watch/splinters/commit/07735fa))
+
+
+
+## <small>1.2.4 (2025-04-27)</small>
+
 * chore: update @exile-watch/voidstone to version 1.0.15 in package.json and package-lock.json ([02ab79f](https://github.com/exile-watch/splinters/commit/02ab79f))
 * chore(@exile-watch/lefthook-config): release v1.2.3 and update deps ([4afa26e](https://github.com/exile-watch/splinters/commit/4afa26e))
 * chore(@exile-watch/typescript-config): release v1.2.3 and update deps ([6c3df9c](https://github.com/exile-watch/splinters/commit/6c3df9c))
 * chore(@exile-watch/vite-config): release v0.1.2 and update deps ([7e730b1](https://github.com/exile-watch/splinters/commit/7e730b1))
 * chore(release): release v1.1.8 and update deps [skip-ci] ([1b99b17](https://github.com/exile-watch/splinters/commit/1b99b17))
+* chore(release): release v1.2.4 and update deps [skip-ci] ([111d13d](https://github.com/exile-watch/splinters/commit/111d13d))
 
 
 
