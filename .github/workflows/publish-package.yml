@@ -21,11 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Code quality assurance
     steps:
-      - name: Authenticate to GitHub Registry
-        uses: exile-watch/doryani/auth-github-registry@main
-        with:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
       - uses: exile-watch/doryani/code-quality-assurance@main
         with:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
