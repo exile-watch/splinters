@@ -35,7 +35,6 @@ jobs:
         uses: exile-watch/doryani/auth-github-registry@main
         with:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GH_ACTOR: ${{ github.actor }}
 
       - name: Install deps
         uses: exile-watch/doryani/install-npm-dependencies@main
