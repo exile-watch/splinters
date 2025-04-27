@@ -1,9 +1,25 @@
 ##  (2025-04-27)
 
+* chore: update @exile-watch/voidstone to version 1.0.15 in package.json and package-lock.json ([02ab79f](https://github.com/exile-watch/splinters/commit/02ab79f))
+* chore(@exile-watch/biome-config): release v1.1.7 and update deps ([109eb35](https://github.com/exile-watch/splinters/commit/109eb35))
+* chore(@exile-watch/conventional-changelog-config): release v1.2.3 and update deps ([b20ac58](https://github.com/exile-watch/splinters/commit/b20ac58))
+* chore(@exile-watch/lefthook-config): release v1.2.3 and update deps ([4afa26e](https://github.com/exile-watch/splinters/commit/4afa26e))
+* chore(@exile-watch/typescript-config): release v1.2.3 and update deps ([6c3df9c](https://github.com/exile-watch/splinters/commit/6c3df9c))
+* chore(@exile-watch/vite-config): release v0.1.2 and update deps ([7e730b1](https://github.com/exile-watch/splinters/commit/7e730b1))
+* chore(release): release v1.1.8 and update deps [skip-ci] ([1b99b17](https://github.com/exile-watch/splinters/commit/1b99b17))
+* chore(release): release v1.2.4 and update deps [skip-ci] ([1b39b21](https://github.com/exile-watch/splinters/commit/1b39b21))
+* chore(release): release v1.2.4 and update deps [skip-ci] ([07735fa](https://github.com/exile-watch/splinters/commit/07735fa))
+* chore(release): release v1.2.4 and update deps [skip-ci] ([111d13d](https://github.com/exile-watch/splinters/commit/111d13d))
+
+
+
+## <small>v1.1.8 (2025-04-27)</small>
+
 * chore(@exile-watch/biome-config): release v1.1.6 and update deps ([ae67b66](https://github.com/exile-watch/splinters/commit/ae67b66))
 * chore(@exile-watch/conventional-changelog-config): release v1.2.2 and update deps ([1199461](https://github.com/exile-watch/splinters/commit/1199461))
 * chore(@exile-watch/lefthook-config): release v1.2.2 and update deps ([285160b](https://github.com/exile-watch/splinters/commit/285160b))
 * chore(@exile-watch/typescript-config): release v1.2.2 and update deps ([6e3a07f](https://github.com/exile-watch/splinters/commit/6e3a07f))
+* chore(@exile-watch/unit-testing-config): release v1.1.8 and update deps ([85e458d](https://github.com/exile-watch/splinters/commit/85e458d))
 * chore(@exile-watch/vite-config): release v0.1.1 and update deps ([00b9598](https://github.com/exile-watch/splinters/commit/00b9598))
 
 
