@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/typescript-config",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Shared TypeScript configuration for exile.watch frontend projects",
   "main": "tsconfig.json",
   "files": [
