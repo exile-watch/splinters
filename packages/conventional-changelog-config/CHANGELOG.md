@@ -1,10 +1,20 @@
 ##  (2025-04-27)
 
+* chore(release): release v1.1.10 and update deps [skip-ci] ([2a81f04](https://github.com/exile-watch/splinters/commit/2a81f04))
+* chore(release): release v1.1.10 and update deps [skip-ci] ([cc12dbb](https://github.com/exile-watch/splinters/commit/cc12dbb))
+* chore(release): release v1.2.5 and update deps [skip-ci] ([2573305](https://github.com/exile-watch/splinters/commit/2573305))
+* chore(release): release v1.2.5 and update deps [skip-ci] ([b4b499c](https://github.com/exile-watch/splinters/commit/b4b499c))
+
+
+
+## <small>1.2.5 (2025-04-27)</small>
+
 * chore(release): release v0.1.3 and update deps [skip-ci] ([dbebd0f](https://github.com/exile-watch/splinters/commit/dbebd0f))
 * chore(release): release v1.1.9 and update deps [skip-ci] ([e00f22b](https://github.com/exile-watch/splinters/commit/e00f22b))
 * chore(release): release v1.1.9 and update deps [skip-ci] ([5a78d04](https://github.com/exile-watch/splinters/commit/5a78d04))
 * chore(release): release v1.2.4 and update deps [skip-ci] ([1b39b21](https://github.com/exile-watch/splinters/commit/1b39b21))
 * chore(release): release v1.2.4 and update deps [skip-ci] ([07735fa](https://github.com/exile-watch/splinters/commit/07735fa))
+* chore(release): release v1.2.5 and update deps [skip-ci] ([4c7e86f](https://github.com/exile-watch/splinters/commit/4c7e86f))
 
 
 
