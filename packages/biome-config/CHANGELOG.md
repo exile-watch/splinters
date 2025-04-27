@@ -1,5 +1,15 @@
 ##  (2025-04-27)
 
+* chore(@exile-watch/conventional-changelog-config): release v1.2.1 and update deps ([e41cfc7](https://github.com/exile-watch/splinters/commit/e41cfc7))
+* chore(@exile-watch/lefthook-config): release v1.2.1 and update deps ([e991251](https://github.com/exile-watch/splinters/commit/e991251))
+* chore(@exile-watch/typescript-config): release v1.2.1 and update deps ([1ab2191](https://github.com/exile-watch/splinters/commit/1ab2191))
+* chore(@exile-watch/unit-testing-config): release v1.1.7 and update deps ([fbfce33](https://github.com/exile-watch/splinters/commit/fbfce33))
+* chore(@exile-watch/vite-config): release v0.1.1 and update deps ([00b9598](https://github.com/exile-watch/splinters/commit/00b9598))
+
+
+
+## <small>v1.1.5 (2025-04-27)</small>
+
 * chore: add authentication step for GitHub Registry in publish-package.yml ([1634b03](https://github.com/exile-watch/splinters/commit/1634b03))
 * chore: add step to install npm dependencies in publish-package.yml ([308ca50](https://github.com/exile-watch/splinters/commit/308ca50))
 * chore: remove dependabot-version-bump.yml action ([e085b9b](https://github.com/exile-watch/splinters/commit/e085b9b))
@@ -15,6 +25,7 @@
 * chore: update nx.json to streamline git commit and changelog generation ([93413f4](https://github.com/exile-watch/splinters/commit/93413f4))
 * chore: update publish-package.yml and nx.json for release process improvements ([7d19055](https://github.com/exile-watch/splinters/commit/7d19055))
 * chore: update release script in package.json to use voidstone directly ([ccf94b0](https://github.com/exile-watch/splinters/commit/ccf94b0))
+* chore(@exile-watch/biome-config): release v1.1.5 and update deps ([34f5c41](https://github.com/exile-watch/splinters/commit/34f5c41))
 * chore(deps-dev): bump @vitest/ui from 3.0.8 to 3.1.1 ([30510b0](https://github.com/exile-watch/splinters/commit/30510b0))
 
 
