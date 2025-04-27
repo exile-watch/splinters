@@ -2,12 +2,14 @@
 
 * chore: add GitHub Registry authentication step in publish-package.yml ([55996c6](https://github.com/exile-watch/splinters/commit/55996c6))
 * chore: configure Git settings for GitHub Actions in publish-package.yml ([7934acd](https://github.com/exile-watch/splinters/commit/7934acd))
+* chore: release [skip ci] ([681c597](https://github.com/exile-watch/splinters/commit/681c597))
 * chore: remove GH_ACTOR input from GitHub registry action in publish-package.yml ([5414906](https://github.com/exile-watch/splinters/commit/5414906))
 * chore: remove GitHub Registry authentication step from publish-package.yml ([52a7ab7](https://github.com/exile-watch/splinters/commit/52a7ab7))
 * chore: update @exile-watch/voidstone to version 1.0.18 in package.json and package-lock.json ([8c7a920](https://github.com/exile-watch/splinters/commit/8c7a920))
 * chore: update @exile-watch/voidstone to version 1.0.20 in package.json and package-lock.json ([7c20c8d](https://github.com/exile-watch/splinters/commit/7c20c8d))
 * chore: update @exile-watch/voidstone to version 1.0.24 in package.json and package-lock.json ([54c1f7e](https://github.com/exile-watch/splinters/commit/54c1f7e))
 * chore: update @exile-watch/voidstone to version 1.0.25 in package.json and package-lock.json ([3366bf0](https://github.com/exile-watch/splinters/commit/3366bf0))
+* chore: update @exile-watch/voidstone to version 1.0.26 and adjust authentication in publish-package. ([fbd273d](https://github.com/exile-watch/splinters/commit/fbd273d))
 * chore(deps): bump typescript from 5.8.2 to 5.8.3 ([19661ad](https://github.com/exile-watch/splinters/commit/19661ad))
 
 
