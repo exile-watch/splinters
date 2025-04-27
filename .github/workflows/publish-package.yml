@@ -31,8 +31,13 @@ jobs:
     name: Publish to NPM
     runs-on: ubuntu-latest
     steps:
+      - name: Authenticate to GitHub Registry
+        uses: exile-watch/doryani/auth-github-registry@main
+        with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_ACTOR: ${{ github.actor }}
+
       - run: npm run release
-        working-directory: ./
         env:
           GH_ACTOR: ${{ github.actor }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
