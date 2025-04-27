@@ -1,7 +1,17 @@
 ##  (2025-04-27)
 
+* chore(@exile-watch/biome-config): release v1.1.7 and update deps ([109eb35](https://github.com/exile-watch/splinters/commit/109eb35))
+* chore(@exile-watch/conventional-changelog-config): release v1.2.3 and update deps ([b20ac58](https://github.com/exile-watch/splinters/commit/b20ac58))
+* chore(@exile-watch/typescript-config): release v1.2.2 and update deps ([6e3a07f](https://github.com/exile-watch/splinters/commit/6e3a07f))
+* chore(@exile-watch/unit-testing-config): release v1.1.8 and update deps ([85e458d](https://github.com/exile-watch/splinters/commit/85e458d))
+
+
+
+## <small>v1.2.2 (2025-04-27)</small>
+
 * chore(@exile-watch/biome-config): release v1.1.6 and update deps ([ae67b66](https://github.com/exile-watch/splinters/commit/ae67b66))
 * chore(@exile-watch/conventional-changelog-config): release v1.2.2 and update deps ([1199461](https://github.com/exile-watch/splinters/commit/1199461))
+* chore(@exile-watch/lefthook-config): release v1.2.2 and update deps ([285160b](https://github.com/exile-watch/splinters/commit/285160b))
 * chore(@exile-watch/typescript-config): release v1.2.1 and update deps ([1ab2191](https://github.com/exile-watch/splinters/commit/1ab2191))
 * chore(@exile-watch/unit-testing-config): release v1.1.7 and update deps ([fbfce33](https://github.com/exile-watch/splinters/commit/fbfce33))
 * chore(@exile-watch/vite-config): release v0.1.1 and update deps ([00b9598](https://github.com/exile-watch/splinters/commit/00b9598))
