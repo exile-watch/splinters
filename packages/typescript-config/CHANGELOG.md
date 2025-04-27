@@ -1,5 +1,15 @@
 ##  (2025-04-27)
 
+* chore(@exile-watch/biome-config): release v1.1.6 and update deps ([ae67b66](https://github.com/exile-watch/splinters/commit/ae67b66))
+* chore(@exile-watch/conventional-changelog-config): release v1.2.2 and update deps ([1199461](https://github.com/exile-watch/splinters/commit/1199461))
+* chore(@exile-watch/lefthook-config): release v1.2.2 and update deps ([285160b](https://github.com/exile-watch/splinters/commit/285160b))
+* chore(@exile-watch/unit-testing-config): release v1.1.7 and update deps ([fbfce33](https://github.com/exile-watch/splinters/commit/fbfce33))
+* chore(@exile-watch/vite-config): release v0.1.1 and update deps ([00b9598](https://github.com/exile-watch/splinters/commit/00b9598))
+
+
+
+## <small>v1.2.1 (2025-04-27)</small>
+
 * chore: add authentication step for GitHub Registry in publish-package.yml ([1634b03](https://github.com/exile-watch/splinters/commit/1634b03))
 * chore: add step to install npm dependencies in publish-package.yml ([308ca50](https://github.com/exile-watch/splinters/commit/308ca50))
 * chore: remove dependabot-version-bump.yml action ([e085b9b](https://github.com/exile-watch/splinters/commit/e085b9b))
@@ -18,6 +28,7 @@
 * chore(@exile-watch/biome-config): release v1.1.5 and update deps ([34f5c41](https://github.com/exile-watch/splinters/commit/34f5c41))
 * chore(@exile-watch/conventional-changelog-config): release v1.2.1 and update deps ([e41cfc7](https://github.com/exile-watch/splinters/commit/e41cfc7))
 * chore(@exile-watch/lefthook-config): release v1.2.1 and update deps ([e991251](https://github.com/exile-watch/splinters/commit/e991251))
+* chore(@exile-watch/typescript-config): release v1.2.1 and update deps ([1ab2191](https://github.com/exile-watch/splinters/commit/1ab2191))
 * chore(deps-dev): bump @vitest/ui from 3.0.8 to 3.1.1 ([30510b0](https://github.com/exile-watch/splinters/commit/30510b0))
 
 
