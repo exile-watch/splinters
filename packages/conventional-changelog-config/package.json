@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/conventional-changelog-config",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Shared changelog generation from git metadata",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/conventional-changelog-config",
   "repository": {
