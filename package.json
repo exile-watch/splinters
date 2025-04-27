@@ -27,7 +27,7 @@
   "devDependencies": {
     "@exile-watch/biome-config": "*",
     "@exile-watch/lefthook-config": "*",
-    "@exile-watch/voidstone": "^1.0.13",
+    "@exile-watch/voidstone": "^1.0.14",
     "@nx/js": "^20.8.0",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
