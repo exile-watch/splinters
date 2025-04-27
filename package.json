@@ -16,7 +16,7 @@
     "typecheck": "nx run-many -t typecheck",
     "test": "nx run-many -t test",
     "build": "nx run-many -t build",
-    "release": "npx voidstone"
+    "release": "voidstone"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
