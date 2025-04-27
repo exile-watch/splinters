@@ -16,6 +16,6 @@
   "license": "ISC",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/typescript-config",
   "dependencies": {
-    "typescript": "^5.4.5"
+    "typescript": "^5.8.3"
   }
 }
