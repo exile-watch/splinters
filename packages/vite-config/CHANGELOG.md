@@ -1,5 +1,31 @@
-##  (2025-04-27)
+##  (2025-05-01)
 
+* chore: add GitHub Registry authentication step in publish-package.yml ([55996c6](https://github.com/exile-watch/splinters/commit/55996c6))
+* chore: configure Git settings for GitHub Actions in publish-package.yml ([7934acd](https://github.com/exile-watch/splinters/commit/7934acd))
+* chore: pin @biomejs/biome dependency version to 1.9.4 in package.json ([535b3d3](https://github.com/exile-watch/splinters/commit/535b3d3))
+* chore: release [skip ci] ([a505049](https://github.com/exile-watch/splinters/commit/a505049))
+* chore: release [skip ci] ([0507d9a](https://github.com/exile-watch/splinters/commit/0507d9a))
+* chore: release [skip ci] ([20ec564](https://github.com/exile-watch/splinters/commit/20ec564))
+* chore: release [skip ci] ([681c597](https://github.com/exile-watch/splinters/commit/681c597))
+* chore: remove GH_ACTOR input from GitHub registry action in publish-package.yml ([5414906](https://github.com/exile-watch/splinters/commit/5414906))
+* chore: remove GitHub Registry authentication step from publish-package.yml ([52a7ab7](https://github.com/exile-watch/splinters/commit/52a7ab7))
+* chore: update @exile-watch/voidstone to version 1.0.18 in package.json and package-lock.json ([8c7a920](https://github.com/exile-watch/splinters/commit/8c7a920))
+* chore: update @exile-watch/voidstone to version 1.0.20 in package.json and package-lock.json ([7c20c8d](https://github.com/exile-watch/splinters/commit/7c20c8d))
+* chore: update @exile-watch/voidstone to version 1.0.24 in package.json and package-lock.json ([54c1f7e](https://github.com/exile-watch/splinters/commit/54c1f7e))
+* chore: update @exile-watch/voidstone to version 1.0.25 in package.json and package-lock.json ([3366bf0](https://github.com/exile-watch/splinters/commit/3366bf0))
+* chore: update @exile-watch/voidstone to version 1.0.26 and adjust authentication in publish-package. ([fbd273d](https://github.com/exile-watch/splinters/commit/fbd273d))
+* chore: update @exile-watch/voidstone to version 1.0.27 in package.json and package-lock.json ([3d92c8f](https://github.com/exile-watch/splinters/commit/3d92c8f))
+* chore: update package.json and nx.json for dependency and configuration changes ([719d009](https://github.com/exile-watch/splinters/commit/719d009))
+* chore(deps): bump the unit-testing-config-deps group across 1 directory with 2 updates ([3e86dcc](https://github.com/exile-watch/splinters/commit/3e86dcc))
+* chore(deps): bump typescript from 5.8.2 to 5.8.3 ([19661ad](https://github.com/exile-watch/splinters/commit/19661ad))
+* chore(deps): bump vite from 6.3.3 to 6.3.4 ([5b309e8](https://github.com/exile-watch/splinters/commit/5b309e8))
+* feat: update biome.json to ignore coverage directory and format package.json workspaces ([bf4c36b](https://github.com/exile-watch/splinters/commit/bf4c36b))
+
+
+
+## <small>0.1.7 (2025-04-27)</small>
+
+* chore: release [skip ci] ([569ef55](https://github.com/exile-watch/splinters/commit/569ef55))
 * chore(deps-dev): bump @swc-node/register from 1.9.2 to 1.10.10 ([5d6d7d2](https://github.com/exile-watch/splinters/commit/5d6d7d2))
 * chore(deps-dev): bump nx from 20.8.0 to 20.8.1 ([f1018f6](https://github.com/exile-watch/splinters/commit/f1018f6))
 * chore(deps-dev): bump react and @types/react ([539bb60](https://github.com/exile-watch/splinters/commit/539bb60))
