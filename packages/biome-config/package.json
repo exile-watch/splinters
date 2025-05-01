@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/biome-config",
-  "version": "1.1.13",
+  "version": "1.2.0",
   "description": "Shared Biome.js configuration for exile.watch frontend projects",
   "main": "biome.json",
   "type": "module",
