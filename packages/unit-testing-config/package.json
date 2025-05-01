@@ -26,8 +26,8 @@
     "react": ">=18.2.0"
   },
   "devDependencies": {
-    "@exile-watch/typescript-config": "^1.2.9",
-    "@exile-watch/vite-config": "^0.1.7",
+    "@exile-watch/typescript-config": "*",
+    "@exile-watch/vite-config": "*",
     "@exile-watch/writ-react": "*",
     "@types/react": "^19.1.2",
     "react": "^19.1.0"
