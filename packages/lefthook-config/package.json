@@ -18,6 +18,6 @@
     "@commitlint/config-conventional": "^19.8.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "lefthook": "^1.11.11"
+    "lefthook": "^1.11.12"
   }
 }
