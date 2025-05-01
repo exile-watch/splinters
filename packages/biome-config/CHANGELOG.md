@@ -1,9 +1,17 @@
 ##  (2025-05-01)
 
-* feat: update biome.json to ignore coverage directory and format package.json workspaces ([bf4c36b](https://github.com/exile-watch/splinters/commit/bf4c36b))
+* feat: update biome.json to ignore package.json in ignored files ([d172e73](https://github.com/exile-watch/splinters/commit/d172e73))
+* chore: release [skip ci] ([65d3844](https://github.com/exile-watch/splinters/commit/65d3844))
+* chore(deps): bump vite from 6.3.3 to 6.3.4 ([5b309e8](https://github.com/exile-watch/splinters/commit/5b309e8))
+
+
+
+## 1.2.0 (2025-05-01)
+
 * chore: add GitHub Registry authentication step in publish-package.yml ([55996c6](https://github.com/exile-watch/splinters/commit/55996c6))
 * chore: configure Git settings for GitHub Actions in publish-package.yml ([7934acd](https://github.com/exile-watch/splinters/commit/7934acd))
 * chore: pin @biomejs/biome dependency version to 1.9.4 in package.json ([535b3d3](https://github.com/exile-watch/splinters/commit/535b3d3))
+* chore: release [skip ci] ([a505049](https://github.com/exile-watch/splinters/commit/a505049))
 * chore: release [skip ci] ([0507d9a](https://github.com/exile-watch/splinters/commit/0507d9a))
 * chore: release [skip ci] ([20ec564](https://github.com/exile-watch/splinters/commit/20ec564))
 * chore: release [skip ci] ([681c597](https://github.com/exile-watch/splinters/commit/681c597))
@@ -18,6 +26,7 @@
 * chore: update package.json and nx.json for dependency and configuration changes ([719d009](https://github.com/exile-watch/splinters/commit/719d009))
 * chore(deps): bump the unit-testing-config-deps group across 1 directory with 2 updates ([3e86dcc](https://github.com/exile-watch/splinters/commit/3e86dcc))
 * chore(deps): bump typescript from 5.8.2 to 5.8.3 ([19661ad](https://github.com/exile-watch/splinters/commit/19661ad))
+* feat: update biome.json to ignore coverage directory and format package.json workspaces ([bf4c36b](https://github.com/exile-watch/splinters/commit/bf4c36b))
 
 
 
