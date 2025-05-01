@@ -1,6 +1,6 @@
 {
   "name": "@exile-watch/lefthook-config",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "Shared lefthook configuration for git hooks managers in exile.watch frontend projects",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/lefthook-config",
   "repository": {
