@@ -1,6 +1,6 @@
-##  (2025-05-01)
+##  (2025-05-10)
 
-* chore: update lefthook to version 1.11.12 in package.json and package-lock.json ([ff2103f](https://github.com/exile-watch/splinters/commit/ff2103f))
+* chore(deps): bump the lefthook-config-deps group with 2 updates ([3013cb5](https://github.com/exile-watch/splinters/commit/3013cb5))
 
 
 
