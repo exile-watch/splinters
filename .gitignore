@@ -43,4 +43,8 @@ yarn-error.log*
 .yarn-integrity
 
 
+.turbo
+
+
 .nx/cache
+.nx/workspace-data

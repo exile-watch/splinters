@@ -1,17 +1,17 @@
 {
   "name": "@exile-watch/unit-testing-config",
-  "version": "1.1.4",
+  "version": "1.1.16",
   "description": "Shared unit testing configuration for exile.watch frontend projects",
-  "main": "dist/index.mjs",
+  "main": "dist/index.es.js",
+  "module": "dis/index.es.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "type": "module",
   "scripts": {
-    "_clean": "del-cli dist",
-    "_build": "rollup -c",
-    "build": "npm run _build",
-    "typecheck": "npx tsc"
+    "build": "vite build",
+    "typecheck": "tsc"
   },
   "repository": {
     "type": "git",
@@ -21,26 +21,22 @@
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/unit-testing-config",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "peerDependencies": {
     "@exile-watch/writ-react": ">=1",
     "react": ">=18.2.0"
   },
   "devDependencies": {
-    "@exile-watch/postcss-config": "^1.1.1",
-    "@exile-watch/rollup-config": "^0.2.7",
-    "@exile-watch/typescript-config": "^0.3.2",
-    "@exile-watch/writ-react": "^1.0.3",
-    "@types/react": "^18.3.3",
-    "react": "^18.3.1"
+    "@exile-watch/typescript-config": "*",
+    "@exile-watch/vite-config": "*",
+    "@exile-watch/writ-react": "*",
+    "@types/react": "^19.1.2",
+    "react": "^19.1.0"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.1",
-    "jsdom": "^25.0.1",
-    "vite-tsconfig-paths": "^5.0.1",
-    "vitest": "^2.1.2"
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "jsdom": "^26.1.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.1.2"
   }
 }

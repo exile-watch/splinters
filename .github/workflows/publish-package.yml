@@ -11,6 +11,11 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+permissions:
+  contents: write
+  pull-requests: write
+  packages: write
+
 jobs:
   code-quality-assurance:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
@@ -19,7 +24,6 @@ jobs:
     steps:
       - uses: exile-watch/doryani/code-quality-assurance@main
         with:
-          GH_ACTOR: ${{ github.actor }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
   publish-package:
@@ -27,8 +31,18 @@ jobs:
     name: Publish to NPM
     runs-on: ubuntu-latest
     steps:
-      - uses: exile-watch/doryani/publish-package@main
+      - name: Authenticate to GitHub Registry
+        uses: exile-watch/doryani/auth-github-registry@main
         with:
-          GH_ACTOR: ${{ github.actor }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Install deps
+        uses: exile-watch/doryani/install-npm-dependencies@main
+        with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - run: npm run release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}

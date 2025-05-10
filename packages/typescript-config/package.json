@@ -1,11 +1,11 @@
 {
   "name": "@exile-watch/typescript-config",
-  "version": "1.1.0",
+  "version": "1.2.10",
   "description": "Shared TypeScript configuration for exile.watch frontend projects",
   "main": "tsconfig.json",
   "files": [
     "tsconfig.json",
-    "tsconfig.rollup.json"
+    "tsconfig.lib.json"
   ],
   "repository": {
     "type": "git",
@@ -16,9 +16,6 @@
   "license": "ISC",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/typescript-config",
   "dependencies": {
-    "typescript": "^5.4.5"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "typescript": "^5.8.3"
   }
 }

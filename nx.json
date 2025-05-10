@@ -1,28 +1,46 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "affected": {
-    "defaultBase": "main"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["test", "test:coverage", "build"]
-      }
-    }
-  },
   "targetDefaults": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["{projectRoot}/dist"]
+    "postinstall": {
+      "dependsOn": ["^postinstall"],
+      "cache": true
+    },
+    "ci:typecheck": {
+      "dependsOn": ["^ci:typecheck"],
+      "cache": true
+    },
+    "ci:lint": {
+      "dependsOn": ["^ci:lint"],
+      "cache": true
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "cache": true
+    },
+    "lint:apply": {
+      "dependsOn": ["^lint:apply"],
+      "cache": true
+    },
+    "format": {
+      "dependsOn": ["^format"],
+      "cache": true
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+      "cache": true
     },
     "test": {
-      "dependsOn": ["build", "^test"]
+      "dependsOn": ["^test"],
+      "cache": true
     },
-    "test:coverage": {
-      "dependsOn": ["build", "^test"],
-      "outputs": ["{projectRoot}/test/coverage"]
+    "release": {
+      "dependsOn": ["^release"],
+      "cache": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist/**"],
+      "cache": true
     }
   }
-
 }

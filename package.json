@@ -8,15 +8,15 @@
   },
   "scripts": {
     "postinstall": "npx lefthook install",
-    "build": "lerna run build",
-    "typecheck": "lerna run typecheck",
-    "ci:lint": "lerna run ci:lint",
     "ci:typecheck": "exit 0",
-    "lint": "npm run format && lerna run lint",
-    "lint:apply": "lerna run lint:apply",
-    "format": "lerna run format",
-    "test": "lerna run test",
-    "cq": "npm run format && npm run lint && npm run typecheck"
+    "ci:lint": "nx run-many -t ci:lint",
+    "lint": "nx run-many -t format lint",
+    "lint:apply": "nx run-many -t lint:apply",
+    "format": "nx run-many -t format",
+    "typecheck": "nx run-many -t typecheck",
+    "test": "nx run-many -t test",
+    "build": "nx run-many -t build",
+    "release": "voidstone"
   },
   "author": "Sebastian Krzyzanowski",
   "license": "ISC",
@@ -25,22 +25,19 @@
   },
   "homepage": "https://github.com/exile-watch/splinters#readme",
   "devDependencies": {
-    "@exile-watch/biome-config": "^0.3.5",
-    "@exile-watch/conventional-changelog-config": "^0.2.1",
-    "@exile-watch/lefthook-config": "^0.5.7",
+    "@exile-watch/biome-config": "*",
+    "@exile-watch/lefthook-config": "*",
     "@exile-watch/voidstone": "^1.2.1",
-    "@nx/vite": "19.3.0",
-    "@nx/web": "19.5.1",
-    "@vitest/ui": "^2.1.2",
-    "lerna": "^8.1.8",
-    "nx": "19.8.4",
-    "vite": "~5.4.8",
-    "vitest": "^2.1.2"
+    "@vitest/ui": "^3.1.2",
+    "nx": "20.8.1"
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "packageManager": "npm@11.3.0"
 }

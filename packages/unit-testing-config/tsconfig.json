@@ -1,16 +1,10 @@
 {
-  "extends": "@exile-watch/typescript-config/tsconfig.rollup.json",
+  "extends": "@exile-watch/typescript-config/tsconfig.lib.json",
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "outDir": "dist",
     "rootDir": "./src",
-    "module": "ESNext",
-    "target": "ES6",
     "paths": {
       "@exile-watch/*": ["./packages/*/"]
     }
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"]
 }
