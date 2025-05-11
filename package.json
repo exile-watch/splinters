@@ -27,7 +27,7 @@
   "devDependencies": {
     "@exile-watch/biome-config": "*",
     "@exile-watch/lefthook-config": "*",
-    "@exile-watch/voidstone": "^1.2.2",
+    "@exile-watch/voidstone": "^1.2.3",
     "@vitest/ui": "^3.1.2",
     "nx": "20.8.1"
   },
