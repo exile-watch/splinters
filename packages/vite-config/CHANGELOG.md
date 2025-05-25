@@ -1,6 +1,6 @@
-##  (2025-05-10)
+##  (2025-05-25)
 
-* chore(deps): bump vite from 6.3.4 to 6.3.5 ([b51cdb6](https://github.com/exile-watch/splinters/commit/b51cdb6))
+* chore(deps): bump vite-plugin-dts from 4.5.3 to 4.5.4 ([8ffc292](https://github.com/exile-watch/splinters/commit/8ffc292))
 
 
 
