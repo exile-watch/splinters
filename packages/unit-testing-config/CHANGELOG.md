@@ -1,7 +1,6 @@
-##  (2025-05-25)
+##  (2025-05-31)
 
-* chore(deps-dev): bump @types/react in the types group ([915624d](https://github.com/exile-watch/splinters/commit/915624d))
-* chore(deps): bump vitest in the unit-testing-config-deps group ([f759411](https://github.com/exile-watch/splinters/commit/f759411))
+* chore(deps-dev): bump @types/react in the types group ([e86fc1b](https://github.com/exile-watch/splinters/commit/e86fc1b))
 
 
 
