@@ -19,16 +19,13 @@
     "build": "vite build",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
+  "peerDependencies": {
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4"
   },
   "devDependencies": {
-    "@exile-watch/typescript-config": "*"
-  },
-  "peerDependenciesMeta": {
-    "fsevents": {
-      "optional": true
-    }
+    "@exile-watch/typescript-config": "*",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4"
   }
 }
