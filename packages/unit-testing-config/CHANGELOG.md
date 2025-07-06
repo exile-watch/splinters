@@ -1,5 +1,7 @@
-##  (2025-06-28)
+##  (2025-07-06)
 
+* chore: release [skip ci] ([68e3019](https://github.com/exile-watch/splinters/commit/68e3019))
+* chore(deps): bump vitest in the unit-testing-config-deps group ([c5bad38](https://github.com/exile-watch/splinters/commit/c5bad38))
 * chore(deps): bump vitest in the unit-testing-config-deps group ([a63d2ca](https://github.com/exile-watch/splinters/commit/a63d2ca))
 
 
