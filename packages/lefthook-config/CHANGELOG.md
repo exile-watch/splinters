@@ -1,5 +1,6 @@
 ##  (2025-07-06)
 
+* chore: release [skip ci] ([bdaa753](https://github.com/exile-watch/splinters/commit/bdaa753))
 * chore(deps): bump lefthook in the lefthook-config-deps group ([2dfb34e](https://github.com/exile-watch/splinters/commit/2dfb34e))
 
 

@@ -1,5 +1,6 @@
 ##  (2025-07-06)
 
+* chore: release [skip ci] ([bdaa753](https://github.com/exile-watch/splinters/commit/bdaa753))
 * chore: release [skip ci] ([6eba5ad](https://github.com/exile-watch/splinters/commit/6eba5ad))
 * chore: release [skip ci] ([db2ebea](https://github.com/exile-watch/splinters/commit/db2ebea))
 * chore: release [skip ci] ([68e3019](https://github.com/exile-watch/splinters/commit/68e3019))
