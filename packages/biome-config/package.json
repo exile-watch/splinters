@@ -22,6 +22,6 @@
   "license": "ISC",
   "homepage": "https://github.com/exile-watch/splinters/pkgs/npm/biome-config",
   "dependencies": {
-    "@biomejs/biome": "1.9.4"
+    "@biomejs/biome": "2.1.1"
   }
 }
