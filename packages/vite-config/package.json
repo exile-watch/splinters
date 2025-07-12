@@ -20,12 +20,12 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vite": "^6.3.5",
+    "vite": "^7.0.4",
     "vite-plugin-dts": "^4.5.4"
   },
   "devDependencies": {
     "@exile-watch/typescript-config": "*",
-    "vite": "^6.3.5",
+    "vite": "^7.0.4",
     "vite-plugin-dts": "^4.5.4"
   }
 }
